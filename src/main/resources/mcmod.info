@@ -1,0 +1,16 @@
+[
+{
+  "modid": "ctdmoderntweaks",
+  "name": "CTD Modern Tweaks",
+  "description": "Tweaks for the CTD Modern official server.",
+  "version": "1.0.3",
+  "mcversion": "1.10.2",
+  "url": "http://mastergeneral156.pcriot.com/",
+  "updateUrl": "",
+  "authorList": ["TheMasterGeneral"],
+  "credits": "All rights reserved.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

@@ -1,0 +1,6 @@
+{
+    "parent": "ctdmoderntweaks:blocks/fuelWitherBlock",
+    "textures": {
+        "inventory": "ctdmoderntweaks:blocks/fuelWitherBlock"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "textures": {
+            "all": "ctdmoderntweaks:blocks/fuelWitherBlock"
+			
+        }
+    },
+    "variants": {
+        "normal": {
+            "model": "cube_all"
+        }
+    }
+}
