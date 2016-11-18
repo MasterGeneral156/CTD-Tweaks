@@ -1,12 +1,12 @@
 [
 {
-  "modid": "ctdmoderntweaks",
-  "name": "CTD Modern Tweaks",
-  "description": "Tweaks for the CTD Modern official server.",
-  "version": "1.0.3",
+  "modid": "ctdtweaks",
+  "name": "CTD Tweaks",
+  "description": "Tweaks for the CTD official servers.",
+  "version": "1.1.0",
   "mcversion": "1.10.2",
-  "url": "http://mastergeneral156.pcriot.com/",
-  "updateUrl": "",
+  "url": "https://minecraft.curseforge.com/projects/ctd-tweaks",
+  "updateUrl": "https://dl.dropboxusercontent.com/u/72961306/TMG%20Assets/Update%20JSONs/CTD-Tweaks.json",
   "authorList": ["TheMasterGeneral"],
   "credits": "All rights reserved.",
   "logoFile": "",
