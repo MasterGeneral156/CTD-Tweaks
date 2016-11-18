@@ -6,6 +6,7 @@ import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.OreDictionary;
+import net.minecraftforge.oredict.ShapedOreRecipe;
 
 import com.themastergeneral.ctdtweaks.blocks.ModBlocks;
 import com.themastergeneral.ctdtweaks.items.ModItems;
@@ -42,13 +43,22 @@ public class Crafting
 		GameRegistry.addRecipe(item, new Object[] {" P ", "PSP", " P ", 'S', Items.STICK, 'P', Blocks.PISTON});
 		
 		
-		//shapeless crafting recipes
+		//Shapeless crafting recipes
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.fuelwither, 9), new ItemStack(ModBlocks.fuelWitherBlock));
 		
-		//Buckets into fluid?
-		GameRegistry.addShapelessRecipe(new ItemStack(Items.BUCKET, 1), new ItemStack(Items.BUCKET, 1, OreDictionary.WILDCARD_VALUE));
+		//Smelting recipes
+		//GameRegistry.addSmelting(Items.WHEAT, new ItemStack(Items.BREAD), 0.1f);
 		
-		//smelting recipes
-		GameRegistry.addSmelting(Items.WHEAT, new ItemStack(Items.BREAD), 0.1f);
+		//Glowing Core
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.coreglowing), "GGG", "GCG", "GGG", 'C', "glowstone", 'G', "blockGlass"));
+		
+		//Amulet
+		GameRegistry.addRecipe(new ItemStack(ModItems.glowingamulet), "SSS", "S S", " G ", 'S', Items.STRING, 'G', ModItems.coreglowing);
+		
+		//Night Vision Goggles
+		GameRegistry.addRecipe(new ItemStack(ModItems.nightvision), " L ", "GLG", 'L', Items.LEATHER, 'G', ModItems.coreglowing);
+		
+		//Good-bye Boots
+		GameRegistry.addRecipe(new ItemStack(ModItems.goodbyeboots), "LBL", "G G", 'L', Items.LEATHER, 'G', Items.GOLD_INGOT, 'B', Items.LEATHER_BOOTS);
 	}
 }
