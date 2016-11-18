@@ -20,9 +20,9 @@ plugins {
     id "net.minecraftforge.gradle.forge" version "2.0.2"
 }
 */
-version = "1.0.3"
-group= "themastergeneral.ctdmoderntweaks.ctdmoderntweaks" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "CTD Modern Tweaks"
+version = "1.1.0"
+group= "com.themastergeneral.ctdtweaks" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "[1.10.2] CTD Tweaks"
 
 sourceCompatibility = targetCompatibility = "1.6" // Need this here so eclipse task generates correctly.
 compileJava {
