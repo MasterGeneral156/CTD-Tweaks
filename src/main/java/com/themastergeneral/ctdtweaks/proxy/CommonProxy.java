@@ -17,6 +17,7 @@ public class CommonProxy
 {
     public void preInit(FMLPreInitializationEvent e) 
     {
+    	
     	ModBlocks.init();
     	ModItems.init();
     	GameRegistry.registerFuelHandler(new Fuel());

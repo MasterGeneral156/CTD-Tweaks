@@ -6,6 +6,9 @@ item.nightvision.name=Night Vision Goggles
 item.glowingamulet.name=Amulet of Being Watched
 item.coreglowing.name=Glowing Core
 item.goodbyeboots.name=Special Boots. Trust me!
+item.hastering.name=Haste Ring
+item.speedring.name=Speed Ring
+item.basering.name=Ring Base
 
 tile.fuelWitherBlock.name=Block of Wither Fuel
 
