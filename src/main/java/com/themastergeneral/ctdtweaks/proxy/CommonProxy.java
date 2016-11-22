@@ -17,6 +17,7 @@ public class CommonProxy
 {
     public void preInit(FMLPreInitializationEvent e) 
     {
+    	
     	ModBlocks.init();
     	ModItems.init();
     	GameRegistry.registerFuelHandler(new Fuel());
@@ -25,7 +26,6 @@ public class CommonProxy
     {
     	OreDict.init();
     	Crafting.addRecipes();
-    	BlockRenderRegister.registerBlockRenderer();
     }
     public void postInit(FMLPostInitializationEvent e) 
     {

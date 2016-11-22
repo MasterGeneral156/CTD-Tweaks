@@ -47,10 +47,10 @@ public class Crafting
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.fuelwither, 9), new ItemStack(ModBlocks.fuelWitherBlock));
 		
 		//Smelting recipes
-		//GameRegistry.addSmelting(Items.WHEAT, new ItemStack(Items.BREAD), 0.1f);
+		GameRegistry.addSmelting(Items.CARROT, new ItemStack(ModItems.steamedcarrot), 0.1f);
 		
 		//Glowing Core
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.coreglowing), "GGG", "GCG", "GGG", 'C', "glowstone", 'G', "blockGlass"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.coreglowing), "GEG", "ECE", "GEG", 'C', "glowstone", 'G', "blockGlass", 'E', ModItems.enchantedgoldingot));
 		
 		//Amulet
 		GameRegistry.addRecipe(new ItemStack(ModItems.glowingamulet), "SSS", "S S", " G ", 'S', Items.STRING, 'G', ModItems.coreglowing);
