@@ -21,6 +21,8 @@ public class ModItems
 	
 	public static BasicGlow enchantedgoldingot;
 	
+	public static BasicFood steamedcarrot;
+	
 	public static SpecialArmor nightvision;
 	public static SpecialArmor glowingamulet;
 	public static SpecialArmor goodbyeboots;
@@ -34,6 +36,7 @@ public class ModItems
 		 fuelwither = register(new BasicItem ("fuelwither"));
 		 coreglowing = register(new BasicItem ("coreglowing"));
 		 enchantedgoldingot = register(new BasicGlow ("enchantedgoldingot"));
+		 steamedcarrot = register(new BasicFood ("steamedcarrot", 6, 1.2F, false));
 		 nightvision = register(new SpecialArmor("nightvision", weak_armor, 0, EntityEquipmentSlot.HEAD));
 		 glowingamulet = register(new SpecialArmor("glowingamulet", weak_armor, 1, EntityEquipmentSlot.CHEST));
 		 goodbyeboots = register(new SpecialArmor("goodbyeboots", weak_armor, 3, EntityEquipmentSlot.FEET));

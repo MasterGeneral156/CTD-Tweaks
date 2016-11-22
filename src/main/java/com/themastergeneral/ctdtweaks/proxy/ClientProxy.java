@@ -1,5 +1,7 @@
 package com.themastergeneral.ctdtweaks.proxy;
 
+import com.themastergeneral.ctdtweaks.proxy.client.BlockRenderRegister;
+
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.model.ModelLoader;
@@ -18,6 +20,7 @@ public class ClientProxy extends CommonProxy
     public void init(FMLInitializationEvent e) 
     {
         super.init(e);
+        BlockRenderRegister.registerBlockRenderer();
     }
     @Override
     public void postInit(FMLPostInitializationEvent e) 
