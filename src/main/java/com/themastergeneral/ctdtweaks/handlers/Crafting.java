@@ -17,7 +17,7 @@ public class Crafting
 	{
 		ItemStack item;
 		//Wither Fuel
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.fuelWitherBlock), " W ", "WCW", " W ", 'C', Blocks.COAL_BLOCK, 'W', Items.NETHER_STAR);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.fuelwitherblock), " W ", "WCW", " W ", 'C', Blocks.COAL_BLOCK, 'W', Items.NETHER_STAR);
 		
 		//Combat Core
 		GameRegistry.addRecipe(new ItemStack(ModItems.corecombat), "RSR", "BNP", "RAR", 'R', Items.DIAMOND, 'N', Items.NETHER_STAR, 'S', Items.DIAMOND_SWORD, 'B', Items.BOW, 'A', Items.ARROW, 'P', Items.SHIELD);
@@ -32,10 +32,10 @@ public class Crafting
 		GameRegistry.addRecipe(new ItemStack(Items.ELYTRA, 1, 432), "PSP", "LSL", "LSL", 'L', Items.LEATHER, 'S', Items.STICK, 'P', Blocks.PURPUR_BLOCK);
 		
 		//Wither Fuel Block
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.fuelWitherBlock), "FFF", "FFF", "FFF", 'F', ModItems.fuelwither);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.fuelwitherblock), "FFF", "FFF", "FFF", 'F', ModItems.fuelwither);
 		
 		//Enchanted Gold Ingot
-		GameRegistry.addRecipe(new ItemStack(ModItems.enchantedgoldingot), "GGG", "GBG", "GGG", 'G', Items.GOLD_INGOT, 'B', new ItemStack(Items.ENCHANTED_BOOK, 1, OreDictionary.WILDCARD_VALUE));
+		GameRegistry.addRecipe(new ItemStack(ModItems.enchantedgoldingot, 8), "GGG", "GBG", "GGG", 'G', Items.GOLD_INGOT, 'B', new ItemStack(Items.ENCHANTED_BOOK, 1, OreDictionary.WILDCARD_VALUE));
 		
 		//Knockback Stick?
 		item = new ItemStack(Items.STICK);
@@ -44,7 +44,7 @@ public class Crafting
 		
 		
 		//Shapeless crafting recipes
-		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.fuelwither, 9), new ItemStack(ModBlocks.fuelWitherBlock));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.fuelwither, 9), new ItemStack(ModBlocks.fuelwitherblock));
 		
 		//Smelting recipes
 		GameRegistry.addSmelting(Items.CARROT, new ItemStack(ModItems.steamedcarrot), 0.1f);
