@@ -12,7 +12,7 @@ public final class BlockRenderRegister
 {
 	public static void registerBlockRenderer() 
 	{
-	    reg(ModBlocks.fuelWitherBlock);
+	    reg(ModBlocks.fuelwitherblock);
 	}
 
 	public static void reg(Block block) 

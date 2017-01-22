@@ -9,10 +9,10 @@ import com.themastergeneral.ctdtweaks.proxy.client.ItemModelProvider;
 
 public class ModBlocks 
 {
-	public static BasicBlock fuelWitherBlock;
+	public static BasicBlock fuelwitherblock;
 	 public static void init() 
 	 {
-		 fuelWitherBlock = register(new BasicBlock(Material.GROUND, "fuelWitherBlock", true));
+		 fuelwitherblock = register(new BasicBlock(Material.GROUND, "fuelwitherblock", true));
 	 }
 	 
 	 private static <T extends Block> T register (T block, ItemBlock itemBlock) 

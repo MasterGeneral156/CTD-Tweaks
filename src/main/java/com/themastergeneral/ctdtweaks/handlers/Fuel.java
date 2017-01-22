@@ -12,7 +12,7 @@ public class Fuel implements IFuelHandler
 	public int getBurnTime(ItemStack fuel) 
 	{
 		Item var1 = fuel.getItem();
-		if(var1 == Item.getItemFromBlock(ModBlocks.fuelWitherBlock))
+		if(var1 == Item.getItemFromBlock(ModBlocks.fuelwitherblock))
 		{
 			return 100000;
 		}
