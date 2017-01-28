@@ -18,9 +18,9 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class SpecialArmor extends BasicArmor {
 	private World world;
-	public SpecialArmor(String name, ArmorMaterial materialIn, int renderIndexIn, EntityEquipmentSlot equipmentSlotIn) 
+	public SpecialArmor(String name, ArmorMaterial materialIn, int renderIndexIn, EntityEquipmentSlot equipmentSlotIn, String modid) 
 	{
-		super(name, materialIn, renderIndexIn, equipmentSlotIn);
+		super(name, materialIn, renderIndexIn, equipmentSlotIn, modid);
 	}
 	@Override
 	public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) 
@@ -41,6 +41,10 @@ public class SpecialArmor extends BasicArmor {
             }
 			player.addPotionEffect(new PotionEffect(MobEffects.LEVITATION, 100, 50, true, false));
 			player.inventory.removeStackFromSlot(36);
+			if (!world.isRemote)
+			{
+				player.addChatComponentMessage(new TextComponentString("Good bye, cruel world."));
+			}
 		}
 	}
 }

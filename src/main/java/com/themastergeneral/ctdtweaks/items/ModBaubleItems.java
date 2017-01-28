@@ -3,9 +3,10 @@ package com.themastergeneral.ctdtweaks.items;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
+import com.themastergeneral.ctdcore.client.ItemModelProvider;
+import com.themastergeneral.ctdtweaks.Main;
 import com.themastergeneral.ctdtweaks.items.rings.RingHaste;
 import com.themastergeneral.ctdtweaks.items.rings.RingSpeed;
-import com.themastergeneral.ctdtweaks.proxy.client.ItemModelProvider;
 
 public class ModBaubleItems 
 {
@@ -15,9 +16,9 @@ public class ModBaubleItems
 	
 	public static void init() 
 	{
-		 speedring = register(new RingSpeed("speedring"));
-		 hastering = register(new RingHaste("hastering"));
-		 basering = register(new BasicRing("basering"));
+		 speedring = register(new RingSpeed("speedring", Main.MODID));
+		 hastering = register(new RingHaste("hastering", Main.MODID));
+		 basering = register(new BasicRing("basering", Main.MODID));
 	}
 	private static <T extends Item> T register(T item) 
 	{

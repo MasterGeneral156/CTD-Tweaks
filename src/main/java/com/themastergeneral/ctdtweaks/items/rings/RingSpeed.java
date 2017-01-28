@@ -9,9 +9,9 @@ import com.themastergeneral.ctdtweaks.items.BasicRing;
 
 public class RingSpeed extends BasicRing {
 
-	public RingSpeed(String name) 
+	public RingSpeed(String name, String modid) 
 	{
-		super(name);
+		super(name, modid);
 	}
 	@Override
 	public void onWornTick(ItemStack stack, EntityLivingBase entity) 

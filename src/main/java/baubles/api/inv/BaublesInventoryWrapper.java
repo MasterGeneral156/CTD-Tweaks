@@ -74,6 +74,7 @@ public class BaublesInventoryWrapper implements IInventory {
 	@Override
 	public void markDirty() {	}
 
+	@Override
 	public boolean isUseableByPlayer(EntityPlayer player) {
 		return true;
 	}
@@ -108,23 +109,6 @@ public class BaublesInventoryWrapper implements IInventory {
         {
 			this.setInventorySlotContents(i, null);
         }
-	}
-
-	public boolean func_191420_l() 
-	{
-		return false;
-	}
-
-	@Override
-	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public boolean isUsableByPlayer(EntityPlayer player) {
-		// TODO Auto-generated method stub
-		return false;
 	}
 
 }

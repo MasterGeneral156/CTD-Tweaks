@@ -15,11 +15,10 @@ import com.themastergeneral.ctdtweaks.handlers.Crafting;
 import com.themastergeneral.ctdtweaks.handlers.Fuel;
 import com.themastergeneral.ctdtweaks.handlers.OreDict;
 import com.themastergeneral.ctdtweaks.items.ModItems;
-import com.themastergeneral.ctdtweaks.proxy.client.BlockRenderRegister;
 
 public class CommonProxy 
 {
-    public static Configuration config;
+	public static Configuration config;
 	public void preInit(FMLPreInitializationEvent e) 
     {
 		File directory = e.getModConfigurationDirectory();
@@ -37,9 +36,5 @@ public class CommonProxy
     public void postInit(FMLPostInitializationEvent e) 
     {
 
-    }
-    public void registerItemRenderer(Item item, int meta, String id) 
-    {
-    	 
     }
 }

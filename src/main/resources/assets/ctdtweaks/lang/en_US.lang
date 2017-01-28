@@ -5,12 +5,12 @@ item.enchantedgoldingot.name=Enchanted Gold Ingot
 item.nightvision.name=Night Vision Goggles
 item.glowingamulet.name=Amulet of Being Watched
 item.coreglowing.name=Glowing Core
-item.goodbyeboots.name=Special Boots. Trust me!
+item.goodbyeboots.name=Flight Boots
 item.hastering.name=Haste Ring
 item.speedring.name=Speed Ring
 item.basering.name=Ring Base
 item.steamedcarrot.name=Steamed Carrot
 
-tile.fuelwitherblock.name=Block of Wither Fuel
+tile.fuelwitherblock.name=Wither Fuel Block
 
 itemGroup.ctdtweaks=CTD Tweaks

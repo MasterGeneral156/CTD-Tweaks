@@ -1,6 +1,6 @@
 package com.themastergeneral.ctdtweaks.proxy;
 
-import com.themastergeneral.ctdtweaks.proxy.client.BlockRenderRegister;
+import com.themastergeneral.ctdcore.client.BlockRenderRegister;
 
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -20,16 +20,10 @@ public class ClientProxy extends CommonProxy
     public void init(FMLInitializationEvent e) 
     {
         super.init(e);
-        BlockRenderRegister.registerBlockRenderer();
     }
     @Override
     public void postInit(FMLPostInitializationEvent e) 
     {
         super.postInit(e);
     }
-    public void registerItemRenderer(Item item, int meta, String id)
-    {
-    	 ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation("ctdtweaks:" + id, "inventory"));
-    }
-
 }

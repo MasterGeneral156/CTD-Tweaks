@@ -12,6 +12,7 @@ public class Config
 {
     private static final String CATEGORY_GENERAL = "General";
 
+    // This values below you can access elsewhere in your mod:
     public static boolean disableBaubles = false;
     public static boolean disableCarrot = false;
     public static boolean disableWitherFuel = false;
@@ -23,10 +24,12 @@ public class Config
     public static boolean disableEnchantedGold = false;
     public static boolean disableElytra = false;
     public static boolean disableJei = false;
-    public static String ModVersion = Main.VERSION+"-"+Main.acceptedMinecraftVersions;
+    public static String ModVersion = Main.VERSION+"-1.10.2";
     public static int coreCombatDurability = 64;
     public static int coreFlightDurability = 128;
 
+    // Call this from CommonProxy.preInit(). It will create our config if it doesn't
+    // exist yet and read the values if it does exist.
     public static void readConfig() 
     {
         Configuration cfg = CommonProxy.config;

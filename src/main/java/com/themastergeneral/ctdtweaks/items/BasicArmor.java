@@ -1,7 +1,7 @@
 package com.themastergeneral.ctdtweaks.items;
 
-import com.themastergeneral.ctdtweaks.Main;
-import com.themastergeneral.ctdtweaks.proxy.client.ItemModelProvider;
+import com.themastergeneral.ctdcore.Main;
+import com.themastergeneral.ctdcore.client.ItemModelProvider;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.inventory.EntityEquipmentSlot;
@@ -16,8 +16,9 @@ public class BasicArmor extends ItemArmor implements ItemModelProvider
     public final float toughness;
     public final int renderIndex;
 	private String name;
+	private String modid;
     
-	public BasicArmor(String name, ArmorMaterial materialIn, int renderIndexIn, EntityEquipmentSlot equipmentSlotIn) 
+	public BasicArmor(String name, ArmorMaterial materialIn, int renderIndexIn, EntityEquipmentSlot equipmentSlotIn, String modid) 
 	{
 		super(materialIn, renderIndexIn, equipmentSlotIn);
         this.armorType = equipmentSlotIn;
@@ -26,13 +27,14 @@ public class BasicArmor extends ItemArmor implements ItemModelProvider
         this.setMaxDamage(materialIn.getDurability(equipmentSlotIn));
         this.toughness = materialIn.getToughness();
         this.maxStackSize = 1;
-        this.setCreativeTab(Main.creativeTab);	
+        this.setCreativeTab(com.themastergeneral.ctdtweaks.Main.creativeTab);	
         this.name = name;
+        this.modid = modid;
 		this.setUnlocalizedName(name);
 		this.setRegistryName(name);
 	}
 	public void registerItemModel(Item item) 
 	{
-		Main.proxy.registerItemRenderer(this, 0, name);
+		Main.proxy.registerItemRenderer(modid, this, 0, name);
 	}
 }

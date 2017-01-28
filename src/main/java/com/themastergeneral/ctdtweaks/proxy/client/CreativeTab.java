@@ -16,9 +16,9 @@ public class CreativeTab extends CreativeTabs
 	}
 
 	@Override
-	public ItemStack getTabIconItem() 
+	public Item getTabIconItem() 
 	{
-		return new ItemStack(ModItems.corecombat); //shown icon on creative tab
+		return ModItems.corecombat; //shown icon on creative tab
 	}
 	
 	 @Override

@@ -2,22 +2,17 @@ package com.themastergeneral.ctdtweaks.items;
 
 import net.minecraft.item.Item;
 
+import com.themastergeneral.ctdcore.client.ItemModelProvider;
+import com.themastergeneral.ctdcore.item.CTDItem;
 import com.themastergeneral.ctdtweaks.Main;
-import com.themastergeneral.ctdtweaks.proxy.client.ItemModelProvider;
 
-public class BasicItem extends Item implements ItemModelProvider
+public class BasicItem extends CTDItem implements ItemModelProvider
 {
 	protected String name;
-	public BasicItem(String name) 
+	protected String modid;
+	public BasicItem(String name,String modid) 
 	{
-		this.name = name;
-		this.setUnlocalizedName(name);
-		this.setRegistryName(name);
+		super(name,modid);
 		this.setCreativeTab(Main.creativeTab);
 	}
-	public void registerItemModel(Item item) 
-	{
-		Main.proxy.registerItemRenderer(this, 0, name);
-	}
-
 }
