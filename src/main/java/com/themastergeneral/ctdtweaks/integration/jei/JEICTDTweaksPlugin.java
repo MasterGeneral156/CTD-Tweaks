@@ -2,12 +2,13 @@ package com.themastergeneral.ctdtweaks.integration.jei;
 
 import javax.annotation.Nonnull;
 
+import mezz.jei.api.BlankModPlugin;
+import mezz.jei.api.IModRegistry;
+import net.minecraft.item.ItemStack;
+
 import com.themastergeneral.ctdtweaks.config.Config;
 import com.themastergeneral.ctdtweaks.items.ModItems;
 
-import net.minecraft.item.ItemStack;
-import mezz.jei.api.BlankModPlugin;
-import mezz.jei.api.IModRegistry;
 @mezz.jei.api.JEIPlugin
 public class JEICTDTweaksPlugin extends BlankModPlugin 
 {

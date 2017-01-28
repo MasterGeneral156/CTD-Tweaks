@@ -24,7 +24,7 @@ public class Config
     public static boolean disableEnchantedGold = false;
     public static boolean disableElytra = false;
     public static boolean disableJei = false;
-    public static String ModVersion = Main.VERSION+"-"+Main.acceptedMinecraftVersions;
+    public static String ModVersion = Main.VERSION+"-1.10.2";
     public static int coreCombatDurability = 64;
     public static int coreFlightDurability = 128;
 

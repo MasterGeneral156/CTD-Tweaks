@@ -4,25 +4,16 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 
+import com.themastergeneral.ctdcore.block.CTDBlock;
 import com.themastergeneral.ctdtweaks.Main;
 import com.themastergeneral.ctdtweaks.proxy.client.ItemModelProvider;
 
-public class BasicBlock extends Block implements ItemModelProvider
+public class BasicBlock extends CTDBlock implements ItemModelProvider
 {
 	protected String name;
-	public BasicBlock(Material materialIn, String name, Boolean isBlock) 
+	public BasicBlock(Material materialIn, String name, String modid) 
 	{
-		super(materialIn);
-		this.name = name;
-		this.setUnlocalizedName(name);
-		this.setRegistryName(name);
+		super(materialIn, name, modid);
 		this.setCreativeTab(Main.creativeTab);
-		this.fullBlock=isBlock;
 	}
-	
-	@Override
-	public void registerItemModel(Item itemBlock) 
-	{
-		Main.proxy.registerItemRenderer(itemBlock, 0, name);
-	}	
 }

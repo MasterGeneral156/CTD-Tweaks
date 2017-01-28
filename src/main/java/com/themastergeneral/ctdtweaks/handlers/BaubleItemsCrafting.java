@@ -8,7 +8,9 @@ import com.themastergeneral.ctdtweaks.config.Config;
 import com.themastergeneral.ctdtweaks.items.ModBaubleItems;
 import com.themastergeneral.ctdtweaks.items.ModItems;
 
-public class BaubleItemsCrafting {
+
+public class BaubleItemsCrafting 
+{
 	public static void addRecipes() 
 	{
 		if (Config.disableBaubles == false)
