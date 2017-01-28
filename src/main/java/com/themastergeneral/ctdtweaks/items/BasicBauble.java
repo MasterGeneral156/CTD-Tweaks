@@ -6,9 +6,9 @@ import baubles.api.IBauble;
 
 public abstract class BasicBauble extends BasicItem implements IBauble {
 
-	public BasicBauble(String name) 
+	public BasicBauble(String name, String modid) 
 	{
-		super(name);
+		super(name, modid);
 	}
 	@Override
 	public boolean canEquip(ItemStack stack, EntityLivingBase player) 

@@ -8,7 +8,6 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import com.themastergeneral.ctdcore.block.CTDBlock;
 import com.themastergeneral.ctdcore.block.RegisterBlock;
 import com.themastergeneral.ctdtweaks.Main;
-import com.themastergeneral.ctdtweaks.proxy.client.ItemModelProvider;
 
 public class ModBlocks extends RegisterBlock
 {

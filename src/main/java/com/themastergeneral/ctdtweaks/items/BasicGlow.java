@@ -7,10 +7,9 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BasicGlow extends BasicItem 
 {
-	public BasicGlow(String name) 
+	public BasicGlow(String name, String modid) 
 	{
-		super(name);
-		// TODO Auto-generated constructor stub
+		super(name, modid);
 	}
 	@SideOnly(Side.CLIENT)
 	public boolean hasEffect(ItemStack par1ItemStack) 

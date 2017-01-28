@@ -17,14 +17,15 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = Main.MODID, name = Main.MODNAME, version = Main.VERSION, dependencies = Main.DEPENDENCIES)
+@Mod(modid = Main.MODID, name = Main.MODNAME, version = Main.VERSION, dependencies = Main.DEPENDENCIES, updateJSON = Main.updateJSON)
 public class Main 
 {
 	public static boolean baublesLoaded = false;
     public static final String MODID = "ctdtweaks";
     public static final String MODNAME = "CTD Tweaks";
-    public static final String VERSION = "1.2.2";
-    public static final String DEPENDENCIES = "after:Baubles;required-after:ctdcore@[1.0.1,]";
+    public static final String VERSION = "1.4.0";
+    public static final String DEPENDENCIES = "after:Baubles;required-after:ctdcore@[1.0.2,]";
+    public static final String updateJSON = "https://dl.dropboxusercontent.com/u/72961306/TMG%20Assets/Update%20JSONs/CTD-Tweaks.json";
     
     public static final CreativeTab creativeTab = new CreativeTab();
     
@@ -45,7 +46,6 @@ public class Main
     		ModBaubleItems.init();
     		BaubleItemsCrafting.addRecipes();
     	}
-    	System.out.println("CTD Tweaks is loading...");
     }
     @EventHandler
     public void init(FMLInitializationEvent e) 
@@ -57,6 +57,5 @@ public class Main
     public void postInit(FMLPostInitializationEvent e) 
     {
     	proxy.postInit(e);
-    	System.out.println("CTD Tweaks is loaded.");
     }
 }

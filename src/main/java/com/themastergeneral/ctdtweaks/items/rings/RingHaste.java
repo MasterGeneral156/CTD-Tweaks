@@ -9,9 +9,9 @@ import com.themastergeneral.ctdtweaks.items.BasicRing;
 
 public class RingHaste extends BasicRing {
 
-	public RingHaste(String name) 
+	public RingHaste(String name, String modid) 
 	{
-		super(name);
+		super(name, modid);
 	}
 	@Override
 	public void onWornTick(ItemStack stack, EntityLivingBase entity) 

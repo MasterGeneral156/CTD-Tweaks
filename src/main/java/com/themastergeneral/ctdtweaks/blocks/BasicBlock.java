@@ -5,8 +5,8 @@ import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 
 import com.themastergeneral.ctdcore.block.CTDBlock;
+import com.themastergeneral.ctdcore.client.ItemModelProvider;
 import com.themastergeneral.ctdtweaks.Main;
-import com.themastergeneral.ctdtweaks.proxy.client.ItemModelProvider;
 
 public class BasicBlock extends CTDBlock implements ItemModelProvider
 {
