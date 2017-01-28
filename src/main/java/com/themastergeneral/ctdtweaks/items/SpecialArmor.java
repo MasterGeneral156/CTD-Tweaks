@@ -41,10 +41,6 @@ public class SpecialArmor extends BasicArmor {
             }
 			player.addPotionEffect(new PotionEffect(MobEffects.LEVITATION, 100, 50, true, false));
 			player.inventory.removeStackFromSlot(36);
-			if (!world.isRemote)
-			{
-				player.addChatComponentMessage(new TextComponentString("Good bye, cruel world."));
-			}
 		}
 	}
 }

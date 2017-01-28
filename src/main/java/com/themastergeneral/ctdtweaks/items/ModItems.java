@@ -3,13 +3,13 @@ package com.themastergeneral.ctdtweaks.items;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 import com.themastergeneral.ctdcore.client.ItemModelProvider;
 import com.themastergeneral.ctdtweaks.Main;
+import com.themastergeneral.ctdtweaks.config.Config;
 
 public class ModItems 
 {
