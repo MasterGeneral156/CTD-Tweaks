@@ -27,6 +27,7 @@ public class Config
     public static String ModVersion = Main.VERSION+"-1.10.2";
     public static int coreCombatDurability = 64;
     public static int coreFlightDurability = 128;
+    public static int witherFuelBurn = 56000;
 
     // Call this from CommonProxy.preInit(). It will create our config if it doesn't
     // exist yet and read the values if it does exist.
@@ -67,5 +68,6 @@ public class Config
         disableJei = cfg.getBoolean("disableJei", CATEGORY_GENERAL, disableJei, "Set to true to remove Just Enough Items integration.");
         coreCombatDurability = cfg.getInt("coreCombatDurability", CATEGORY_GENERAL, coreCombatDurability, 1, 4096, "Uses you can get out of the Combat Core before it breaks.");
         coreFlightDurability = cfg.getInt("coreFlightDurability", CATEGORY_GENERAL, coreFlightDurability, 1, 4096, "Uses you can get out of the Flight Core before it breaks.");
+        witherFuelBurn = cfg.getInt("Wither Fuel Burn Time", CATEGORY_GENERAL, witherFuelBurn, 1, 2147483647, "How many ticks will Wither Fuel burn for? (Block is X10)");
     }
 }

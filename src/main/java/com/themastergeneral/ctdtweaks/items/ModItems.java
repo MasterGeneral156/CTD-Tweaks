@@ -8,10 +8,11 @@ import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 import com.themastergeneral.ctdcore.client.ItemModelProvider;
+import com.themastergeneral.ctdcore.item.RegisterItem;
 import com.themastergeneral.ctdtweaks.Main;
 import com.themastergeneral.ctdtweaks.config.Config;
 
-public class ModItems 
+public class ModItems extends RegisterItem
 {
 	public static BasicCore corecombat;
 	public static BasicItem coreflight;
@@ -43,13 +44,4 @@ public class ModItems
 		 goodbyeboots = register(new SpecialArmor("goodbyeboots", weak_armor, 3, EntityEquipmentSlot.FEET, Main.MODID));
 		  
 	 }
-	private static <T extends Item> T register(T item) 
-	{
-		GameRegistry.register(item);
-		if(item instanceof ItemModelProvider) 
-		{
-			((ItemModelProvider)item).registerItemModel(item);
-		}
-		return item;
-	}
 }

@@ -6,7 +6,7 @@ import com.themastergeneral.ctdcore.client.ItemModelProvider;
 import com.themastergeneral.ctdcore.item.CTDItem;
 import com.themastergeneral.ctdtweaks.Main;
 
-public class BasicItem extends CTDItem implements ItemModelProvider
+public class BasicItem extends CTDItem
 {
 	protected String name;
 	protected String modid;

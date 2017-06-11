@@ -16,13 +16,13 @@ public class BaubleItemsCrafting
 		if (Config.disableBaubles == false)
 		{
 			//Basic Ring
-			GameRegistry.addRecipe(new ItemStack(ModBaubleItems.basering), "NNN", "N N", "NNN", 'N', Items.GOLD_NUGGET);
+			//GameRegistry.addRecipe(new ItemStack(ModBaubleItems.basering), "NNN", "N N", "NNN", 'N', Items.GOLD_NUGGET);
 			
 			//Speed Ring
-			GameRegistry.addRecipe(new ItemStack(ModBaubleItems.speedring), " S ", "SBS", " S ", 'B', ModBaubleItems.basering, 'S', Items.SUGAR);
+			//GameRegistry.addRecipe(new ItemStack(ModBaubleItems.speedring), " S ", "SBS", " S ", 'B', ModBaubleItems.basering, 'S', Items.SUGAR);
 			
 			//Haste Ring
-			GameRegistry.addRecipe(new ItemStack(ModBaubleItems.hastering), " H ", "HBH", " H ", 'B', ModBaubleItems.basering, 'H', ModItems.enchantedgoldingot);
+			//GameRegistry.addRecipe(new ItemStack(ModBaubleItems.hastering), " H ", "HBH", " H ", 'B', ModBaubleItems.basering, 'H', ModItems.enchantedgoldingot);
 		}
 	}
 }
