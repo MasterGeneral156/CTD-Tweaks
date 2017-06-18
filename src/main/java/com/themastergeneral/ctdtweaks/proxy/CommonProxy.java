@@ -13,7 +13,6 @@ import com.themastergeneral.ctdtweaks.blocks.ModBlocks;
 import com.themastergeneral.ctdtweaks.config.Config;
 import com.themastergeneral.ctdtweaks.handlers.Crafting;
 import com.themastergeneral.ctdtweaks.handlers.Fuel;
-import com.themastergeneral.ctdtweaks.handlers.OreDict;
 import com.themastergeneral.ctdtweaks.items.ModItems;
 
 public class CommonProxy 
@@ -30,7 +29,6 @@ public class CommonProxy
     }
     public void init(FMLInitializationEvent e) 
     {
-    	OreDict.init();
     	Crafting.addRecipes();
     }
     public void postInit(FMLPostInitializationEvent e) 
