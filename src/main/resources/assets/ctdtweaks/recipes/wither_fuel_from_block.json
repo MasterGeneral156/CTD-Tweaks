@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ctdtweaks:fuelwitherblock"
+    }
+  ],
+  "result": {
+    "item": "ctdtweaks:fuelwither",
+    "count": 9
+  }
+}

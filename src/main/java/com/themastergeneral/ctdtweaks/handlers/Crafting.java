@@ -16,19 +16,6 @@ public class Crafting
 {
 	public static void addRecipes() 
 	{
-		ItemStack item;
-		if (Config.disableWitherFuelBlock == false)
-		{
-			//Wither Fuel
-			//GameRegistry.addRecipe(new ItemStack(ModBlocks.fuelwitherblock), " W ", "WCW", " W ", 'C', Blocks.COAL_BLOCK, 'W', Items.NETHER_STAR);
-			//Wither Fuel Block
-			//GameRegistry.addRecipe(new ItemStack(ModBlocks.fuelwitherblock), "FFF", "FFF", "FFF", 'F', ModItems.fuelwither);
-		}
-		if (Config.disableWitherFuel == false)
-		{
-			//Shapeless crafting recipes
-			//GameRegistry.addShapelessRecipe(new ItemStack(ModItems.fuelwither, 9), new ItemStack(ModBlocks.fuelwitherblock));
-		}
 		if (Config.disableBossDrops == false)
 		{
 			//Nether Star
@@ -39,10 +26,6 @@ public class Crafting
 		}
 		if (Config.disableGagItems == false)
 		{
-			//Knockback Stick?
-			item = new ItemStack(Items.STICK);
-			item.addEnchantment(Enchantment.getEnchantmentByID(19), 10);
-			//GameRegistry.addRecipe(item, new Object[] {" P ", "PSP", " P ", 'S', Items.STICK, 'P', Blocks.PISTON});
 			
 			//Good-bye Boots
 			//GameRegistry.addRecipe(new ItemStack(ModItems.goodbyeboots), "LBL", "G G", 'L', Items.LEATHER, 'G', Items.GOLD_INGOT, 'B', Items.LEATHER_BOOTS);
