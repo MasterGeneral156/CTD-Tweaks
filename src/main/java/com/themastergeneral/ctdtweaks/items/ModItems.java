@@ -33,8 +33,6 @@ public class ModItems extends RegisterItem
 	 public static void init() 
 	 {
 		 corecombat = register(new BasicCore("corecombat", Config.coreCombatDurability, Main.MODID));
-		 coreflight = register(new BasicCore("coreflight", Config.coreFlightDurability, Main.MODID));
-		 nuggettin = register(new BasicItem ("nuggettin", Main.MODID));
 		 fuelwither = register(new BasicItem ("fuelwither", Main.MODID));
 		 coreglowing = register(new BasicItem ("coreglowing", Main.MODID));
 		 enchantedgoldingot = register(new BasicGlow ("enchantedgoldingot", Main.MODID));
