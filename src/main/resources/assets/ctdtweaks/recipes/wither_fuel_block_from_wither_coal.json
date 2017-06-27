@@ -1,6 +1,6 @@
 {
     "type": "minecraft:crafting_shaped",
-    "group": "ctdtweaks",
+    "group": "ctdtweaks:witherfuelblock",
     "pattern": [
         "WWW",
         "WWW",
