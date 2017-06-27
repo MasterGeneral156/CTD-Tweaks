@@ -8,7 +8,7 @@ import com.themastergeneral.ctdcore.block.CTDBlock;
 import com.themastergeneral.ctdcore.client.ItemModelProvider;
 import com.themastergeneral.ctdtweaks.Main;
 
-public class BasicBlock extends CTDBlock implements ItemModelProvider
+public class BasicBlock extends CTDBlock
 {
 	protected String name;
 	public BasicBlock(Material materialIn, String name, String modid) 
