@@ -24,7 +24,7 @@ public class Main
     public static final String MODID = "ctdtweaks";
     public static final String MODNAME = "CTD Tweaks";
     public static final String VERSION = "1.4.1";
-    public static final String DEPENDENCIES = "after:Baubles;required-after:ctdcore@[1.1.2,]";
+    public static final String DEPENDENCIES = "after:Baubles;required-after:ctdcore@[1.1.3,]";
     public static final String updateJSON = "https://raw.githubusercontent.com/MasterGeneral156/Version/master/CTD-Tweaks.json";
     
     public static final CreativeTab creativeTab = new CreativeTab();
