@@ -14,3 +14,11 @@ item.steamedcarrot.name=Steamed Carrot
 tile.fuelwitherblock.name=Wither Fuel Block
 
 itemGroup.ctdtweaks=CTD Tweaks
+
+jei.corecombat.info=Used to automate boss drops. This item has a finite durability, which you can specify in the config file. As of CTD Tweaks 1.4.1, this item does not work if its damaged. Will be fixed ASAP.
+jei.amulet.info=When worn, give you a glowing effect, making you easier to find.
+jei.fuelwither.info=Coal infused with wither powers to make it much more potent.
+jei.boots.info=Put these on outside and fly away!
+jei.nightvision.info=When worn, allows you to see much more easily at night.
+jei.coreglowing.info=Temporary recipe until Wildcards work with recipes again.
+jei.enchantedgold.info=Recipe removed until wildcards work with recipes again.
