@@ -3,7 +3,9 @@ package com.themastergeneral.ctdtweaks.proxy;
 import java.io.File;
 
 import net.minecraft.item.Item;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
+import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -11,6 +13,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 import com.themastergeneral.ctdtweaks.blocks.ModBlocks;
 import com.themastergeneral.ctdtweaks.config.Config;
+import com.themastergeneral.ctdtweaks.events.FlightEvent;
 import com.themastergeneral.ctdtweaks.handlers.Crafting;
 import com.themastergeneral.ctdtweaks.handlers.Fuel;
 import com.themastergeneral.ctdtweaks.handlers.OreDict;
@@ -32,6 +35,7 @@ public class CommonProxy
     public void init(FMLInitializationEvent e) 
     {
     	Crafting.addRecipes();
+    	MinecraftForge.EVENT_BUS.register(new FlightEvent());
     }
     public void postInit(FMLPostInitializationEvent e) 
     {

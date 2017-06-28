@@ -11,7 +11,6 @@ import com.themastergeneral.ctdtweaks.items.rings.RingSpeed;
 
 public class ModBaubleItems extends RegisterItem
 {
-	public static BasicRing basering;
 	public static RingSpeed speedring;
 	public static RingHaste hastering;
 	
@@ -19,6 +18,5 @@ public class ModBaubleItems extends RegisterItem
 	{
 		 speedring = register(new RingSpeed("speedring", Main.MODID));
 		 hastering = register(new RingHaste("hastering", Main.MODID));
-		 basering = register(new BasicRing("basering", Main.MODID));
 	}
 }

@@ -15,8 +15,6 @@ public class BaubleItemsCrafting
 	{
 		if (Config.disableBaubles == false)
 		{
-			//Basic Ring
-			//GameRegistry.addRecipe(new ItemStack(ModBaubleItems.basering), "NNN", "N N", "NNN", 'N', Items.GOLD_NUGGET);
 			
 			//Speed Ring
 			//GameRegistry.addRecipe(new ItemStack(ModBaubleItems.speedring), " S ", "SBS", " S ", 'B', ModBaubleItems.basering, 'S', Items.SUGAR);
