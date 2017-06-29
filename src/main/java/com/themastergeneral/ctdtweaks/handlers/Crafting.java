@@ -22,10 +22,7 @@ public class Crafting
 		
 			//Glowing Core
 			//GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.coreglowing), "GEG", "ECE", "GEG", 'C', "glowstone", 'G', "blockGlass", 'E', ModItems.enchantedgoldingot));
-		if (Config.disableCarrot == false)
-		{
 			//Smelting recipes
 			GameRegistry.addSmelting(Items.CARROT, new ItemStack(ModItems.steamedcarrot), 0.1f);
-		}
 	}
 }
