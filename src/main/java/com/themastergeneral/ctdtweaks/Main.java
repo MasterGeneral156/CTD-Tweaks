@@ -3,8 +3,6 @@ package com.themastergeneral.ctdtweaks;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.Logger;
 
-import com.themastergeneral.ctdtweaks.handlers.BaubleItemsCrafting;
-import com.themastergeneral.ctdtweaks.items.ModBaubleItems;
 import com.themastergeneral.ctdtweaks.proxy.CommonProxy;
 import com.themastergeneral.ctdtweaks.proxy.client.CreativeTab;
 
@@ -23,8 +21,8 @@ public class Main
 	public static boolean baublesLoaded = false;
     public static final String MODID = "ctdtweaks";
     public static final String MODNAME = "CTD Tweaks";
-    public static final String VERSION = "1.5.0";
-    public static final String DEPENDENCIES = "after:Baubles;required-after:ctdcore@[1.1.3,]";
+    public static final String VERSION = "1.5.1";
+    public static final String DEPENDENCIES = "required-after:ctdcore@[1.1.3,]";
     public static final String updateJSON = "https://raw.githubusercontent.com/MasterGeneral156/Version/master/CTD-Tweaks.json";
     
     public static final CreativeTab creativeTab = new CreativeTab();
@@ -39,13 +37,7 @@ public class Main
     @EventHandler
     public void preInit(FMLPreInitializationEvent e) 
     {
-    	baublesLoaded = Loader.isModLoaded("Baubles");
     	proxy.preInit(e);
-    	if (Main.baublesLoaded)
-    	{
-    		ModBaubleItems.init();
-    		BaubleItemsCrafting.addRecipes();
-    	}
     }
     @EventHandler
     public void init(FMLInitializationEvent e) 
