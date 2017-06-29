@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "ctdtweaks:hastering",
+    "pattern": [
+        " S ",
+        "SRS",
+		" S "
+    ],
+    "key": {
+		"R": { "item": "ctdtweaks:basering" },
+		"S":  {"item": "ctdtweaks:enchantedgoldingot" }
+    },
+    "result": {
+        "item": "ctdtweaks:hastering",
+		"count": 1
+		}
+    }
+}
