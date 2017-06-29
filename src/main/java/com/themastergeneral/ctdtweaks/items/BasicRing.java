@@ -1,18 +1,12 @@
 package com.themastergeneral.ctdtweaks.items;
 
-import baubles.api.BaubleType;
 import net.minecraft.item.ItemStack;
 
-public class BasicRing extends BasicBauble {
+public class BasicRing extends BasicItem {
 
 	public BasicRing(String name, String modid) 
 	{
 		super(name, modid);
+		this.maxStackSize=1;
 	}
-	@Override
-	public BaubleType getBaubleType(ItemStack arg0) 
-	{
-		return BaubleType.RING;
-	}
-
 }
