@@ -11,9 +11,9 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 
 
-version = "1.12-1.5.0"
+version = "1.12-1.5.2"
 group = "com.themastergeneral.ctdtweaks" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "CTD Tweaks"
+archivesBaseName = "CTD-Tweaks"
 
 sourceCompatibility = targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 compileJava {
@@ -21,7 +21,7 @@ compileJava {
 }
 
 minecraft {
-    version = "1.12-14.21.0.2375"
+    version = "1.12-14.21.1.2387"
     runDir = "run"
     
     // the mappings can be changed at any time, and must be in the following format.
@@ -33,24 +33,28 @@ minecraft {
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
 }
 
-repositories {
-  maven {
-    // location of the maven that hosts JEI files
-    name = "Progwml6 maven"
-    url = "http://dvs1.progwml6.com/files/maven"
-  }
-  maven {
-    // location of a maven mirror for JEI files, as a fallback
-    name = "ModMaven"
-    url = "modmaven.k-4u.nl"
-  }
+repositories 
+{
+	maven 
+	{
+		// location of the maven that hosts JEI files
+		name = "Progwml6 maven"
+		url = "http://dvs1.progwml6.com/files/maven"
+	}
+	maven 
+	{
+		// location of a maven mirror for JEI files, as a fallback
+		name = "ModMaven"
+		url = "modmaven.k-4u.nl"
+	}
 }
 
-dependencies {
-  // compile against the JEI API
-  deobfCompile "mezz.jei:jei_${mc_version}:${jei_version}:api"
-  // at runtime, use the full JEI jar
-  runtime "mezz.jei:jei_${mc_version}:${jei_version}"
+dependencies 
+{
+	// compile against the JEI API
+	deobfCompile "mezz.jei:jei_${mc_version}:${jei_version}:api"
+	// at runtime, use the full JEI jar
+	runtime "mezz.jei:jei_${mc_version}:${jei_version}"
 }
 
 processResources {
