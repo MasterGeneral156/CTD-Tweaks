@@ -1,0 +1,35 @@
+{
+    "display": 
+	{
+        "icon": 
+		{
+            "item": "ctdtweaks:fuelwitherblock"
+        },
+        "title": 
+		{
+            "translate": "advancement.fuelwither.name"
+        },
+        "description": 
+		{
+            "translate": "advancement.fuelwither.desc"
+        },
+		"frame": "challenge"
+    },
+	"parent": "ctdtweaks:main/root",
+    "criteria": 
+	{
+        "carrot": 
+		{
+            "trigger": "minecraft:inventory_changed",
+            "conditions": 
+			{
+                "items": 
+				[
+                    {
+                        "item": "ctdtweaks:fuelwitherblock"
+                    }
+                ]
+            }
+        }
+    }
+}

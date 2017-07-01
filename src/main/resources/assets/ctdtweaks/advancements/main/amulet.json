@@ -1,0 +1,34 @@
+{
+    "display": 
+	{
+        "icon": 
+		{
+            "item": "ctdtweaks:glowingamulet"
+        },
+        "title": 
+		{
+            "translate": "advancement.glowingamulet.name"
+        },
+        "description": 
+		{
+            "translate": "advancement.glowingamulet.desc"
+        }
+    },
+	"parent": "ctdtweaks:main/glowingcore",
+    "criteria": 
+	{
+        "carrot": 
+		{
+            "trigger": "minecraft:inventory_changed",
+            "conditions": 
+			{
+                "items": 
+				[
+                    {
+                        "item": "ctdtweaks:glowingamulet"
+                    }
+                ]
+            }
+        }
+    }
+}
