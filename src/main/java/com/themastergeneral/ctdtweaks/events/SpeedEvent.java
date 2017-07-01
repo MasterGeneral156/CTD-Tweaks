@@ -18,16 +18,13 @@ public class SpeedEvent
 		if(event.phase == Phase.START)
 		{
 			EntityPlayer player = (EntityPlayer) event.player;
-			if(player.inventory.hasItemStack(new ItemStack(ModItems.hastering)))
+			if(player.inventory.hasItemStack(new ItemStack(ModItems.speedring)))
 			{
 				player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20, 2, true, false));
 			}
 			else
 			{
-				if(player.capabilities.isFlying == true)
-				{
-					player.removeActivePotionEffect(MobEffects.SPEED);
-				}
+				player.removeActivePotionEffect(MobEffects.SPEED);
 			}
 			if(event.phase == Phase.END)
 			{

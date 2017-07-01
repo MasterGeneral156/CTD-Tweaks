@@ -24,10 +24,7 @@ public class HasteEvent
 			}
 			else
 			{
-				if(player.capabilities.isFlying == true)
-				{
-					player.removeActivePotionEffect(MobEffects.HASTE);
-				}
+				player.removeActivePotionEffect(MobEffects.HASTE);
 			}
 			if(event.phase == Phase.END)
 			{
