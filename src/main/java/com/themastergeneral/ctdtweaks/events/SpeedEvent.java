@@ -22,13 +22,9 @@ public class SpeedEvent
 			{
 				player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20, 2, true, false));
 			}
-			else
-			{
-				player.removeActivePotionEffect(MobEffects.SPEED);
-			}
 			if(event.phase == Phase.END)
 			{
-
+				player.removeActivePotionEffect(MobEffects.SPEED);
 			}
 		}
 	}

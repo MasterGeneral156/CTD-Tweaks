@@ -15,6 +15,7 @@ public class Config
     // This values below you can access elsewhere in your mod:
     public static String ModVersion = Main.VERSION+"-1.12";
     public static int coreCombatDurability = 64;
+    public static int drillMiningLevel = 4;
     public static int witherFuelBurn = 56000;
 
     // Call this from CommonProxy.preInit(). It will create our config if it doesn't
@@ -44,6 +45,7 @@ public class Config
         cfg.addCustomCategoryComment(CATEGORY_GENERAL, "General configuration for the CTD Tweaks mod.");
         ModVersion = cfg.getString("ModVersion", CATEGORY_GENERAL, ModVersion, "Internal. Don't need to mess with this.");
         coreCombatDurability = cfg.getInt("coreCombatDurability", CATEGORY_GENERAL, coreCombatDurability, 1, 4096, "Uses you can get out of the Combat Core before it breaks.");
+        drillMiningLevel = cfg.getInt("Mining Drill Mining Level", CATEGORY_GENERAL, drillMiningLevel, 1, 4, "Drill's mining level.");
         witherFuelBurn = cfg.getInt("Wither Fuel Burn Time", CATEGORY_GENERAL, witherFuelBurn, 1, 2147483647, "How many ticks will Wither Fuel burn for? (Block is X10)");
     }
 }

@@ -33,6 +33,8 @@ public class ModItems extends RegisterItem
 	public static BasicRing speedring;
 	public static BasicRing flightcore;
 	
+	public static ItemDrill drill;
+	
 	public static ArmorMaterial weak_armor = EnumHelper.addArmorMaterial("weak_armor", "ctdtweaks:weak_armor", 100, new int[] {0, 0, 0, 0}, (int) 0F, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0F);
 	 public static void init() 
 	 {
@@ -48,5 +50,6 @@ public class ModItems extends RegisterItem
 		 basering = register(new BasicRing("basering", Main.MODID));
 		 hastering = register(new BasicRing("hastering", Main.MODID));
 		 speedring = register(new BasicRing("speedring", Main.MODID));
+		 //drill = register(new ItemDrill("drill", Main.MODID));	//Not yet :D
 	 }
 }

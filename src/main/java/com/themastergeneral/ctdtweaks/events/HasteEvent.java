@@ -22,13 +22,9 @@ public class HasteEvent
 			{
 				player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 20, 2, true, false));
 			}
-			else
-			{
-				player.removeActivePotionEffect(MobEffects.HASTE);
-			}
 			if(event.phase == Phase.END)
 			{
-
+				player.removeActivePotionEffect(MobEffects.HASTE);
 			}
 		}
 	}
