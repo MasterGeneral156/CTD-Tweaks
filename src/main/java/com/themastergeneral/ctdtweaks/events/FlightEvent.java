@@ -24,7 +24,7 @@ public class FlightEvent
 			}
 			else
 			{
-				if(player.capabilities.isFlying == true)
+				if(player.capabilities.isFlying == true && player.isSpectator() == false)
 				{
 					player.capabilities.isFlying = player.capabilities.isCreativeMode ? true : false;
 					player.capabilities.allowFlying = player.capabilities.isCreativeMode ? true : false;
