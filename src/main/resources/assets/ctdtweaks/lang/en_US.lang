@@ -16,7 +16,7 @@ tile.fuelwitherblock.name=Wither Fuel Block
 
 itemGroup.ctdtweaks=CTD Tweaks
 
-jei.corecombat.info=Used to automate boss drops. This item has a finite durability, which you can specify in the config file. As of CTD Tweaks 1.4.1, this item does not work if its damaged. Will be fixed ASAP.
+jei.corecombat.info=Used to automate boss drops.
 jei.amulet.info=When worn, give you a glowing effect, making you easier to find.
 jei.fuelwither.info=Coal infused with wither powers to make it much more potent.
 jei.boots.info=Put these on outside and fly away!
