@@ -11,6 +11,10 @@ import com.themastergeneral.ctdcore.client.ItemModelProvider;
 import com.themastergeneral.ctdcore.item.RegisterItem;
 import com.themastergeneral.ctdtweaks.Main;
 import com.themastergeneral.ctdtweaks.config.Config;
+import com.themastergeneral.ctdtweaks.items.baubles.BasicRing;
+import com.themastergeneral.ctdtweaks.items.baubles.RingFlight;
+import com.themastergeneral.ctdtweaks.items.baubles.RingHaste;
+import com.themastergeneral.ctdtweaks.items.baubles.RingSpeed;
 
 public class ModItems extends RegisterItem
 {
@@ -29,9 +33,9 @@ public class ModItems extends RegisterItem
 	public static SpecialArmor goodbyeboots;
 	
 	public static BasicRing basering;
-	public static BasicRing hastering;
-	public static BasicRing speedring;
-	public static BasicRing flightcore;
+	public static RingHaste hastering;
+	public static RingSpeed speedring;
+	public static RingFlight flightcore;
 	
 	public static ItemDrill drill;
 	
@@ -40,7 +44,7 @@ public class ModItems extends RegisterItem
 	 {
 		 corecombat = register(new BasicCore("corecombat", Config.coreCombatDurability, Main.MODID));
 		 fuelwither = register(new BasicItem ("fuelwither", Main.MODID));
-		 flightcore = register(new BasicRing ("flightcore", Main.MODID));
+		 flightcore = register(new RingFlight ("flightcore", Main.MODID));
 		 coreglowing = register(new BasicItem ("coreglowing", Main.MODID));
 		 enchantedgoldingot = register(new BasicGlow ("enchantedgoldingot", Main.MODID));
 		 steamedcarrot = register(new BasicFood ("steamedcarrot", 6, 1.2F, false, Main.MODID));
@@ -48,8 +52,8 @@ public class ModItems extends RegisterItem
 		 glowingamulet = register(new SpecialArmor("glowingamulet", weak_armor, 1, EntityEquipmentSlot.CHEST, Main.MODID));
 		 goodbyeboots = register(new SpecialArmor("goodbyeboots", weak_armor, 3, EntityEquipmentSlot.FEET, Main.MODID));
 		 basering = register(new BasicRing("basering", Main.MODID));
-		 hastering = register(new BasicRing("hastering", Main.MODID));
-		 speedring = register(new BasicRing("speedring", Main.MODID));
+		 hastering = register(new RingHaste("hastering", Main.MODID));
+		 speedring = register(new RingSpeed("speedring", Main.MODID));
 		 //drill = register(new ItemDrill("drill", Main.MODID));	//Not yet :D
 	 }
 }
