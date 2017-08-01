@@ -1,5 +1,7 @@
 package com.themastergeneral.ctdtweaks.items.baubles;
 
+import com.themastergeneral.ctdtweaks.config.Config;
+
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.init.MobEffects;
 import net.minecraft.item.ItemStack;
@@ -15,6 +17,6 @@ public class RingSpeed extends BasicRing
 	@Override
 	public void onWornTick(ItemStack stack, EntityLivingBase entity) 
 	{
-		entity.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20, 2, true, false));
+		entity.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20, Config.speedringmodifier-1, true, false));
 	}
 }
