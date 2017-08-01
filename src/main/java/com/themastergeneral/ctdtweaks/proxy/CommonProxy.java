@@ -24,7 +24,7 @@ public class CommonProxy
 	public void preInit(FMLPreInitializationEvent e) 
     {
 		File directory = e.getModConfigurationDirectory();
-		config = new Configuration(new File(directory.getPath(), "ctd/ctdTweaks.cfg"));
+		config = new Configuration(new File(directory.getPath(), "ctd/ctdtweaks.cfg"));
 		Config.readConfig();
     	ModBlocks.init();
     	ModItems.init();
