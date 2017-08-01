@@ -7,7 +7,7 @@
 		"DBD"
     ],
     "key": {
-		"N": { "item": "minecraft:nether_star" },
+		"N": { "item": "ctdtweaks:fuelwitherblock" },
 		"D": { "item": "minecraft:diamond" },
 		"H": { "item": "minecraft:diamond_sword" },
 		"A": { "item": "minecraft:arrow" },
