@@ -2,13 +2,14 @@
     "type": "minecraft:crafting_shaped",
     "group": "ctdtweaks:flightcore",
     "pattern": [
-        "DFD",
+        "DFN",
         "FRF",
-		"DFD"
+		"NFD"
     ],
     "key": {
 		"D": { "item": "minecraft:diamond" },
 		"R": { "item": "ctdtweaks:basering" },
+		"N": { "item": "minecraft:nether_star" },
 		"F": { "item": "minecraft:feather" }
     },
     "result": {
