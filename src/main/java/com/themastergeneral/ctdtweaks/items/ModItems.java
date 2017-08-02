@@ -47,7 +47,7 @@ public class ModItems extends RegisterItem
 		 flightcore = register(new RingFlight ("flightcore", Main.MODID));
 		 coreglowing = register(new BasicItem ("coreglowing", Main.MODID));
 		 enchantedgoldingot = register(new BasicGlow ("enchantedgoldingot", Main.MODID));
-		 steamedcarrot = register(new BasicFood ("steamedcarrot", 6, 1.2F, false, Main.MODID));
+		 steamedcarrot = register(new BasicFood ("steamedcarrot", 6, 0.65F, false, Main.MODID));
 		 nightvision = register(new SpecialArmor("nightvision", weak_armor, 0, EntityEquipmentSlot.HEAD, Main.MODID));
 		 glowingamulet = register(new SpecialArmor("glowingamulet", weak_armor, 1, EntityEquipmentSlot.CHEST, Main.MODID));
 		 goodbyeboots = register(new SpecialArmor("goodbyeboots", weak_armor, 3, EntityEquipmentSlot.FEET, Main.MODID));
