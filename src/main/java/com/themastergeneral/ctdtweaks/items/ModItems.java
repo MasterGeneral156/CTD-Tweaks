@@ -14,6 +14,7 @@ import com.themastergeneral.ctdtweaks.config.Config;
 import com.themastergeneral.ctdtweaks.items.baubles.BasicRing;
 import com.themastergeneral.ctdtweaks.items.baubles.RingFlight;
 import com.themastergeneral.ctdtweaks.items.baubles.RingHaste;
+import com.themastergeneral.ctdtweaks.items.baubles.RingInvis;
 import com.themastergeneral.ctdtweaks.items.baubles.RingSpeed;
 
 public class ModItems extends RegisterItem
@@ -36,6 +37,7 @@ public class ModItems extends RegisterItem
 	public static RingHaste hastering;
 	public static RingSpeed speedring;
 	public static RingFlight flightcore;
+	public static RingInvis invisring;
 	
 	public static ItemDrill drill;
 	
@@ -53,7 +55,8 @@ public class ModItems extends RegisterItem
 		 goodbyeboots = register(new SpecialArmor("goodbyeboots", weak_armor, 3, EntityEquipmentSlot.FEET, Main.MODID));
 		 basering = register(new BasicRing("basering", Main.MODID));
 		 hastering = register(new RingHaste("hastering", Main.MODID));
-		 speedring = register(new RingSpeed("speedring", Main.MODID));
+		speedring = register(new RingSpeed("speedring", Main.MODID));
+		invisring = register(new RingInvis("invisring", Main.MODID));
 		 //drill = register(new ItemDrill("drill", Main.MODID));	//Not yet :D
 	 }
 }

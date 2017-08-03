@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "ctdtweaks:invisring",
+    "pattern": [
+        " S ",
+        "SRS",
+		" S "
+    ],
+    "key": {
+		"R": { "item": "ctdtweaks:basering" },
+		"S": {"item": "ctdtweaks:fuelwither" }
+    },
+    "result": {
+        "item": "ctdtweaks:invisring",
+		"count": 1
+		}
+    }
+}
