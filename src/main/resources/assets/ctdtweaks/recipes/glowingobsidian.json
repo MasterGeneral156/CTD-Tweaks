@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "ctdtweaks:glowingobsidian",
+   "ingredients": [
+    {
+      "type": "forge:ore_dict",
+	  "ore": "dustGlowstone"
+    },
+    {
+      "type": "forge:ore_dict",
+	  "ore": "obsidian"
+    }
+  ],
+  "result": {
+    "item": "ctdtweaks:glowingobsidian",
+    "count": 1
+  }
+}
