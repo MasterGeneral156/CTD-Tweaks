@@ -16,6 +16,7 @@ import com.themastergeneral.ctdtweaks.config.Config;
 import com.themastergeneral.ctdtweaks.handlers.Crafting;
 import com.themastergeneral.ctdtweaks.handlers.Fuel;
 import com.themastergeneral.ctdtweaks.handlers.OreDict;
+import com.themastergeneral.ctdtweaks.handlers.Smelting;
 import com.themastergeneral.ctdtweaks.items.ModItems;
 
 public class CommonProxy 
@@ -30,6 +31,7 @@ public class CommonProxy
     	ModItems.init();
     	OreDict.InitOre();
     	GameRegistry.registerFuelHandler(new Fuel());
+    	Smelting.addSmelting();
     }
     public void init(FMLInitializationEvent e) 
     {
