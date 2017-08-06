@@ -3,14 +3,14 @@
   "modid": "ctdtweaks",
   "name": "CTD Tweaks",
   "description": "Tweaks for the CTD official servers.",
-  "version": "1.5.8",
+  "version": "1.5.9",
   "mcversion": "1.12",
   "url": "https://minecraft.curseforge.com/projects/ctd-tweaks",
   "updateUrl": "https://raw.githubusercontent.com/MasterGeneral156/Version/master/CTD-Tweaks.json",
   "authorList": ["TheMasterGeneral"],
-  "credits": "",
-  "logoFile": "",
+  "credits": "TheMasterGeneral",
+  "logoFile": "assets/ctdtweaks/textures/logo-new.png",
   "screenshots": [],
-  "dependencies": []
+  "dependencies": ["ctdcore"]
 }
 ]
