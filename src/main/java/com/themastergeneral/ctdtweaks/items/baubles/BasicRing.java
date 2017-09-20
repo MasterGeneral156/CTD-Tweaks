@@ -6,9 +6,8 @@ import net.minecraft.item.ItemStack;
 
 public class BasicRing extends BasicBauble {
 
-	public BasicRing(String name, String modid) 
-	{
+	public BasicRing(String name, String modid) {
 		super(name, modid);
-		this.maxStackSize=1;
+		this.maxStackSize = 1;
 	}
 }

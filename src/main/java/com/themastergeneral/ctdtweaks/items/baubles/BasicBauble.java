@@ -9,14 +9,12 @@ import baubles.api.IBauble;
 
 public class BasicBauble extends BasicItem implements IBauble {
 
-	public BasicBauble(String name, String modid) 
-	{
+	public BasicBauble(String name, String modid) {
 		super(name, modid);
 	}
 
 	@Override
-	public BaubleType getBaubleType(ItemStack arg0) 
-	{
+	public BaubleType getBaubleType(ItemStack arg0) {
 		return BaubleType.RING;
 	}
 

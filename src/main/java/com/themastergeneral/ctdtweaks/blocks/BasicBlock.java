@@ -8,11 +8,10 @@ import com.themastergeneral.ctdcore.block.CTDBlock;
 import com.themastergeneral.ctdcore.client.ItemModelProvider;
 import com.themastergeneral.ctdtweaks.Main;
 
-public class BasicBlock extends CTDBlock
-{
+public class BasicBlock extends CTDBlock {
 	protected String name;
-	public BasicBlock(Material materialIn, String name, String modid) 
-	{
+
+	public BasicBlock(Material materialIn, String name, String modid) {
 		super(materialIn, name, modid);
 		this.setCreativeTab(Main.creativeTab);
 	}

@@ -7,23 +7,23 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.potion.PotionEffect;
 import net.minecraftforge.common.capabilities.CapabilityManager;
 
-public class RingFlight extends BasicRing 
-{
-	public RingFlight(String name, String modid) 
-	{
+public class RingFlight extends BasicRing {
+	public RingFlight(String name, String modid) {
 		super(name, modid);
 	}
+
 	@Override
-	public void onWornTick(ItemStack itemstack, EntityLivingBase entity)
-	{
+	public void onWornTick(ItemStack itemstack, EntityLivingBase entity) {
 		EntityPlayer player = (EntityPlayer) entity;
 		player.capabilities.allowFlying = true;
 	}
+
 	@Override
-	public void onUnequipped(ItemStack stack, EntityLivingBase entity) 
-	{
+	public void onUnequipped(ItemStack stack, EntityLivingBase entity) {
 		EntityPlayer player = (EntityPlayer) entity;
-		player.capabilities.isFlying = player.capabilities.isCreativeMode ? true : false;
-		player.capabilities.allowFlying = player.capabilities.isCreativeMode ? true : false;
+		player.capabilities.isFlying = player.capabilities.isCreativeMode ? true
+				: false;
+		player.capabilities.allowFlying = player.capabilities.isCreativeMode ? true
+				: false;
 	}
 }

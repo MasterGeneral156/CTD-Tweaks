@@ -11,21 +11,30 @@ import com.themastergeneral.ctdtweaks.config.Config;
 import com.themastergeneral.ctdtweaks.items.ModItems;
 
 @mezz.jei.api.JEIPlugin
-public class JEICTDTweaksPlugin extends BlankModPlugin 
-{
+public class JEICTDTweaksPlugin extends BlankModPlugin {
 	@Override
-	public void register(@Nonnull IModRegistry registry) 
-	{
-		registry.addDescription(new ItemStack(ModItems.corecombat), "jei.corecombat.info");
-		registry.addDescription(new ItemStack(ModItems.glowingamulet), "jei.amulet.info");
-		registry.addDescription(new ItemStack(ModItems.fuelwither), "jei.fuelwither.info");
-		registry.addDescription(new ItemStack(ModBlocks.fuelwitherblock), "jei.fuelwither.info");
-		registry.addDescription(new ItemStack(ModItems.goodbyeboots), "jei.boots.info");
-		registry.addDescription(new ItemStack(ModItems.nightvision), "jei.nightvision.info");
-		registry.addDescription(new ItemStack(ModItems.coreglowing), "jei.coreglowing.info");
-		registry.addDescription(new ItemStack(ModItems.enchantedgoldingot), "jei.enchantedgold.info");
-		registry.addDescription(new ItemStack(ModItems.flightcore), "jei.flightring.info");
-		registry.addDescription(new ItemStack(ModItems.hastering), "jei.hastering.info");
-		registry.addDescription(new ItemStack(ModItems.speedring), "jei.speedring.info");
+	public void register(@Nonnull IModRegistry registry) {
+		registry.addDescription(new ItemStack(ModItems.corecombat),
+				"jei.corecombat.info");
+		registry.addDescription(new ItemStack(ModItems.glowingamulet),
+				"jei.amulet.info");
+		registry.addDescription(new ItemStack(ModItems.fuelwither),
+				"jei.fuelwither.info");
+		registry.addDescription(new ItemStack(ModBlocks.fuelwitherblock),
+				"jei.fuelwither.info");
+		registry.addDescription(new ItemStack(ModItems.goodbyeboots),
+				"jei.boots.info");
+		registry.addDescription(new ItemStack(ModItems.nightvision),
+				"jei.nightvision.info");
+		registry.addDescription(new ItemStack(ModItems.coreglowing),
+				"jei.coreglowing.info");
+		registry.addDescription(new ItemStack(ModItems.enchantedgoldingot),
+				"jei.enchantedgold.info");
+		registry.addDescription(new ItemStack(ModItems.flightcore),
+				"jei.flightring.info");
+		registry.addDescription(new ItemStack(ModItems.hastering),
+				"jei.hastering.info");
+		registry.addDescription(new ItemStack(ModItems.speedring),
+				"jei.speedring.info");
 	}
 }

@@ -18,12 +18,13 @@ import com.themastergeneral.ctdcore.Main;
 import com.themastergeneral.ctdcore.client.BlockRenderRegister;
 import com.themastergeneral.ctdcore.client.ItemModelProvider;
 
-public class SoulSandGlass extends BlockGlass implements ItemModelProvider, BlockRenderRegister
-{
+public class SoulSandGlass extends BlockGlass implements ItemModelProvider,
+		BlockRenderRegister {
 	protected String name;
 	protected String modid;
-	public SoulSandGlass(Material materialIn, boolean ignoreSimilarity, String name, String modid)
-	{
+
+	public SoulSandGlass(Material materialIn, boolean ignoreSimilarity,
+			String name, String modid) {
 		super(materialIn, ignoreSimilarity);
 		this.name = name;
 		this.modid = modid;
@@ -34,30 +35,34 @@ public class SoulSandGlass extends BlockGlass implements ItemModelProvider, Bloc
 	}
 
 	@SideOnly(Side.CLIENT)
-    public BlockRenderLayer getBlockLayer()
-    {
-        return BlockRenderLayer.CUTOUT;
-    }
-	
-	public int quantityDropped(Random random)
-    {
-        return 1;
-    }
-	
-    public boolean isFullCube(IBlockState state)
-    {
-        return false;
-    }
+	public BlockRenderLayer getBlockLayer() {
+		return BlockRenderLayer.CUTOUT;
+	}
 
-    @Override
-	public void registerItemModel(Item itemBlock) 
-	{
+	public int quantityDropped(Random random) {
+		return 1;
+	}
+
+	public boolean isFullCube(IBlockState state) {
+		return false;
+	}
+
+	@Override
+	public void registerItemModel(Item itemBlock) {
 		Main.proxy.registerItemRenderer(modid, itemBlock, 0, name);
 	}
+
 	@Override
-	public void reg(Block block) 
-	{
-		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
-	    .register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(modid + ":" + block.getUnlocalizedName().substring(5), "inventory"));
+	public void reg(Block block) {
+		Minecraft
+				.getMinecraft()
+				.getRenderItem()
+				.getItemModelMesher()
+				.register(
+						Item.getItemFromBlock(block),
+						0,
+						new ModelResourceLocation(modid + ":"
+								+ block.getUnlocalizedName().substring(5),
+								"inventory"));
 	}
 }

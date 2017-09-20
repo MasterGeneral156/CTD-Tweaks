@@ -13,16 +13,17 @@ import com.themastergeneral.ctdtweaks.blocks.ModBlocks;
 import com.themastergeneral.ctdtweaks.config.Config;
 import com.themastergeneral.ctdtweaks.items.ModItems;
 
-public class Crafting 
-{
-	public static void addRecipes() 
-	{
-			//Enchanted Gold Ingot
-			//GameRegistry.addRecipe(new ItemStack(ModItems.enchantedgoldingot, 8), "GGG", "GBG", "GGG", 'G', Items.GOLD_INGOT, 'B', new ItemStack(Items.ENCHANTED_BOOK, 1, OreDictionary.WILDCARD_VALUE));
-		
-			//Glowing Core
-			//GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.coreglowing), "GEG", "ECE", "GEG", 'C', "glowstone", 'G', "blockGlass", 'E', ModItems.enchantedgoldingot));
-			//Smelting recipes
-			GameRegistry.addSmelting(Items.CARROT, new ItemStack(ModItems.steamedcarrot), 0.1f);
+public class Crafting {
+	public static void addRecipes() {
+		// Enchanted Gold Ingot
+		// GameRegistry.addRecipe(new ItemStack(ModItems.enchantedgoldingot, 8),
+		// "GGG", "GBG", "GGG", 'G', Items.GOLD_INGOT, 'B', new
+		// ItemStack(Items.ENCHANTED_BOOK, 1, OreDictionary.WILDCARD_VALUE));
+
+		// Glowing Core
+		// GameRegistry.addRecipe(new ShapedOreRecipe(new
+		// ItemStack(ModItems.coreglowing), "GEG", "ECE", "GEG", 'C',
+		// "glowstone", 'G', "blockGlass", 'E', ModItems.enchantedgoldingot));
+		// Smelting recipes
 	}
 }

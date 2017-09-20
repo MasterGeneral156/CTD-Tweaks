@@ -9,11 +9,10 @@
     "key": {
 		"W": { "item": "minecraft:skull", "data": 1 },
 		"S": { "item": "minecraft:soul_sand" },
-		"C": [{"type": "forge:ore_dict", "ore": "tmgcombatcore"}]
+		"C": { "item": "ctdtweaks:corecombat", "data": 32767 }
     },
     "result": {
         "item": "minecraft:nether_star",
 		"count": 1
-		}
-    }
+	}
 }

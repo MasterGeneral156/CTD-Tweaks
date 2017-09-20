@@ -6,8 +6,7 @@ import com.themastergeneral.ctdcore.block.CTDBlock;
 
 public class HardLightBlock extends BasicBlock {
 
-	public HardLightBlock(Material materialIn, String name, String modid)
-	{
+	public HardLightBlock(Material materialIn, String name, String modid) {
 		super(materialIn, name, modid);
 		this.setHardness(50F);
 		this.setLightLevel(15F);
