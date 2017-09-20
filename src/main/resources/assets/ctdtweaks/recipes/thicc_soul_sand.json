@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "ctdtweaks:thiccsoulsand",
+  "ingredients": [
+    {
+		"item": "minecraft:soul_sand"
+    },
+	{
+		"item": "minecraft:soul_sand"
+	}
+  ],
+  "result": 
+  {
+		"item": "ctdtweaks:thiccsoulsand",
+		"count": 1
+  }
+}

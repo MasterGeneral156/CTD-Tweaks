@@ -12,9 +12,12 @@ item.basering.name=Ring Base
 item.steamedcarrot.name=Steamed Carrot
 item.flightcore.name=Flight Ring
 item.invisring.name=Invisibility Ring
+item.destructo_sword.name=Destructo Sword
+item.refinedwitherfuel.name=Refined Wither Fuel
 
 tile.fuelwitherblock.name=Wither Fuel Block
 tile.gothicglass.name=Gothic Glass
+tile.thiccsoulsand.name=Thicc Soul Sand
 tile.glowingobsidian.name=Glowing Obsidian
 
 itemGroup.ctdtweaks=CTD Tweaks

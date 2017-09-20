@@ -1,0 +1,6 @@
+{
+    "parent": "ctdtweaks:blocks/thiccsoulsand",
+    "textures": {
+        "inventory": "ctdtweaks:blocks/thiccsoulsand"
+    }
+}
