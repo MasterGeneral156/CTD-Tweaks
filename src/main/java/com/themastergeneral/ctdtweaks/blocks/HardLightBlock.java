@@ -3,6 +3,7 @@ package com.themastergeneral.ctdtweaks.blocks;
 import net.minecraft.block.material.Material;
 
 import com.themastergeneral.ctdcore.block.CTDBlock;
+import com.themastergeneral.ctdtweaks.Main;
 
 public class HardLightBlock extends BasicBlock {
 
