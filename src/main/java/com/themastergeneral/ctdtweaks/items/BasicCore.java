@@ -26,13 +26,13 @@ public class BasicCore extends BasicItem {
 		return true;
 	}
 
-	/*@Override
+	@Override
 	public ItemStack getContainerItem(ItemStack itemStack) {
 		ItemStack stack = itemStack.copy();
 		stack.setItemDamage(stack.getItemDamage() + 1);
 		this.maxStackSize = 1;
 		return stack;
-	}*/
+	}
 
 	@SideOnly(Side.CLIENT)
 	public boolean hasEffect(ItemStack par1ItemStack) {
