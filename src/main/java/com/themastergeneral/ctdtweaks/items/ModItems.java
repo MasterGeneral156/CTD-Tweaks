@@ -50,7 +50,8 @@ public class ModItems extends RegisterItem {
 			SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0F);
 
 	public static void init() {
-		corecombat = register(new BasicCore("corecombat", Main.MODID, 0));
+		corecombat = register(new BasicCore("corecombat", Main.MODID,
+				Config.combatcoredurability));
 
 		fuelwither = register(new BasicItem("fuelwither", Main.MODID));
 		coreglowing = register(new BasicItem("coreglowing", Main.MODID));
@@ -77,8 +78,8 @@ public class ModItems extends RegisterItem {
 		speedring = register(new RingSpeed("speedring", Main.MODID));
 		invisring = register(new RingInvis("invisring", Main.MODID));
 
-		// destructo_sword = register(new VoidSword("destructo_sword",
-		// Main.MODID, ToolMaterial.IRON)); //Soon... gotta bugfix first.
+		//destructo_sword = register(new VoidSword("destructo_sword", Main.MODID,
+		//		ToolMaterial.IRON)); // Soon... gotta bugfix first.
 
 		// drill = register(new ItemDrill("drill", Main.MODID)); //Not yet :D
 	}
