@@ -32,6 +32,7 @@ public class SoulSandGlass extends BlockGlass implements ItemModelProvider,
 		this.setRegistryName(name);
 		this.setHardness(0.3F);
 		this.setSoundType(SoundType.GLASS);
+		this.setCreativeTab(com.themastergeneral.ctdtweaks.Main.creativeTab);
 	}
 
 	@SideOnly(Side.CLIENT)
