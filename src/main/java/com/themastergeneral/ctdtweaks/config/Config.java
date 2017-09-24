@@ -16,6 +16,7 @@ public class Config {
 	public static int speedringmodifier = 3;
 	public static int drillMiningLevel = 4;
 	public static int witherFuelBurn = 56000;
+	public static int combatcoredurability = 64;
 
 	// Call this from CommonProxy.preInit(). It will create our config if it
 	// doesn't
@@ -49,5 +50,8 @@ public class Config {
 		speedringmodifier = cfg.getInt("Speed Ring Modifier", CATEGORY_GENERAL,
 				speedringmodifier, 1, 255,
 				"What level of Speed should the ring give?");
+		combatcoredurability = cfg.getInt("Combat Core Maximum Users", CATEGORY_GENERAL,
+				combatcoredurability, 1, 255,
+				"How many uses before breaking");
 	}
 }
