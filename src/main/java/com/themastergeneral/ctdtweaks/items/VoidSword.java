@@ -2,12 +2,10 @@ package com.themastergeneral.ctdtweaks.items;
 
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.Item;
-import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
-import net.minecraft.util.DamageSource;
 
-import com.themastergeneral.ctdcore.Main;
+import com.themastergeneral.ctdcore.CTDCore;
 import com.themastergeneral.ctdcore.client.ItemModelProvider;
 
 public class VoidSword extends ItemSword implements ItemModelProvider {
@@ -24,7 +22,7 @@ public class VoidSword extends ItemSword implements ItemModelProvider {
 	}
 
 	public void registerItemModel(Item item) {
-		Main.proxy.registerItemRenderer(modid, this, 0, name);
+		CTDCore.proxy.registerItemRenderer(modid, this, 0, name);
 	}
 
 	@Override

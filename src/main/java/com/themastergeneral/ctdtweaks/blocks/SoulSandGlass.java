@@ -14,9 +14,10 @@ import net.minecraft.util.BlockRenderLayer;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-import com.themastergeneral.ctdcore.Main;
+import com.themastergeneral.ctdcore.CTDCore;
 import com.themastergeneral.ctdcore.client.BlockRenderRegister;
 import com.themastergeneral.ctdcore.client.ItemModelProvider;
+import com.themastergeneral.ctdtweaks.CTDTweaks;
 
 public class SoulSandGlass extends BlockGlass implements ItemModelProvider,
 		BlockRenderRegister {
@@ -32,7 +33,7 @@ public class SoulSandGlass extends BlockGlass implements ItemModelProvider,
 		this.setRegistryName(name);
 		this.setHardness(0.3F);
 		this.setSoundType(SoundType.GLASS);
-		this.setCreativeTab(com.themastergeneral.ctdtweaks.Main.creativeTab);
+		this.setCreativeTab(CTDTweaks.creativeTab);
 	}
 
 	@SideOnly(Side.CLIENT)
@@ -50,7 +51,7 @@ public class SoulSandGlass extends BlockGlass implements ItemModelProvider,
 
 	@Override
 	public void registerItemModel(Item itemBlock) {
-		Main.proxy.registerItemRenderer(modid, itemBlock, 0, name);
+		CTDCore.proxy.registerItemRenderer(modid, itemBlock, 0, name);
 	}
 
 	@Override

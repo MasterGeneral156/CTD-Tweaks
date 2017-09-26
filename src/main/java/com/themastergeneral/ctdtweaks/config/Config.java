@@ -1,12 +1,11 @@
 package com.themastergeneral.ctdtweaks.config;
 
+import net.minecraftforge.common.config.Configuration;
+
 import org.apache.logging.log4j.Level;
 
-import com.themastergeneral.ctdtweaks.Main;
+import com.themastergeneral.ctdtweaks.CTDTweaks;
 import com.themastergeneral.ctdtweaks.proxy.CommonProxy;
-
-import scala.Int;
-import net.minecraftforge.common.config.Configuration;
 
 public class Config {
 	private static final String CATEGORY_GENERAL = "General";
@@ -27,7 +26,7 @@ public class Config {
 			cfg.load();
 			initGeneralConfig(cfg);
 		} catch (Exception e1) {
-			Main.logger.log(Level.ERROR, "Problem loading config file!", e1);
+			CTDTweaks.logger.log(Level.ERROR, "Problem loading config file!", e1);
 		} finally {
 			if (cfg.hasChanged()) {
 				cfg.save();

@@ -2,15 +2,11 @@ package com.themastergeneral.ctdtweaks.items;
 
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
-import net.minecraft.item.Item;
-import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraftforge.common.util.EnumHelper;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
-import com.themastergeneral.ctdcore.client.ItemModelProvider;
 import com.themastergeneral.ctdcore.item.RegisterItem;
-import com.themastergeneral.ctdtweaks.Main;
+import com.themastergeneral.ctdtweaks.CTDTweaks;
 import com.themastergeneral.ctdtweaks.config.Config;
 import com.themastergeneral.ctdtweaks.items.baubles.BasicRing;
 import com.themastergeneral.ctdtweaks.items.baubles.RingFlight;
@@ -50,37 +46,37 @@ public class ModItems extends RegisterItem {
 			SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0F);
 
 	public static void init() {
-		corecombat = register(new BasicCore("corecombat", Main.MODID,
+		corecombat = register(new BasicCore("corecombat", CTDTweaks.MODID,
 				Config.combatcoredurability));
 
-		fuelwither = register(new BasicItem("fuelwither", Main.MODID));
-		coreglowing = register(new BasicItem("coreglowing", Main.MODID));
+		fuelwither = register(new BasicItem("fuelwither", CTDTweaks.MODID));
+		coreglowing = register(new BasicItem("coreglowing", CTDTweaks.MODID));
 		refinedwitherfuel = register(new BasicItem("refinedwitherfuel",
-				Main.MODID));
+				CTDTweaks.MODID));
 
-		flightcore = register(new RingFlight("flightcore", Main.MODID));
+		flightcore = register(new RingFlight("flightcore", CTDTweaks.MODID));
 
 		enchantedgoldingot = register(new BasicGlow("enchantedgoldingot",
-				Main.MODID));
+				CTDTweaks.MODID));
 
 		steamedcarrot = register(new BasicFood("steamedcarrot", 6, 0.65F,
-				false, Main.MODID));
+				false, CTDTweaks.MODID));
 
 		nightvision = register(new SpecialArmor("nightvision", weak_armor, 0,
-				EntityEquipmentSlot.HEAD, Main.MODID));
+				EntityEquipmentSlot.HEAD, CTDTweaks.MODID));
 		glowingamulet = register(new SpecialArmor("glowingamulet", weak_armor,
-				1, EntityEquipmentSlot.CHEST, Main.MODID));
+				1, EntityEquipmentSlot.CHEST, CTDTweaks.MODID));
 		goodbyeboots = register(new SpecialArmor("goodbyeboots", weak_armor, 3,
-				EntityEquipmentSlot.FEET, Main.MODID));
+				EntityEquipmentSlot.FEET, CTDTweaks.MODID));
 
-		basering = register(new BasicRing("basering", Main.MODID));
-		hastering = register(new RingHaste("hastering", Main.MODID));
-		speedring = register(new RingSpeed("speedring", Main.MODID));
-		invisring = register(new RingInvis("invisring", Main.MODID));
+		basering = register(new BasicRing("basering", CTDTweaks.MODID));
+		hastering = register(new RingHaste("hastering", CTDTweaks.MODID));
+		speedring = register(new RingSpeed("speedring", CTDTweaks.MODID));
+		invisring = register(new RingInvis("invisring", CTDTweaks.MODID));
 
-		//destructo_sword = register(new VoidSword("destructo_sword", Main.MODID,
+		//destructo_sword = register(new VoidSword("destructo_sword", CTDTweaks.MODID,
 		//		ToolMaterial.IRON)); // Soon... gotta bugfix first.
 
-		// drill = register(new ItemDrill("drill", Main.MODID)); //Not yet :D
+		// drill = register(new ItemDrill("drill", CTDTweaks.MODID)); //Not yet :D
 	}
 }

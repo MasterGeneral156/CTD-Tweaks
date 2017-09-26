@@ -1,13 +1,9 @@
 package com.themastergeneral.ctdtweaks.blocks;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.item.ItemBlock;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
-import com.themastergeneral.ctdcore.block.CTDBlock;
 import com.themastergeneral.ctdcore.block.RegisterBlock;
-import com.themastergeneral.ctdtweaks.Main;
+import com.themastergeneral.ctdtweaks.CTDTweaks;
 
 public class ModBlocks extends RegisterBlock {
 	public static BasicBlock fuelwitherblock;
@@ -17,12 +13,12 @@ public class ModBlocks extends RegisterBlock {
 
 	public static void init() {
 		fuelwitherblock = register(new BasicBlock(Material.ROCK,
-				"fuelwitherblock", Main.MODID));
+				"fuelwitherblock", CTDTweaks.MODID));
 		thiccsoulsand = register(new GlowingBlock(Material.SAND,
-				"thiccsoulsand", Main.MODID));
+				"thiccsoulsand", CTDTweaks.MODID));
 		glowingobsidian = register(new HardLightBlock(Material.REDSTONE_LIGHT,
-				"glowingobsidian", Main.MODID));
+				"glowingobsidian", CTDTweaks.MODID));
 		gothicglass = register(new SoulSandGlass(Material.GLASS, false,
-				"gothicglass", Main.MODID));
+				"gothicglass", CTDTweaks.MODID));
 	}
 }
