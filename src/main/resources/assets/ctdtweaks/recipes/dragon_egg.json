@@ -8,7 +8,7 @@
     ],
     "key": {
 		"E": { "item": "minecraft:end_crystal" },
-		"C": [{"type": "forge:ore_dict", "ore": "tmgcombatcore"}]
+		"C": { "item": "ctdtweaks:corecombat", "data": 32767 }
     },
     "result": {
         "item": "minecraft:dragon_egg",
