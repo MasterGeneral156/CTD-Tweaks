@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "ctdtweaks:enchantedgoldingot",
+    "pattern": [
+        "GGG",
+        "GBG",
+		"GGG"
+    ],
+    "key": {
+		"G": [{"type": "forge:ore_dict", "ore": "ingotGold"}],
+		"B": { "item": "minecraft:enchanted_book", "data": 32767 }
+    },
+    "result": {
+        "item": "ctdtweaks:enchantedgoldingot",
+		"count": 8
+		}
+    }
+}
