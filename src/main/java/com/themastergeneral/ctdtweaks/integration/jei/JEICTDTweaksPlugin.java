@@ -26,10 +26,6 @@ public class JEICTDTweaksPlugin extends BlankModPlugin {
 				"jei.boots.info");
 		registry.addDescription(new ItemStack(ModItems.nightvision),
 				"jei.nightvision.info");
-		registry.addDescription(new ItemStack(ModItems.coreglowing),
-				"jei.coreglowing.info");
-		registry.addDescription(new ItemStack(ModItems.enchantedgoldingot),
-				"jei.enchantedgold.info");
 		registry.addDescription(new ItemStack(ModItems.flightcore),
 				"jei.flightring.info");
 		registry.addDescription(new ItemStack(ModItems.hastering),
