@@ -7,38 +7,38 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.items.ItemStackHandler;
 
-public class BaublesContainer extends ItemStackHandler implements IBaublesItemHandler {
+public class BaublesContainer extends ItemStackHandler implements
+		IBaublesItemHandler {
 
 	private final static int BAUBLE_SLOTS = 7;
-	
-	public BaublesContainer()
-    {
-        super(BAUBLE_SLOTS);
-    }
-	
+
+	public BaublesContainer() {
+		super(BAUBLE_SLOTS);
+	}
+
 	@Override
-	public void setSize(int size)
-    {
-		if (size<BAUBLE_SLOTS) size = BAUBLE_SLOTS;
+	public void setSize(int size) {
+		if (size < BAUBLE_SLOTS)
+			size = BAUBLE_SLOTS;
 		super.setSize(size);
-    }
+	}
 
 	/**
 	 * Returns true if automation is allowed to insert the given stack (ignoring
 	 * stack size) into the given slot.
 	 */
 	@Override
-	public boolean isItemValidForSlot(int slot, ItemStack stack, EntityLivingBase player) {
-		if (stack == null || !(stack.getItem() instanceof IBauble) ||
-				!((IBauble) stack.getItem()).canEquip(stack, player))
+	public boolean isItemValidForSlot(int slot, ItemStack stack,
+			EntityLivingBase player) {
+		if (stack == null || !(stack.getItem() instanceof IBauble)
+				|| !((IBauble) stack.getItem()).canEquip(stack, player))
 			return false;
-		
+
 		return ((IBauble) stack.getItem()).getBaubleType(stack).hasSlot(slot);
 	}
-	
-		
-	private boolean blockEvents=false;
-	
+
+	private boolean blockEvents = false;
+
 	@Override
 	public boolean isEventBlocked() {
 		return blockEvents;
@@ -48,17 +48,15 @@ public class BaublesContainer extends ItemStackHandler implements IBaublesItemHa
 	public void setEventBlock(boolean blockEvents) {
 		this.blockEvents = blockEvents;
 	}
-	
+
 	@Override
-	protected void onContentsChanged(int slot)
-    {
-		setChanged(slot,true);
-    }
-	
-	
+	protected void onContentsChanged(int slot) {
+		setChanged(slot, true);
+	}
+
 	@Override
 	public boolean isChanged(int slot) {
-		if (changed==null) {
+		if (changed == null) {
 			changed = new boolean[this.getSlots()];
 			Arrays.fill(changed, false);
 		}
@@ -67,14 +65,13 @@ public class BaublesContainer extends ItemStackHandler implements IBaublesItemHa
 
 	@Override
 	public void setChanged(int slot, boolean change) {
-		if (changed==null) {
+		if (changed == null) {
 			changed = new boolean[this.getSlots()];
 			Arrays.fill(changed, false);
 		}
 		this.changed[slot] = change;
 	}
 
-
 	private boolean[] changed;
-	
+
 }
