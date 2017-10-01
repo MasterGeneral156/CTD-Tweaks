@@ -15,14 +15,15 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = CTDTweaks.MODID, name = CTDTweaks.MODNAME, version = CTDTweaks.VERSION, dependencies = CTDTweaks.DEPENDENCIES, updateJSON = CTDTweaks.updateJSON, acceptedMinecraftVersions = CTDTweaks.MCVersion)
+@Mod(modid = CTDTweaks.MODID, name = CTDTweaks.MODNAME, certificateFingerprint = CTDTweaks.FingerPrint, version = CTDTweaks.VERSION, dependencies = CTDTweaks.DEPENDENCIES, updateJSON = CTDTweaks.updateJSON, acceptedMinecraftVersions = CTDTweaks.MCVersion)
 public class CTDTweaks {
 	public static final String MODID = "ctdtweaks";
 	public static final String MODNAME = "CTD Tweaks";
-	public static final String VERSION = "1.7.1";
+	public static final String VERSION = "1.7.2";
 	public static final String DEPENDENCIES = "required-after:baubles;required-after:ctdcore@[1.2,];";
 	public static final String updateJSON = "https://raw.githubusercontent.com/MasterGeneral156/Version/master/CTD-Tweaks.json";
 	public static final String MCVersion = "1.12.2";
+	public static final String FingerPrint = "441b509a0f58a0ef41aca8daf1be20d96287635e";
 
 	public static final CreativeTab creativeTab = new CreativeTab();
 
