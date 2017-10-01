@@ -8,17 +8,18 @@ import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextComponentString;
 
 public class BaublesInventoryWrapper implements IInventory {
-	
-	final IBaublesItemHandler handler;	
+
+	final IBaublesItemHandler handler;
 	final EntityPlayer player;
-	
+
 	public BaublesInventoryWrapper(IBaublesItemHandler handler) {
 		super();
 		this.handler = handler;
 		this.player = null;
 	}
 
-	public BaublesInventoryWrapper(IBaublesItemHandler handler, EntityPlayer player) {
+	public BaublesInventoryWrapper(IBaublesItemHandler handler,
+			EntityPlayer player) {
 		super();
 		this.handler = handler;
 		this.player = player;
@@ -72,7 +73,8 @@ public class BaublesInventoryWrapper implements IInventory {
 	}
 
 	@Override
-	public void markDirty() {	}
+	public void markDirty() {
+	}
 
 	@Override
 	public boolean isUseableByPlayer(EntityPlayer player) {
@@ -80,10 +82,12 @@ public class BaublesInventoryWrapper implements IInventory {
 	}
 
 	@Override
-	public void openInventory(EntityPlayer player) {	}
+	public void openInventory(EntityPlayer player) {
+	}
 
 	@Override
-	public void closeInventory(EntityPlayer player) {	}
+	public void closeInventory(EntityPlayer player) {
+	}
 
 	@Override
 	public boolean isItemValidForSlot(int index, ItemStack stack) {
@@ -96,7 +100,8 @@ public class BaublesInventoryWrapper implements IInventory {
 	}
 
 	@Override
-	public void setField(int id, int value) {}
+	public void setField(int id, int value) {
+	}
 
 	@Override
 	public int getFieldCount() {
@@ -104,11 +109,10 @@ public class BaublesInventoryWrapper implements IInventory {
 	}
 
 	@Override
-	public void clear() {	
-		for (int i = 0; i < this.getSizeInventory(); ++i)
-        {
+	public void clear() {
+		for (int i = 0; i < this.getSizeInventory(); ++i) {
 			this.setInventorySlotContents(i, null);
-        }
+		}
 	}
 
 }

@@ -16,25 +16,25 @@ import com.themastergeneral.ctdtweaks.handlers.Fuel;
 import com.themastergeneral.ctdtweaks.handlers.OreDict;
 import com.themastergeneral.ctdtweaks.items.ModItems;
 
-public class CommonProxy 
-{
+public class CommonProxy {
 	public static Configuration config;
-	public void preInit(FMLPreInitializationEvent e) 
-    {
-		File directory = e.getModConfigurationDirectory();
-		config = new Configuration(new File(directory.getPath(), "CTD/CTDTweaks.cfg"));
-		Config.readConfig();
-    	ModBlocks.init();
-    	ModItems.init();
-    	GameRegistry.registerFuelHandler(new Fuel());
-    }
-    public void init(FMLInitializationEvent e) 
-    {
-    	OreDict.init();
-    	Crafting.addRecipes();
-    }
-    public void postInit(FMLPostInitializationEvent e) 
-    {
 
-    }
+	public void preInit(FMLPreInitializationEvent e) {
+		File directory = e.getModConfigurationDirectory();
+		config = new Configuration(new File(directory.getPath(),
+				"ctd/ctdtweaks.cfg"));
+		Config.readConfig();
+		ModBlocks.init();
+		ModItems.init();
+		GameRegistry.registerFuelHandler(new Fuel());
+	}
+
+	public void init(FMLInitializationEvent e) {
+		OreDict.init();
+		Crafting.addRecipes();
+	}
+
+	public void postInit(FMLPostInitializationEvent e) {
+
+	}
 }

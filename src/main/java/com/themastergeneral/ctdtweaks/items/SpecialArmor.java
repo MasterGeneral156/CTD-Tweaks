@@ -18,32 +18,33 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class SpecialArmor extends BasicArmor {
 	private World world;
-	public SpecialArmor(String name, ArmorMaterial materialIn, int renderIndexIn, EntityEquipmentSlot equipmentSlotIn, String modid) 
-	{
+
+	public SpecialArmor(String name, ArmorMaterial materialIn,
+			int renderIndexIn, EntityEquipmentSlot equipmentSlotIn, String modid) {
 		super(name, materialIn, renderIndexIn, equipmentSlotIn, modid);
 	}
+
 	@Override
-	public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) 
-	{
-		if (itemStack.getItem() == ModItems.nightvision)
-		{
-		    player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 300, 0, true, false));
+	public void onArmorTick(World world, EntityPlayer player,
+			ItemStack itemStack) {
+		if (itemStack.getItem() == ModItems.nightvision) {
+			player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,
+					300, 0, true, false));
 		}
-		if (itemStack.getItem() == ModItems.glowingamulet)
-		{
-		    player.addPotionEffect(new PotionEffect(MobEffects.GLOWING, 20, 0, true, false));
+		if (itemStack.getItem() == ModItems.glowingamulet) {
+			player.addPotionEffect(new PotionEffect(MobEffects.GLOWING, 20, 0,
+					true, false));
 		}
-		if (itemStack.getItem() == ModItems.goodbyeboots)
-		{
-			if (player.capabilities.isCreativeMode)
-            {
+		if (itemStack.getItem() == ModItems.goodbyeboots) {
+			if (player.capabilities.isCreativeMode) {
 				player.setGameType(GameType.SURVIVAL);
-            }
-			player.addPotionEffect(new PotionEffect(MobEffects.LEVITATION, 100, 50, true, false));
+			}
+			player.addPotionEffect(new PotionEffect(MobEffects.LEVITATION, 100,
+					50, true, false));
 			player.inventory.removeStackFromSlot(36);
-			if (!world.isRemote)
-			{
-				player.addChatComponentMessage(new TextComponentString("Good bye, cruel world."));
+			if (!world.isRemote) {
+				player.addChatComponentMessage(new TextComponentString(
+						"Good bye, cruel world."));
 			}
 		}
 	}

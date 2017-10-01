@@ -9,11 +9,11 @@ import com.themastergeneral.ctdcore.block.CTDBlock;
 import com.themastergeneral.ctdcore.block.RegisterBlock;
 import com.themastergeneral.ctdtweaks.Main;
 
-public class ModBlocks extends RegisterBlock
-{
+public class ModBlocks extends RegisterBlock {
 	public static BasicBlock fuelwitherblock;
-	 public static void init() 
-	 {
-		 fuelwitherblock = register(new BasicBlock(Material.GROUND, "fuelwitherblock", Main.MODID));
-	 }
+
+	public static void init() {
+		fuelwitherblock = register(new BasicBlock(Material.GROUND,
+				"fuelwitherblock", Main.MODID));
+	}
 }
