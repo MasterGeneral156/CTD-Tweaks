@@ -6,11 +6,13 @@ import org.apache.logging.log4j.Logger;
 import com.themastergeneral.ctdtweaks.proxy.CommonProxy;
 import com.themastergeneral.ctdtweaks.proxy.client.CreativeTab;
 
+import net.minecraftforge.fml.common.FMLLog;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.SidedProxy;
+import net.minecraftforge.fml.common.event.FMLFingerprintViolationEvent;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -19,7 +21,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class CTDTweaks {
 	public static final String MODID = "ctdtweaks";
 	public static final String MODNAME = "CTD Tweaks";
-	public static final String VERSION = "1.7.2";
+	public static final String VERSION = "1.7.3";
 	public static final String DEPENDENCIES = "required-after:baubles;required-after:ctdcore@[1.2,];";
 	public static final String updateJSON = "https://raw.githubusercontent.com/MasterGeneral156/Version/master/CTD-Tweaks.json";
 	public static final String MCVersion = "1.12.2";
@@ -47,5 +49,10 @@ public class CTDTweaks {
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent e) {
 		proxy.postInit(e);
+	}
+	
+	@EventHandler
+	public void onFingerprintViolation(FMLFingerprintViolationEvent e) {
+		FMLLog.warning("Invalid fingerprint detected for CTD Tweaks! TheMasterGeneral will not support this version!");
 	}
 }
