@@ -26,7 +26,7 @@ public class CommonProxy {
 		ModBlocks.init();
 		ModItems.init();
 		OreDict.InitOre();
-		GameRegistry.registerFuelHandler(new Fuel());
+		//Fuel.registerFuel();
 		Smelting.addSmelting();
 	}
 

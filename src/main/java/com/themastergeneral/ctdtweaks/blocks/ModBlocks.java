@@ -6,13 +6,13 @@ import com.themastergeneral.ctdcore.block.RegisterBlock;
 import com.themastergeneral.ctdtweaks.CTDTweaks;
 
 public class ModBlocks extends RegisterBlock {
-	public static BasicBlock fuelwitherblock;
+	public static WitherFuelBlock fuelwitherblock;
 	public static GlowingBlock thiccsoulsand;
 	public static HardLightBlock glowingobsidian;
 	public static SoulSandGlass gothicglass;
 
 	public static void init() {
-		fuelwitherblock = register(new BasicBlock(Material.ROCK,
+		fuelwitherblock = register(new WitherFuelBlock(Material.ROCK,
 				"fuelwitherblock", CTDTweaks.MODID));
 		thiccsoulsand = register(new GlowingBlock(Material.SAND,
 				"thiccsoulsand", CTDTweaks.MODID));
