@@ -6,11 +6,9 @@ import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
 import com.themastergeneral.ctdtweaks.blocks.ModBlocks;
 import com.themastergeneral.ctdtweaks.config.Config;
-import com.themastergeneral.ctdtweaks.handlers.Fuel;
 import com.themastergeneral.ctdtweaks.handlers.OreDict;
 import com.themastergeneral.ctdtweaks.handlers.Smelting;
 import com.themastergeneral.ctdtweaks.items.ModItems;
@@ -26,7 +24,6 @@ public class CommonProxy {
 		ModBlocks.init();
 		ModItems.init();
 		OreDict.InitOre();
-		//Fuel.registerFuel();
 		Smelting.addSmelting();
 	}
 

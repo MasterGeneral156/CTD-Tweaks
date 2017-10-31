@@ -19,6 +19,7 @@ tile.fuelwitherblock.name=Wither Fuel Block
 tile.gothicglass.name=Gothic Glass
 tile.thiccsoulsand.name=Thicc Soul Sand
 tile.glowingobsidian.name=Glowing Obsidian
+tile.concrete.name=Concrete
 
 itemGroup.ctdtweaks=CTD Tweaks
 

@@ -10,6 +10,7 @@ public class ModBlocks extends RegisterBlock {
 	public static GlowingBlock thiccsoulsand;
 	public static HardLightBlock glowingobsidian;
 	public static SoulSandGlass gothicglass;
+	public static ConcreteBlock concrete;
 
 	public static void init() {
 		fuelwitherblock = register(new WitherFuelBlock(Material.ROCK,
@@ -20,5 +21,8 @@ public class ModBlocks extends RegisterBlock {
 				"glowingobsidian", CTDTweaks.MODID));
 		gothicglass = register(new SoulSandGlass(Material.GLASS, false,
 				"gothicglass", CTDTweaks.MODID));
+
+		concrete = register(new ConcreteBlock(Material.GROUND, "concrete",
+				CTDTweaks.MODID));
 	}
 }

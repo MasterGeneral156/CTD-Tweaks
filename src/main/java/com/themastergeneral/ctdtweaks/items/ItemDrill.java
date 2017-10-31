@@ -26,7 +26,7 @@ public class ItemDrill extends BasicItem {
 		return Config.drillMiningLevel;
 	}
 
-	public boolean breakBlocks(ItemStack stack, int radius, World world,
+	/*public boolean breakBlocks(ItemStack stack, int radius, World world,
 			BlockPos aPos, int side, EntityPlayer player) {
 		int xRange = radius;
 		int yRange = radius;
@@ -120,5 +120,5 @@ public class ItemDrill extends BasicItem {
 			}
 		}
 		return toReturn;
-	}
+	}*/
 }

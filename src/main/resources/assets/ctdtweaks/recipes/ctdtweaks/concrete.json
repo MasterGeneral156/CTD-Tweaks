@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "ctdtweaks:concrete",
+  "ingredients": [
+    {
+		"item": "minecraft:gravel"
+    },
+	{
+		"item": "minecraft:sand",
+		"data": 0
+    },
+	{
+		"item": "minecraft:sand",
+		"data": 0
+    },
+	{
+		"item": "minecraft:gravel"
+	}
+  ],
+  "result": 
+  {
+		"item": "ctdtweaks:concrete",
+		"count": 4
+  }
+}
