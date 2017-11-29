@@ -77,11 +77,6 @@ public class BaublesInventoryWrapper implements IInventory {
 	}
 
 	@Override
-	public boolean isUseableByPlayer(EntityPlayer player) {
-		return true;
-	}
-
-	@Override
 	public void openInventory(EntityPlayer player) {
 	}
 
@@ -113,6 +108,11 @@ public class BaublesInventoryWrapper implements IInventory {
 		for (int i = 0; i < this.getSizeInventory(); ++i) {
 			this.setInventorySlotContents(i, null);
 		}
+	}
+
+	@Override
+	public boolean isUseableByPlayer(EntityPlayer player) {
+		return true;
 	}
 
 }

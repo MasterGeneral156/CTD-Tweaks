@@ -1,5 +1,6 @@
 package com.themastergeneral.ctdtweaks.handlers;
 
+import com.themastergeneral.ctdtweaks.blocks.ModBlocks;
 import com.themastergeneral.ctdtweaks.items.ModItems;
 
 import net.minecraftforge.oredict.OreDictionary;
@@ -22,7 +23,7 @@ public class OreDict {
 	}
 
 	public static final void block() {
-
+		OreDictionary.registerOre("concrete", ModBlocks.concrete);
 	}
 
 	public static final void dust() {
@@ -30,6 +31,5 @@ public class OreDict {
 	}
 
 	public static final void nugget() {
-		OreDictionary.registerOre("nuggetTin", ModItems.nuggettin);
 	}
 }

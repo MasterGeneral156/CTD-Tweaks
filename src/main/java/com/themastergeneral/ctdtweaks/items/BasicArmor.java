@@ -1,13 +1,12 @@
 package com.themastergeneral.ctdtweaks.items;
 
-import com.themastergeneral.ctdcore.Main;
-import com.themastergeneral.ctdcore.client.ItemModelProvider;
-
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
-import net.minecraft.item.ItemArmor.ArmorMaterial;
+
+import com.themastergeneral.ctdcore.CTDCore;
+import com.themastergeneral.ctdcore.client.ItemModelProvider;
+import com.themastergeneral.ctdtweaks.CTDTweaks;
 
 public class BasicArmor extends ItemArmor implements ItemModelProvider {
 	public final EntityEquipmentSlot armorType;
@@ -27,7 +26,7 @@ public class BasicArmor extends ItemArmor implements ItemModelProvider {
 		this.setMaxDamage(materialIn.getDurability(equipmentSlotIn));
 		this.toughness = materialIn.getToughness();
 		this.maxStackSize = 1;
-		this.setCreativeTab(com.themastergeneral.ctdtweaks.Main.creativeTab);
+		this.setCreativeTab(CTDTweaks.creativeTab);
 		this.name = name;
 		this.modid = modid;
 		this.setUnlocalizedName(name);
@@ -35,6 +34,6 @@ public class BasicArmor extends ItemArmor implements ItemModelProvider {
 	}
 
 	public void registerItemModel(Item item) {
-		Main.proxy.registerItemRenderer(modid, this, 0, name);
+		CTDCore.proxy.registerItemRenderer(modid, this, 0, name);
 	}
 }
