@@ -4,13 +4,13 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
-import com.themastergeneral.ctdtweaks.Main;
+import com.themastergeneral.ctdtweaks.CTDTweaks;
 import com.themastergeneral.ctdtweaks.items.ModItems;
 
 public class CreativeTab extends CreativeTabs {
 
 	public CreativeTab() {
-		super(Main.MODID);
+		super(CTDTweaks.MODID);
 	}
 
 	@Override

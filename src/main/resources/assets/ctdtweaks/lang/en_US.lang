@@ -1,5 +1,4 @@
 item.corecombat.name=Combat Core
-item.nuggettin.name=Tin Nugget
 item.fuelwither.name=Wither Fuel
 item.enchantedgoldingot.name=Enchanted Gold Ingot
 item.nightvision.name=Night Vision Goggles
@@ -10,7 +9,24 @@ item.hastering.name=Haste Ring
 item.speedring.name=Speed Ring
 item.basering.name=Ring Base
 item.steamedcarrot.name=Steamed Carrot
+item.flightcore.name=Flight Ring
+item.invisring.name=Invisibility Ring
+item.destructo_sword.name=Destructo Sword
+item.refinedwitherfuel.name=Refined Wither Fuel
 
 tile.fuelwitherblock.name=Wither Fuel Block
+tile.gothicglass.name=Gothic Glass
+tile.thiccsoulsand.name=Thicc Soul Sand
+tile.glowingobsidian.name=Glowing Obsidian
+tile.concrete.name=Concrete
 
 itemGroup.ctdtweaks=CTD Tweaks
+
+jei.corecombat.info=Used to automate boss drops.
+jei.amulet.info=When worn, give you a glowing effect, making you easier to find.
+jei.fuelwither.info=Coal infused with wither powers to make it much more potent.
+jei.boots.info=Put these on outside and fly away!
+jei.nightvision.info=When worn, allows you to see much more easily at night.
+jei.flightring.info=Allows creative flight if equipped in a Bauble Ring Slot.
+jei.hastering.info=Gives Haste if equipped in a Bauble Ring Slot. Does not stack.
+jei.speedring.info=Gives Speed if equipped in a Bauble Ring Slot. Does not stack.

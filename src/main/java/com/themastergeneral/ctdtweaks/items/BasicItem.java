@@ -1,10 +1,8 @@
 package com.themastergeneral.ctdtweaks.items;
 
-import net.minecraft.item.Item;
-
 import com.themastergeneral.ctdcore.client.ItemModelProvider;
 import com.themastergeneral.ctdcore.item.CTDItem;
-import com.themastergeneral.ctdtweaks.Main;
+import com.themastergeneral.ctdtweaks.CTDTweaks;
 
 public class BasicItem extends CTDItem implements ItemModelProvider {
 	protected String name;
@@ -12,6 +10,6 @@ public class BasicItem extends CTDItem implements ItemModelProvider {
 
 	public BasicItem(String name, String modid) {
 		super(name, modid);
-		this.setCreativeTab(Main.creativeTab);
+		this.setCreativeTab(CTDTweaks.creativeTab);
 	}
 }
