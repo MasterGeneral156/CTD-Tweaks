@@ -7,8 +7,8 @@
 		"DGE"
     ],
     "key": {
-		"D": [{"type": "forge:ore_dict", "ore": "gemDiamond"}],
-		"E": [{"type": "forge:ore_dict", "ore": "gemEmerald"}],
+		"E": [{"type": "forge:ore_dict", "ore": "gemDiamond"}],
+		"D": [{"type": "forge:ore_dict", "ore": "gemEmerald"}],
 		"R": { "item": "ctdtweaks:basering" },
 		"G": { "item": "ctdtweaks:enchantedgoldingot" }
     },

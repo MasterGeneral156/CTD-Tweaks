@@ -8,7 +8,7 @@
     ],
     "key": {
 		"S": [{"type": "forge:ore_dict", "ore": "blockCoal"}],
-		"W": { "item": "minecraft:nether_star" }
+		"W": [{"type": "forge:ore_dict", "ore": "netherStar"}]
     },
     "result": {
         "item": "ctdtweaks:fuelwitherblock",

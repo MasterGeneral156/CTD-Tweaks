@@ -2,13 +2,14 @@
     "type": "minecraft:crafting_shaped",
     "group": "ctdtweaks:speedring",
     "pattern": [
-        " S ",
-        "SRS",
-		" S "
+        "SES",
+        "ERE",
+		"SES"
     ],
     "key": {
 		"R": { "item": "ctdtweaks:basering" },
-		"S": {"item": "minecraft:sugar" }
+		"E": { "item": "ctdtweaks:enchantedgoldingot" },
+		"S": { "item": "minecraft:sugar" }
     },
     "result": {
         "item": "ctdtweaks:speedring",

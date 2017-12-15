@@ -8,7 +8,7 @@
     ],
     "key": {
 		"G": { "item": "ctdtweaks:coreglowing" },
-		"S": { "item": "minecraft:string" }
+		"S": [{"type": "forge:ore_dict", "ore": "string"}]
     },
     "result": {
         "item": "ctdtweaks:glowingamulet",

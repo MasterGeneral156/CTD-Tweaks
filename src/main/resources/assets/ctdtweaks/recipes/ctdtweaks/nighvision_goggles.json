@@ -8,7 +8,7 @@
     ],
     "key": {
 		"G": { "item": "ctdtweaks:coreglowing" },
-		"L": { "item": "minecraft:leather" }
+		"L": [{"type": "forge:ore_dict", "ore": "leather"}]
     },
     "result": {
         "item": "ctdtweaks:nightvision",

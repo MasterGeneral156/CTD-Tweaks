@@ -6,9 +6,9 @@
         "G G"
     ],
     "key": {
-		"L": { "item": "minecraft:leather" },
+		"L": [{"type": "forge:ore_dict", "ore": "leather"}],
 		"B": { "item": "minecraft:leather_boots" },
-		"G": { "item": "minecraft:gold_ingot" }
+		"G": [{"type": "forge:ore_dict", "ore": "ingotGold"}]
     },
     "result": {
         "item": "ctdtweaks:goodbyeboots",
