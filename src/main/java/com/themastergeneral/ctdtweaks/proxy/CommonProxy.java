@@ -6,14 +6,11 @@ import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
 import com.themastergeneral.ctdtweaks.blocks.ModBlocks;
 import com.themastergeneral.ctdtweaks.config.Config;
-import com.themastergeneral.ctdtweaks.handlers.Crafting;
-import com.themastergeneral.ctdtweaks.handlers.Fuel;
 import com.themastergeneral.ctdtweaks.handlers.OreDict;
-import com.themastergeneral.ctdtweaks.handlers.Smelt;
+import com.themastergeneral.ctdtweaks.handlers.Smelting;
 import com.themastergeneral.ctdtweaks.items.ModItems;
 
 public class CommonProxy {
@@ -26,13 +23,12 @@ public class CommonProxy {
 		Config.readConfig();
 		ModBlocks.init();
 		ModItems.init();
-		GameRegistry.registerFuelHandler(new Fuel());
+		OreDict.InitOre();
+		Smelting.addSmelting();
 	}
 
 	public void init(FMLInitializationEvent e) {
-		OreDict.init();
-		Crafting.addRecipes();
-		Smelt.init();
+
 	}
 
 	public void postInit(FMLPostInitializationEvent e) {

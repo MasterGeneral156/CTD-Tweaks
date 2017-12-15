@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "ctdtweaks:concrete",
+    "pattern": [
+        "GS",
+        "SG"
+    ],
+    "key": {
+		"S": [{"type": "forge:ore_dict", "ore": "sand"}],
+		"G": [{"type": "forge:ore_dict", "ore": "gravel"}]
+    },
+    "result": {
+        "item": "ctdtweaks:concrete",
+		"count": 8
+		}
+    }
+}

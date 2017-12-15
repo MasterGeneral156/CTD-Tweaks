@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "ctdtweaks:invisring",
+    "pattern": [
+        "SES",
+        "ERE",
+		"SES"
+    ],
+    "key": {
+		"R": { "item": "ctdtweaks:basering" },
+		"S": { "item": "ctdtweaks:fuelwither" },
+		"E": { "item": "ctdtweaks:enchantedgoldingot" }
+    },
+    "result": {
+        "item": "ctdtweaks:invisring",
+		"count": 1
+		}
+    }
+}

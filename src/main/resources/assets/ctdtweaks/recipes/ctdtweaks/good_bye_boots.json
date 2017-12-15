@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "ctdtweaks:bye_boots",
+    "pattern": [
+        "LBL",
+        "G G"
+    ],
+    "key": {
+		"L": [{"type": "forge:ore_dict", "ore": "leather"}],
+		"B": { "item": "minecraft:leather_boots" },
+		"G": [{"type": "forge:ore_dict", "ore": "ingotGold"}]
+    },
+    "result": {
+        "item": "ctdtweaks:goodbyeboots",
+		"count": 1
+		}
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "display": 
+	{
+        "icon": 
+		{
+            "item": "ctdtweaks:nightvision"
+        },
+        "title": 
+		{
+            "translate": "advancement.nightvision.name"
+        },
+        "description": 
+		{
+            "translate": "advancement.nightvision.desc"
+        }
+    },
+	"parent": "ctdtweaks:main/glowingcore",
+    "criteria": 
+	{
+        "carrot": 
+		{
+            "trigger": "minecraft:inventory_changed",
+            "conditions": 
+			{
+                "items": 
+				[
+                    {
+                        "item": "ctdtweaks:nightvision"
+                    }
+                ]
+            }
+        }
+    }
+}

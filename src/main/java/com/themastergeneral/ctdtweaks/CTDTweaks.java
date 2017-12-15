@@ -1,6 +1,13 @@
 package com.themastergeneral.ctdtweaks;
 
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.Logger;
+
+import com.themastergeneral.ctdtweaks.proxy.CommonProxy;
+import com.themastergeneral.ctdtweaks.proxy.client.CreativeTab;
+
 import net.minecraftforge.fml.common.FMLLog;
+import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -10,20 +17,15 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-import org.apache.logging.log4j.Logger;
-
-import com.themastergeneral.ctdtweaks.proxy.CommonProxy;
-import com.themastergeneral.ctdtweaks.proxy.client.CreativeTab;
-
-@Mod(modid = CTDTweaks.MODID, name = CTDTweaks.MODNAME, version = CTDTweaks.VERSION, dependencies = CTDTweaks.DEPENDENCIES, updateJSON = CTDTweaks.updateJSON, certificateFingerprint = CTDTweaks.Fingerprint)
+@Mod(modid = CTDTweaks.MODID, name = CTDTweaks.MODNAME, certificateFingerprint = CTDTweaks.FingerPrint, version = CTDTweaks.VERSION, dependencies = CTDTweaks.DEPENDENCIES, updateJSON = CTDTweaks.updateJSON, acceptedMinecraftVersions = CTDTweaks.MCVersion)
 public class CTDTweaks {
-	public static boolean baublesLoaded = false;
 	public static final String MODID = "ctdtweaks";
 	public static final String MODNAME = "CTD Tweaks";
-	public static final String VERSION = "1.7.6";
-	public static final String DEPENDENCIES = "required-after:baubles;required-after:ctdcore@[1.2.3,]";
+	public static final String VERSION = "1.7.7";
+	public static final String DEPENDENCIES = "required-after:baubles;required-after:ctdcore@[1.2.3,];";
 	public static final String updateJSON = "https://raw.githubusercontent.com/MasterGeneral156/Version/master/CTD-Tweaks.json";
-	public static final String Fingerprint = "441b509a0f58a0ef41aca8daf1be20d96287635e";
+	public static final String MCVersion = "1.12.2";
+	public static final String FingerPrint = "441b509a0f58a0ef41aca8daf1be20d96287635e";
 
 	public static final CreativeTab creativeTab = new CreativeTab();
 
@@ -48,7 +50,7 @@ public class CTDTweaks {
 	public void postInit(FMLPostInitializationEvent e) {
 		proxy.postInit(e);
 	}
-
+	
 	@EventHandler
 	public void onFingerprintViolation(FMLFingerprintViolationEvent e) {
 		FMLLog.warning("Invalid fingerprint detected for CTD Tweaks! TheMasterGeneral will not support this version!");

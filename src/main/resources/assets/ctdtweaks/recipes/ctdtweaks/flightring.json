@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "ctdtweaks:flightcore",
+    "pattern": [
+        "EGD",
+        "GRG",
+		"DGE"
+    ],
+    "key": {
+		"D": [{"type": "forge:ore_dict", "ore": "gemDiamond"}],
+		"E": [{"type": "forge:ore_dict", "ore": "gemEmerald"}],
+		"R": { "item": "ctdtweaks:basering" },
+		"G": { "item": "ctdtweaks:enchantedgoldingot" }
+    },
+    "result": {
+        "item": "ctdtweaks:flightcore",
+		"count": 1
+    }
+}

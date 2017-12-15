@@ -1,0 +1,34 @@
+{
+    "display": 
+	{
+        "icon": 
+		{
+            "item": "ctdtweaks:basering"
+        },
+        "title": 
+		{
+            "translate": "advancement.basering.name"
+        },
+        "description": 
+		{
+            "translate": "advancement.basering.desc"
+        }
+    },
+	"parent": "ctdtweaks:main/root",
+    "criteria": 
+	{
+        "carrot": 
+		{
+            "trigger": "minecraft:inventory_changed",
+            "conditions": 
+			{
+                "items": 
+				[
+                    {
+                        "item": "ctdtweaks:basering"
+                    }
+                ]
+            }
+        }
+    }
+}

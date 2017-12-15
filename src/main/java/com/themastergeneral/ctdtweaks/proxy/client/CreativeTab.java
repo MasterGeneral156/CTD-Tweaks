@@ -1,7 +1,6 @@
 package com.themastergeneral.ctdtweaks.proxy.client;
 
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 import com.themastergeneral.ctdtweaks.CTDTweaks;

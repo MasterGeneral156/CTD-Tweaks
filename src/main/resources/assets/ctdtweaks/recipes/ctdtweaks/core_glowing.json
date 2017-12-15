@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "ctdtweaks:coreglowing",
+    "pattern": [
+        "GEG",
+        "ECE",
+		"GEG"
+    ],
+    "key": {
+		"G": [{"type": "forge:ore_dict", "ore": "blockGlass"}],
+		"C": [{"type": "forge:ore_dict", "ore": "glowstone"}],
+		"E": { "item": "ctdtweaks:enchantedgoldingot" }
+    },
+    "result": {
+        "item": "ctdtweaks:coreglowing",
+		"count": 1
+		}
+    }
+}
