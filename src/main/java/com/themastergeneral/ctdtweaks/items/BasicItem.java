@@ -22,12 +22,10 @@ public class BasicItem extends CTDItem {
 	{
 		Item item = fuel.getItem();
 		if (item == ModItems.fuelwither) 
-		{
 			return Config.witherFuelBurn;
-		}
+		else if(item == Item.getItemFromBlock(ModBlocks.fuelwitherblock))
+			return Config.witherFuelBurn*10;
 		else 
-		{
 			return 0;
-		}
 	}
 }
