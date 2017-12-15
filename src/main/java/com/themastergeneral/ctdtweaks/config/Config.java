@@ -16,6 +16,7 @@ public class Config {
 	public static int drillMiningLevel = 4;
 	public static int witherFuelBurn = 56000;
 	public static int combatcoredurability = 64;
+	public static boolean doEnderfugeSmelt = true;
 
 	// Call this from CommonProxy.preInit(). It will create our config if it
 	// doesn't
@@ -26,7 +27,8 @@ public class Config {
 			cfg.load();
 			initGeneralConfig(cfg);
 		} catch (Exception e1) {
-			CTDTweaks.logger.log(Level.ERROR, "Problem loading config file!", e1);
+			CTDTweaks.logger.log(Level.ERROR, "Problem loading config file!",
+					e1);
 		} finally {
 			if (cfg.hasChanged()) {
 				cfg.save();
@@ -49,8 +51,11 @@ public class Config {
 		speedringmodifier = cfg.getInt("Speed Ring Modifier", CATEGORY_GENERAL,
 				speedringmodifier, 1, 255,
 				"What level of Speed should the ring give?");
-		combatcoredurability = cfg.getInt("Combat Core Maximum Users", CATEGORY_GENERAL,
-				combatcoredurability, 1, 255,
+		combatcoredurability = cfg.getInt("Combat Core Maximum Users",
+				CATEGORY_GENERAL, combatcoredurability, 1, 255,
 				"How many uses before breaking");
+		doEnderfugeSmelt = cfg
+				.getBoolean("Enderfuge recipes", CATEGORY_GENERAL, true,
+						"If the mod Enderfuge is loaded, should we use it for some smelting recipes?");
 	}
 }
