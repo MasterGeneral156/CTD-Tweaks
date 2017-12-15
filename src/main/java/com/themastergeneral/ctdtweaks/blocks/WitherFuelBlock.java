@@ -13,9 +13,4 @@ public class WitherFuelBlock extends BasicBlock {
 		super(materialIn, name, modid);
 		// TODO Auto-generated constructor stub
 	}
-	
-	public int getItemBurnTime(ItemStack fuel) 
-	{
-		return Config.witherFuelBurn*10;
-	}
 }
