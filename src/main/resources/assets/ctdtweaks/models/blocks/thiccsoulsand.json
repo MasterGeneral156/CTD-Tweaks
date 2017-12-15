@@ -1,6 +1,6 @@
 {
     "parent": "block/cube_all",
     "textures": {
-        "all": "minecraft:blocks/soul_sand"
+        "all": "ctdtweaks:blocks/thiccsoulsand"
     }
 }
