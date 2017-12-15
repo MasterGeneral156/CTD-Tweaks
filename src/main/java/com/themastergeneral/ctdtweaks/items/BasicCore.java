@@ -6,7 +6,7 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BasicCore extends BasicItem {
-	public BasicCore(String name, String modid, int durability) {
+	public BasicCore(String name, int durability, String modid) {
 		super(name, modid);
 		this.maxStackSize = 1;
 		this.setMaxDamage(durability - 1);

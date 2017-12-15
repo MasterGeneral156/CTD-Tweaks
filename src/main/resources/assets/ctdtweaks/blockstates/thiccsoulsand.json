@@ -2,7 +2,7 @@
     "forge_marker": 1,
     "defaults": {
         "textures": {
-            "all": "ctdtweaks:blocks/thiccsoulsand"
+            "all": "minecraft:blocks/soul_sand"
 			
         }
     },

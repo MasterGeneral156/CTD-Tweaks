@@ -1,11 +1,10 @@
-package com.themastergeneral.ctdtweaks.items.baubles;
+package com.themastergeneral.ctdtweaks.items.rings;
 
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.MobEffects;
 import net.minecraft.item.ItemStack;
-import net.minecraft.potion.PotionEffect;
-import net.minecraftforge.common.capabilities.CapabilityManager;
+
+import com.themastergeneral.ctdtweaks.items.BasicRing;
 
 public class RingFlight extends BasicRing {
 	public RingFlight(String name, String modid) {
