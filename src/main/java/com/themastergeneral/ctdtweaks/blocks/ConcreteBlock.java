@@ -23,6 +23,8 @@ public class ConcreteBlock extends BasicBlock {
 
 	public ConcreteBlock(Material materialIn, String name, String modid) {
 		super(materialIn, name, modid);
+		this.setHardness(1.8F);
+		this.setHarvestLevel("pickaxe", 0);
 	}
 
 	@Nullable
