@@ -15,7 +15,19 @@ public class IMEEnderfuge {
 		toSend.setTag("output", new NBTTagCompound());
 		input.writeToNBT(toSend.getCompoundTag("input"));
 		output.writeToNBT(toSend.getCompoundTag("output"));
+		
 		FMLInterModComms.sendMessage("enderfuge", "addenderfugerecipe",
 				toSend);
+	}
+	public static final void addEnderfugeFuel(ItemStack input, int burntime)
+	{
+		if (input == null || burntime == 0) {
+			return;
+		}
+		String burntime1=String.valueOf(burntime);
+		NBTTagCompound toSend = new NBTTagCompound();
+		toSend.setTag("input", new NBTTagCompound());
+		toSend.setTag("burn", new NBTTagCompound());
+		input.writeToNBT(toSend.getCompoundTag("input"));
 	}
 }
