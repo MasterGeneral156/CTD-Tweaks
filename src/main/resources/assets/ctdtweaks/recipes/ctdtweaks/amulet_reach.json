@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "ctdtweaks:amuletreach",
+    "pattern": [
+        "SSS",
+        "SGS",
+		"GEG"
+    ],
+    "key": {
+		"G": { "item": "ctdtweaks:coreglowing" },
+		"E": [{"type": "forge:ore_dict", "ore": "enderpearl"}],
+		"S": [{"type": "forge:ore_dict", "ore": "string"}]
+    },
+    "result": {
+        "item": "ctdtweaks:amuletreach",
+		"count": 1
+		}
+    }
+}

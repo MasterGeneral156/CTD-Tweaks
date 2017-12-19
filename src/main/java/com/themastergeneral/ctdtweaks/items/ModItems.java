@@ -8,6 +8,7 @@ import net.minecraftforge.common.util.EnumHelper;
 import com.themastergeneral.ctdcore.item.RegisterItem;
 import com.themastergeneral.ctdtweaks.CTDTweaks;
 import com.themastergeneral.ctdtweaks.config.Config;
+import com.themastergeneral.ctdtweaks.items.baubles.AmuletExtendReach;
 import com.themastergeneral.ctdtweaks.items.baubles.BasicRing;
 import com.themastergeneral.ctdtweaks.items.baubles.RingFlight;
 import com.themastergeneral.ctdtweaks.items.baubles.RingHaste;
@@ -37,6 +38,9 @@ public class ModItems extends RegisterItem {
 	public static RingSpeed speedring;
 	public static RingFlight flightcore;
 	public static RingInvis invisring;
+	
+	public static AmuletExtendReach amuletreach;
+	public static AmuletExtendReach creativeamuletreach;
 
 	public static ItemDrill drill;
 
@@ -73,6 +77,9 @@ public class ModItems extends RegisterItem {
 		hastering = register(new RingHaste("hastering", CTDTweaks.MODID));
 		speedring = register(new RingSpeed("speedring", CTDTweaks.MODID));
 		invisring = register(new RingInvis("invisring", CTDTweaks.MODID));
+		
+		amuletreach = register(new AmuletExtendReach("amuletreach", CTDTweaks.MODID, Config.reachAmuletRange));
+		creativeamuletreach = register(new AmuletExtendReach("creativeamuletreach", CTDTweaks.MODID, Config.creativereachAmuletRange));
 
 		//destructo_sword = register(new VoidSword("destructo_sword", CTDTweaks.MODID,
 		//		ToolMaterial.IRON)); // Soon... gotta bugfix first.
