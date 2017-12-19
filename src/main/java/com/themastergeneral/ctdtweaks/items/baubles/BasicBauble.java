@@ -15,7 +15,7 @@ public class BasicBauble extends BasicItem implements IBauble {
 
 	@Override
 	public BaubleType getBaubleType(ItemStack arg0) {
-		return BaubleType.RING;
+		return BaubleType.TRINKET;
 	}
 
 }
