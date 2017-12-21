@@ -21,11 +21,11 @@ public class Smelting {
 			if (Loader.isModLoaded("enderfuge")) {
 				IMEEnderfuge.addEnderfugeSmelt(new ItemStack(
 						ModBlocks.fuelwitherblock), new ItemStack(
-						ModItems.refinedwitherfuel), 0.0F);
+						ModItems.refinedwitherfuel), 0.4F);
 			} else {
 				GameRegistry.addSmelting(new ItemStack(
 						ModBlocks.fuelwitherblock), new ItemStack(
-						ModItems.refinedwitherfuel), 0.4f);
+						ModItems.refinedwitherfuel), 0.4F);
 			}
 		} else {
 			GameRegistry.addSmelting(new ItemStack(ModBlocks.fuelwitherblock),
