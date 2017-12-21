@@ -3,6 +3,7 @@ package com.themastergeneral.ctdtweaks.items.baubles;
 import com.themastergeneral.ctdtweaks.config.Config;
 
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.PotionEffect;

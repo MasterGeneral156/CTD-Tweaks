@@ -1,5 +1,6 @@
 package com.themastergeneral.ctdtweaks.items.baubles;
 
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
 
 import com.themastergeneral.ctdtweaks.items.BasicItem;
