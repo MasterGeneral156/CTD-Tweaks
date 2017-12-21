@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "ctdtweaks:trinkethealth",
+    "pattern": [
+        "E E",
+        "ERE",
+		" E "
+    ],
+    "key": {
+		"R": { "item": "ctdtweaks:refinedwitherfuel" },
+		"E": { "item": "ctdtweaks:enchantedgoldingot" }
+    },
+    "result": {
+        "item": "ctdtweaks:trinkethealth",
+		"count": 1
+		}
+    }
+}

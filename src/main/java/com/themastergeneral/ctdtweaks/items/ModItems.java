@@ -14,6 +14,7 @@ import com.themastergeneral.ctdtweaks.items.baubles.RingFlight;
 import com.themastergeneral.ctdtweaks.items.baubles.RingHaste;
 import com.themastergeneral.ctdtweaks.items.baubles.RingInvis;
 import com.themastergeneral.ctdtweaks.items.baubles.RingSpeed;
+import com.themastergeneral.ctdtweaks.items.baubles.TrinketHealth;
 
 public class ModItems extends RegisterItem {
 	public static BasicCore corecombat;
@@ -41,6 +42,8 @@ public class ModItems extends RegisterItem {
 	
 	public static AmuletExtendReach amuletreach;
 	public static AmuletExtendReach creativeamuletreach;
+	
+	public static TrinketHealth trinketHealth;
 
 	public static ItemDrill drill;
 
@@ -80,6 +83,8 @@ public class ModItems extends RegisterItem {
 		
 		amuletreach = register(new AmuletExtendReach("amuletreach", CTDTweaks.MODID, Config.reachAmuletRange));
 		creativeamuletreach = register(new AmuletExtendReach("creativeamuletreach", CTDTweaks.MODID, Config.creativereachAmuletRange));
+		
+		trinketHealth = register(new TrinketHealth("trinketHealth", CTDTweaks.MODID));
 
 		//destructo_sword = register(new VoidSword("destructo_sword", CTDTweaks.MODID,
 		//		ToolMaterial.IRON)); // Soon... gotta bugfix first.

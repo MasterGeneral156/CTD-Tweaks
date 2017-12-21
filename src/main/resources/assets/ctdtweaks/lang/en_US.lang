@@ -16,6 +16,7 @@ item.destructo_sword.name=Destructo Sword
 item.refinedwitherfuel.name=Refined Wither Fuel
 item.amuletreach.name=Amulet of Reaching
 item.creativeamuletreach.name=Amulet of Reaching (Creative)
+item.trinketHealth.name=Health Charm
 
 tile.fuelwitherblock.name=Wither Fuel Block
 tile.gothicglass.name=Gothic Glass
