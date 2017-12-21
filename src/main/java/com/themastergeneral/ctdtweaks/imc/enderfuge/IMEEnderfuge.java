@@ -11,10 +11,9 @@ public class IMEEnderfuge {
 			return;
 		}
 		NBTTagCompound toSend = new NBTTagCompound();
-		toSend.setTag("input", new NBTTagCompound());
-		toSend.setTag("output", new NBTTagCompound());
-		input.writeToNBT(toSend.getCompoundTag("input"));
-		output.writeToNBT(toSend.getCompoundTag("output"));
+		toSend.setTag("input", input.writeToNBT(new NBTTagCompound()));
+		toSend.setTag("output", output.writeToNBT(new NBTTagCompound()));
+		toSend.setFloat("xp", xp);
 		
 		FMLInterModComms.sendMessage("enderfuge", "addenderfugerecipe",
 				toSend);
@@ -26,8 +25,10 @@ public class IMEEnderfuge {
 		}
 		String burntime1=String.valueOf(burntime);
 		NBTTagCompound toSend = new NBTTagCompound();
-		toSend.setTag("input", new NBTTagCompound());
-		toSend.setTag("burn", new NBTTagCompound());
-		input.writeToNBT(toSend.getCompoundTag("input"));
+		toSend.setTag("input", input.writeToNBT(new NBTTagCompound()));
+		toSend.setInteger("burn", burntime);
+		
+		FMLInterModComms.sendMessage("enderfuge", "addenderfugefuel",
+				toSend);
 	}
 }
