@@ -21,11 +21,11 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class CTDTweaks {
 	public static final String MODID = "ctdtweaks";
 	public static final String MODNAME = "CTD Tweaks";
-	public static final String VERSION = "1.8.2";
+	public static final String VERSION = "1.8.3";
 	public static final String DEPENDENCIES = "required-after:baubles;required-after:ctdcore@[1.2.3,];";
 	public static final String updateJSON = "https://raw.githubusercontent.com/MasterGeneral156/Version/master/CTD-Tweaks.json";
 	public static final String MCVersion = "1.12.2";
-	public static final String FingerPrint = "441b509a0f58a0ef41aca8daf1be20d96287635e";
+	public static final String FingerPrint = "1cd8befc36d6dedc5601d77a013f43afc71f899f";
 
 	public static final CreativeTab creativeTab = new CreativeTab();
 
