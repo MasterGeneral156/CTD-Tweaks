@@ -17,8 +17,6 @@ public class Config {
 	public static int witherFuelBurn = 56000;
 	public static int combatcoredurability = 64;
 	public static boolean doEnderfugeSmelt = true;
-	public static int reachAmuletRange = 10;
-	public static int creativereachAmuletRange = 1000;
 
 	// Call this from CommonProxy.preInit(). It will create our config if it
 	// doesn't
@@ -56,12 +54,6 @@ public class Config {
 		combatcoredurability = cfg.getInt("Combat Core Maximum Users",
 				CATEGORY_GENERAL, combatcoredurability, 1, 255,
 				"How many uses before breaking");
-		reachAmuletRange = cfg.getInt("Amulet of Reaching range?",
-				CATEGORY_GENERAL, reachAmuletRange, 5, 65655,
-				"How large should the player's range be when they equip the Amulet of Reaching? (Vanilla is 5)");
-		creativereachAmuletRange = cfg.getInt("Creative Amulet of Reaching range?",
-				CATEGORY_GENERAL, creativereachAmuletRange, 5, 65655,
-				"How large should the player's range be when they equip the Creative Amulet of Reaching? (Vanilla is 5)");
 		doEnderfugeSmelt = cfg
 				.getBoolean("Enderfuge recipes", CATEGORY_GENERAL, true,
 						"If the mod Enderfuge is loaded, should we use it for some smelting recipes?");
