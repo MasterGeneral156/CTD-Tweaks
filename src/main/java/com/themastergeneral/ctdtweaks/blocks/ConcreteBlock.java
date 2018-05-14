@@ -36,8 +36,10 @@ public class ConcreteBlock extends BasicBlock {
 	@Override
 	public void onEntityCollidedWithBlock(World worldIn, BlockPos pos,
 			IBlockState state, Entity entityIn) {
-		((EntityLivingBase) entityIn).addPotionEffect(new PotionEffect(
-				MobEffects.SPEED, 20, 3, true, false));
+		if (entityIn instanceof EntityLivingBase) {
+			((EntityLivingBase) entityIn).addPotionEffect(new PotionEffect(
+					MobEffects.SPEED, 20, 3, true, false));
+		}
 	}
 
 }
