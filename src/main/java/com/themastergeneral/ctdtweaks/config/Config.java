@@ -39,19 +39,19 @@ public class Config {
 		cfg.addCustomCategoryComment(CATEGORY_GENERAL,
 				"General configuration for the CTD Tweaks mod.");
 		drillMiningLevel = cfg.getInt("Mining Drill Mining Level",
-				CATEGORY_GENERAL, drillMiningLevel, 1, 4,
+				CATEGORY_GENERAL, drillMiningLevel, 1, Integer.MAX_VALUE,
 				"Drill's mining level.");
 		witherFuelBurn = cfg.getInt("Wither Fuel Burn Time", CATEGORY_GENERAL,
-				witherFuelBurn, 1, 2147483647,
+				witherFuelBurn, 1, Integer.MAX_VALUE,
 				"How many ticks will Wither Fuel burn for? (Block is X10)");
 		hasteringmodifier = cfg.getInt("Haste Ring Modifier", CATEGORY_GENERAL,
-				hasteringmodifier, 1, 255,
+				hasteringmodifier, 1, Integer.MAX_VALUE,
 				"What level of Haste should the ring give?");
 		speedringmodifier = cfg.getInt("Speed Ring Modifier", CATEGORY_GENERAL,
-				speedringmodifier, 1, 255,
+				speedringmodifier, 1, Integer.MAX_VALUE,
 				"What level of Speed should the ring give?");
 		combatcoredurability = cfg.getInt("Combat Core Maximum Users",
-				CATEGORY_GENERAL, combatcoredurability, 1, 255,
+				CATEGORY_GENERAL, combatcoredurability, 1, Integer.MAX_VALUE,
 				"How many uses before breaking");
 	}
 }
