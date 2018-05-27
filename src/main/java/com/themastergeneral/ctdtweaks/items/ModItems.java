@@ -9,10 +9,10 @@ import com.themastergeneral.ctdcore.item.RegisterItem;
 import com.themastergeneral.ctdtweaks.CTDTweaks;
 import com.themastergeneral.ctdtweaks.config.Config;
 import com.themastergeneral.ctdtweaks.items.baubles.BasicRing;
-import com.themastergeneral.ctdtweaks.items.baubles.RingFlight;
-import com.themastergeneral.ctdtweaks.items.baubles.RingHaste;
-import com.themastergeneral.ctdtweaks.items.baubles.RingInvis;
-import com.themastergeneral.ctdtweaks.items.baubles.RingSpeed;
+import com.themastergeneral.ctdtweaks.items.baubles.rings.RingFlight;
+import com.themastergeneral.ctdtweaks.items.baubles.rings.RingHaste;
+import com.themastergeneral.ctdtweaks.items.baubles.rings.RingInvis;
+import com.themastergeneral.ctdtweaks.items.baubles.rings.RingSpeed;
 
 public class ModItems extends RegisterItem {
 	public static BasicCore corecombat;

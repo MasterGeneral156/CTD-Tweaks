@@ -1,9 +1,11 @@
-package com.themastergeneral.ctdtweaks.items.baubles;
+package com.themastergeneral.ctdtweaks.items.baubles.rings;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.annotation.Nullable;
+
+import com.themastergeneral.ctdtweaks.items.baubles.BasicRing;
 
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.EntityLivingBase;

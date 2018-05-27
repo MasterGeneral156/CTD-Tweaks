@@ -1,4 +1,6 @@
-package com.themastergeneral.ctdtweaks.items.baubles;
+package com.themastergeneral.ctdtweaks.items.baubles.rings;
+
+import com.themastergeneral.ctdtweaks.items.baubles.BasicRing;
 
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
