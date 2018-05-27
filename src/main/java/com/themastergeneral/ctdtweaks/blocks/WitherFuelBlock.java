@@ -11,6 +11,5 @@ public class WitherFuelBlock extends BasicBlock {
 
 	public WitherFuelBlock(Material materialIn, String name, String modid) {
 		super(materialIn, name, modid);
-		// TODO Auto-generated constructor stub
 	}
 }
