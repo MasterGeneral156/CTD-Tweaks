@@ -20,8 +20,8 @@ public class SpecialArmor extends BasicArmor {
 	private World world;
 
 	public SpecialArmor(String name, ArmorMaterial materialIn,
-			int renderIndexIn, EntityEquipmentSlot equipmentSlotIn, String modid) {
-		super(name, materialIn, renderIndexIn, equipmentSlotIn, modid);
+			int renderIndexIn, EntityEquipmentSlot equipmentSlotIn) {
+		super(name, materialIn, renderIndexIn, equipmentSlotIn);
 	}
 
 	@Override

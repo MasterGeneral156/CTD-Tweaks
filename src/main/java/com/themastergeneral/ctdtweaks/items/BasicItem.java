@@ -12,8 +12,8 @@ public class BasicItem extends CTDItem {
 	protected String name;
 	protected String modid;
 
-	public BasicItem(String name, String modid) {
-		super(name, modid);
+	public BasicItem(String name) {
+		super(name, CTDTweaks.MODID);
 		this.setCreativeTab(CTDTweaks.creativeTab);
 	}
 	

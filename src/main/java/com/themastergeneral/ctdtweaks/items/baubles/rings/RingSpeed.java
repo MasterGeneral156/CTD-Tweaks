@@ -9,8 +9,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.potion.PotionEffect;
 
 public class RingSpeed extends BasicRing {
-	public RingSpeed(String name, String modid) {
-		super(name, modid);
+	public RingSpeed(String name) {
+		super(name);
 	}
 
 	@Override

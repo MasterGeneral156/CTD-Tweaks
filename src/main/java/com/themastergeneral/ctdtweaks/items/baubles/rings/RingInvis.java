@@ -17,8 +17,8 @@ import net.minecraft.world.World;
 
 public class RingInvis extends BasicRing {
 
-	public RingInvis(String name, String modid) {
-		super(name, modid);
+	public RingInvis(String name) {
+		super(name);
 	}
 
 	@Override

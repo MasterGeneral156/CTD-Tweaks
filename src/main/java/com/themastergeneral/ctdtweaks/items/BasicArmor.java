@@ -17,7 +17,7 @@ public class BasicArmor extends ItemArmor implements ItemModelProvider {
 	private String modid;
 
 	public BasicArmor(String name, ArmorMaterial materialIn, int renderIndexIn,
-			EntityEquipmentSlot equipmentSlotIn, String modid) {
+			EntityEquipmentSlot equipmentSlotIn) {
 		super(materialIn, renderIndexIn, equipmentSlotIn);
 		this.armorType = equipmentSlotIn;
 		this.renderIndex = renderIndexIn;
@@ -28,7 +28,7 @@ public class BasicArmor extends ItemArmor implements ItemModelProvider {
 		this.maxStackSize = 1;
 		this.setCreativeTab(CTDTweaks.creativeTab);
 		this.name = name;
-		this.modid = modid;
+		this.modid = CTDTweaks.MODID;
 		this.setUnlocalizedName(name);
 		this.setRegistryName(name);
 	}

@@ -7,15 +7,16 @@ import net.minecraft.item.ItemSword;
 
 import com.themastergeneral.ctdcore.CTDCore;
 import com.themastergeneral.ctdcore.client.ItemModelProvider;
+import com.themastergeneral.ctdtweaks.CTDTweaks;
 
 public class VoidSword extends ItemSword implements ItemModelProvider {
 	protected String name;
 	protected String modid;
 
-	public VoidSword(String name, String modid, ToolMaterial material) {
+	public VoidSword(String name, ToolMaterial material) {
 		super(material);
 		this.name = name;
-		this.modid = modid;
+		this.modid = CTDTweaks.MODID;
 		this.setUnlocalizedName(name);
 		this.setRegistryName(name);
 		this.setMaxStackSize(1);

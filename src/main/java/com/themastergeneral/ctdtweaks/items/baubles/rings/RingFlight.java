@@ -10,8 +10,8 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraftforge.common.capabilities.CapabilityManager;
 
 public class RingFlight extends BasicRing {
-	public RingFlight(String name, String modid) {
-		super(name, modid);
+	public RingFlight(String name) {
+		super(name);
 	}
 
 	@Override

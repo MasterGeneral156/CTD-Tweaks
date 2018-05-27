@@ -10,8 +10,8 @@ import baubles.api.IBauble;
 
 public class BasicBauble extends BasicItem implements IBauble {
 
-	public BasicBauble(String name, String modid) {
-		super(name, modid);
+	public BasicBauble(String name) {
+		super(name);
 	}
 
 	@Override

@@ -6,8 +6,8 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BasicGlow extends BasicItem {
-	public BasicGlow(String name, String modid) {
-		super(name, modid);
+	public BasicGlow(String name) {
+		super(name);
 	}
 
 	@SideOnly(Side.CLIENT)

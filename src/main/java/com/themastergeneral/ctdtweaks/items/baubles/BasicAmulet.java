@@ -5,10 +5,10 @@ import baubles.api.BaubleType;
 
 public class BasicAmulet extends BasicBauble {
 
-	public BasicAmulet(String name, String modid) {
-		super(name, modid);
+	public BasicAmulet(String name) {
+		super(name);
 	}
-	
+
 	@Override
 	public BaubleType getBaubleType(ItemStack arg0) {
 		return BaubleType.AMULET;

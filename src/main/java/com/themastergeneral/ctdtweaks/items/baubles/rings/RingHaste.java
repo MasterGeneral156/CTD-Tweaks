@@ -11,8 +11,8 @@ import net.minecraft.potion.PotionEffect;
 
 public class RingHaste extends BasicRing {
 
-	public RingHaste(String name, String modid) {
-		super(name, modid);
+	public RingHaste(String name) {
+		super(name);
 	}
 
 	@Override

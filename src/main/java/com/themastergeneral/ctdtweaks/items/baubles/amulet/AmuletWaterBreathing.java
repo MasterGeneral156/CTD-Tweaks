@@ -16,8 +16,8 @@ import com.themastergeneral.ctdtweaks.items.baubles.BasicRing;
 
 public class AmuletWaterBreathing extends BasicAmulet {
 
-	public AmuletWaterBreathing(String name, String modid) {
-		super(name, modid);
+	public AmuletWaterBreathing(String name) {
+		super(name);
 	}
 
 	@Override

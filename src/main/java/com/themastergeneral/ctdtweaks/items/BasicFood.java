@@ -12,10 +12,10 @@ public class BasicFood extends ItemFood implements ItemModelProvider {
 	protected String modid;
 
 	public BasicFood(String name, int amount, float saturation,
-			boolean isWolfFood, String modid) {
+			boolean isWolfFood) {
 		super(amount, saturation, isWolfFood);
 		this.name = name;
-		this.modid = modid;
+		this.modid = CTDTweaks.MODID;
 		this.setUnlocalizedName(name);
 		this.setRegistryName(name);
 		this.setCreativeTab(CTDTweaks.creativeTab);
