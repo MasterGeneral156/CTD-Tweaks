@@ -1,6 +1,6 @@
 package com.themastergeneral.ctdtweaks.handlers;
 
-import com.themastergeneral.ctdcore.imc.Enderfuge;
+import com.themastergeneral.ctdcore.imc.IMCHelper;
 import com.themastergeneral.ctdtweaks.blocks.ModBlocks;
 import com.themastergeneral.ctdtweaks.config.Config;
 import com.themastergeneral.ctdtweaks.items.ModItems;
@@ -17,18 +17,9 @@ public class Smelting {
 				new ItemStack(ModBlocks.gothicglass, 2), 0.4f);
 		GameRegistry.addSmelting(Items.CARROT, new ItemStack(
 				ModItems.steamedcarrot), 0.1f);
-		if (Config.doEnderfugeSmelt == true) {
-			if (Loader.isModLoaded("enderfuge")) {
-				Enderfuge.addSmelt(new ItemStack(ModBlocks.fuelwitherblock),
-						new ItemStack(ModItems.refinedwitherfuel), 0.4F);
-			} else {
-				GameRegistry.addSmelting(new ItemStack(
-						ModBlocks.fuelwitherblock), new ItemStack(
-						ModItems.refinedwitherfuel), 0.4F);
-			}
-		} else {
-			GameRegistry.addSmelting(new ItemStack(ModBlocks.fuelwitherblock),
-					new ItemStack(ModItems.refinedwitherfuel), 0.4f);
-		}
+		IMCHelper.addEnderfugeSmelt(new ItemStack(ModBlocks.fuelwitherblock),
+				new ItemStack(ModItems.refinedwitherfuel), 0.4F);
+		GameRegistry.addSmelting(new ItemStack(ModBlocks.fuelwitherblock),
+				new ItemStack(ModItems.refinedwitherfuel), 0.4F);
 	}
 }
