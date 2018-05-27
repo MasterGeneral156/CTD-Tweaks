@@ -11,8 +11,8 @@ public class Config {
 	private static final String CATEGORY_GENERAL = "General";
 
 	// This values below you can access elsewhere in your mod:
-	public static int hasteringmodifier = 3;
-	public static int speedringmodifier = 3;
+	public static int hasteringmodifier = 2;
+	public static int speedringmodifier = 2;
 	public static int drillMiningLevel = 4;
 	public static int witherFuelBurn = 56000;
 	public static int combatcoredurability = 64;
