@@ -7,10 +7,12 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
+import com.themastergeneral.ctdcore.imc.CTDMythos;
 import com.themastergeneral.ctdtweaks.blocks.ModBlocks;
 import com.themastergeneral.ctdtweaks.config.Config;
 import com.themastergeneral.ctdtweaks.handlers.EnderfugeFuel;
 import com.themastergeneral.ctdtweaks.handlers.OreDict;
+import com.themastergeneral.ctdtweaks.handlers.Processing;
 import com.themastergeneral.ctdtweaks.handlers.Smelting;
 import com.themastergeneral.ctdtweaks.items.ModItems;
 
@@ -24,16 +26,14 @@ public class CommonProxy {
 		Config.readConfig();
 		ModBlocks.init();
 		ModItems.init();
-		OreDict.InitOre();
-		Smelting.addSmelting();
-		EnderfugeFuel.init();
 	}
 
 	public void init(FMLInitializationEvent e) {
-
+		Processing.init();
 	}
 
 	public void postInit(FMLPostInitializationEvent e) {
 
 	}
+
 }
