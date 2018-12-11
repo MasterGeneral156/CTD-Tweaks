@@ -13,6 +13,12 @@ public class RingFlight extends BasicRing {
 	public RingFlight(String name) {
 		super(name);
 	}
+	
+	@Override
+	public void onEquipped(ItemStack itemstack, EntityLivingBase entity) {
+		EntityPlayer player = (EntityPlayer) entity;
+		player.capabilities.allowFlying = true;
+	}
 
 	@Override
 	public void onWornTick(ItemStack itemstack, EntityLivingBase entity) {
