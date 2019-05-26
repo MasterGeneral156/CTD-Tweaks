@@ -31,10 +31,6 @@ public class SpecialArmor extends BasicArmor {
 			player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,
 					300, 0, true, false));
 		}
-		if (itemStack.getItem() == ModItems.glowingamulet) {
-			player.addPotionEffect(new PotionEffect(MobEffects.GLOWING, 20, 0,
-					true, false));
-		}
 		if (itemStack.getItem() == ModItems.goodbyeboots) {
 			if (player.capabilities.isCreativeMode) {
 				player.setGameType(GameType.SURVIVAL);
