@@ -7,8 +7,8 @@
 		"DBD"
     ],
     "key": {
-		"N": { "item": "ctdtweaks:fuelwitherblock" },
-		"D": [{"type": "forge:ore_dict", "ore": "gemDiamond"}],
+		"N": { "item": "ctdtweaks:refinedwitherfuel" },
+		"D": { "item": "ctdtweaks:fuelwither" },
 		"H": { "item": "minecraft:diamond_sword" },
 		"A": { "item": "minecraft:arrow" },
 		"S": { "item": "minecraft:shield" },
