@@ -9,6 +9,7 @@ import com.themastergeneral.ctdcore.item.RegisterItem;
 import com.themastergeneral.ctdtweaks.CTDTweaks;
 import com.themastergeneral.ctdtweaks.config.Config;
 import com.themastergeneral.ctdtweaks.items.baubles.BasicRing;
+import com.themastergeneral.ctdtweaks.items.baubles.amulet.AmuletBeingWatched;
 import com.themastergeneral.ctdtweaks.items.baubles.amulet.AmuletWaterBreathing;
 import com.themastergeneral.ctdtweaks.items.baubles.rings.RingFlight;
 import com.themastergeneral.ctdtweaks.items.baubles.rings.RingHaste;
@@ -29,7 +30,7 @@ public class ModItems extends RegisterItem {
 	public static BasicFood steamedcarrot;
 
 	public static SpecialArmor nightvision;
-	public static SpecialArmor glowingamulet;
+	public static AmuletBeingWatched glowingamulet;
 	public static SpecialArmor goodbyeboots;
 
 	public static BasicRing basering;
@@ -65,8 +66,7 @@ public class ModItems extends RegisterItem {
 
 		nightvision = register(new SpecialArmor("nightvision", weak_armor, 0,
 				EntityEquipmentSlot.HEAD));
-		glowingamulet = register(new SpecialArmor("glowingamulet", weak_armor,
-				1, EntityEquipmentSlot.CHEST));
+		glowingamulet = register(new AmuletBeingWatched("glowingamulet"));
 		goodbyeboots = register(new SpecialArmor("goodbyeboots", weak_armor, 3,
 				EntityEquipmentSlot.FEET));
 
