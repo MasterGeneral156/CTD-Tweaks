@@ -17,15 +17,15 @@ public class BasicItem extends CTDItem {
 		this.setCreativeTab(CTDTweaks.creativeTab);
 	}
 	
-	@Override
+	/*@Override
 	public int getItemBurnTime(ItemStack fuel) 
 	{
 		Item item = fuel.getItem();
 		if (item == ModItems.fuelwither) 
 			return Config.witherFuelBurn;
-		else if(item == Item.getItemFromBlock(ModBlocks.fuelwitherblock))
+		else if (item == Item.getItemFromBlock(ModBlocks.fuelwitherblock))
 			return Config.witherFuelBurn*10;
 		else 
 			return 0;
-	}
+	}*/
 }
