@@ -38,7 +38,7 @@ public class ConcreteBlock extends BasicBlock {
 			IBlockState state, Entity entityIn) {
 		if (entityIn instanceof EntityLivingBase) {
 			((EntityLivingBase) entityIn).addPotionEffect(new PotionEffect(
-					MobEffects.SPEED, 20, 3, true, false));
+					MobEffects.SPEED, 20, 2, true, false));
 		}
 	}
 
