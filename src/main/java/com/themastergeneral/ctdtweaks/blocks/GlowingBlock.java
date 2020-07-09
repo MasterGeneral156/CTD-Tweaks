@@ -8,8 +8,8 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class GlowingBlock extends BasicBlock {
 
-	public GlowingBlock(Material materialIn, String name, String modid) {
-		super(materialIn, name, modid);
+	public GlowingBlock(Material materialIn, String name) {
+		super(materialIn, name);
 	}
 
 	@SideOnly(Side.CLIENT)

@@ -21,8 +21,8 @@ public class ConcreteBlock extends BasicBlock {
 	protected static final AxisAlignedBB CONCRETE_AABB = new AxisAlignedBB(
 			0.0D, 0.0D, 0.0D, 1.0D, 0.875D, 1.0D);
 
-	public ConcreteBlock(Material materialIn, String name, String modid) {
-		super(materialIn, name, modid);
+	public ConcreteBlock(Material materialIn, String name) {
+		super(materialIn, name);
 		this.setHardness(1.8F);
 		this.setHarvestLevel("pickaxe", 0);
 	}

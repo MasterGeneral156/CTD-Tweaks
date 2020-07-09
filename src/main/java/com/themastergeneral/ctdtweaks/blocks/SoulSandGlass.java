@@ -24,9 +24,8 @@ public class SoulSandGlass extends BlockGlass implements ItemModelProvider,
 	protected String name;
 	protected String modid;
 
-	public SoulSandGlass(Material materialIn, boolean ignoreSimilarity,
-			String name, String modid) {
-		super(materialIn, ignoreSimilarity);
+	public SoulSandGlass(Material materialIn, String name) {
+		super(materialIn, false);
 		this.name = name;
 		this.modid = modid;
 		this.setUnlocalizedName(name);

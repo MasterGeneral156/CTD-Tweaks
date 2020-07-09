@@ -12,8 +12,8 @@ import com.themastergeneral.ctdtweaks.items.ModItems;
 public class BasicBlock extends CTDBlock {
 	protected String name;
 
-	public BasicBlock(Material materialIn, String name, String modid) {
-		super(materialIn, name, modid);
+	public BasicBlock(Material materialIn, String name) {
+		super(materialIn, name, CTDTweaks.MODID);
 		this.setCreativeTab(CTDTweaks.creativeTab);
 	}
 }
