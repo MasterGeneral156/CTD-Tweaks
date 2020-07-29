@@ -19,25 +19,31 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class SpecialArmor extends BasicArmor {
 	private World world;
 
-	public SpecialArmor(String name, ArmorMaterial materialIn,
-			int renderIndexIn, EntityEquipmentSlot equipmentSlotIn) {
+	public SpecialArmor(String name, ArmorMaterial materialIn, int renderIndexIn, EntityEquipmentSlot equipmentSlotIn) 
+	{
 		super(name, materialIn, renderIndexIn, equipmentSlotIn);
 	}
 
 	@Override
-	public void onArmorTick(World world, EntityPlayer player,
-			ItemStack itemStack) {
-		if (itemStack.getItem() == ModItems.nightvision) {
-			player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,
-					300, 0, true, false));
-		}
-		if (itemStack.getItem() == ModItems.goodbyeboots) {
-			if (player.capabilities.isCreativeMode) {
-				player.setGameType(GameType.SURVIVAL);
+	public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) 
+	{
+		if (!world.isRemote)
+		{
+			if (itemStack.getItem() == ModItems.nightvision) 
+			{
+				player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 300, 0, true, false));
 			}
-			player.addPotionEffect(new PotionEffect(MobEffects.LEVITATION, 100,
-					50, true, false));
-			player.inventory.removeStackFromSlot(36);
+			if (itemStack.getItem() == ModItems.goodbyeboots) 
+			{
+				if (player.capabilities.isCreativeMode) 
+				{
+					player.setGameType(GameType.SURVIVAL);
+				}
+				int dmg = itemStack.getItemDamage();
+				player.addPotionEffect(new PotionEffect(MobEffects.LEVITATION, 100, 50, true, false));
+				player.inventory.decrStackSize(36, 1);
+				player.inventory.addItemStackToInventory(new ItemStack(ModItems.goodbyeboots, 1,  dmg + 1));
+			}
 		}
 	}
 }
