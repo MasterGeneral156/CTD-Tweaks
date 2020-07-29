@@ -1,9 +1,11 @@
 package com.themastergeneral.ctdtweaks.items.baubles.rings;
 
+import com.themastergeneral.ctdtweaks.CTDTweaks;
 import com.themastergeneral.ctdtweaks.config.Config;
 import com.themastergeneral.ctdtweaks.items.baubles.BasicRing;
 
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.init.MobEffects;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.PotionEffect;
@@ -14,8 +16,22 @@ public class RingSpeed extends BasicRing {
 	}
 
 	@Override
-	public void onWornTick(ItemStack stack, EntityLivingBase entity) {
-		entity.addPotionEffect(new PotionEffect(MobEffects.SPEED, 20,
-				Config.speedringmodifier - 1, true, false));
-	}
+    public void onEquipped(ItemStack itemstack, EntityLivingBase entity)
+    {
+        double currentSpeed = entity.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).getAttributeValue();
+        entity.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(currentSpeed + 0.1D);
+    }
+	
+	@Override
+    public void onUnequipped(ItemStack itemstack, EntityLivingBase entity)
+    {
+		double currentSpeed = entity.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).getAttributeValue();
+        entity.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(currentSpeed - 0.1D);
+    }
+	
+	@Override
+    public void onWornTick(ItemStack itemstack, EntityLivingBase player)
+    {
+		
+    }
 }
