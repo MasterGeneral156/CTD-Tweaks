@@ -29,6 +29,6 @@ public class AmuletWaterBreathing extends BasicAmulet {
 	@Override
 	public void addInformation(ItemStack stack, @Nullable World worldIn,
 			List<String> tooltip, ITooltipFlag flagIn) {
-		tooltip.add(1, "Allows breathing underwater.");
+		tooltip.add("Allows breathing underwater.");
 	}
 }
