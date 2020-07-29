@@ -28,10 +28,4 @@ public class RingSpeed extends BasicRing {
 		double currentSpeed = entity.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).getAttributeValue();
         entity.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(currentSpeed - 0.1D);
     }
-	
-	@Override
-    public void onWornTick(ItemStack itemstack, EntityLivingBase player)
-    {
-		
-    }
 }
