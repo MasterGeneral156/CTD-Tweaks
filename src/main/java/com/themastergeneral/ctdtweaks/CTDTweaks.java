@@ -22,7 +22,7 @@ public class CTDTweaks {
 	public static final String MODID = "ctdtweaks";
 	public static final String MODNAME = "CTD Tweaks";
 	public static final String VERSION = "1.10.0";
-	public static final String DEPENDENCIES = "required-after:baubles;required-after:ctdcore@[1.4.1,];";
+	public static final String DEPENDENCIES = "required-after:baubles;required-after:ctdcore@[1.4.2,];";
 	public static final String updateJSON = "https://raw.githubusercontent.com/MasterGeneral156/Version/master/CTD-Tweaks.json";
 	public static final String MCVersion = "1.12.2";
 	public static final String FingerPrint = "b50fe22651b9d97d9d6631514a6a57cd6174b0dc";
