@@ -9,6 +9,7 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
 import net.minecraft.potion.PotionEffect;
@@ -24,7 +25,7 @@ public class ConcreteBlock extends BasicBlock {
 	public ConcreteBlock(Material materialIn, String name) {
 		super(materialIn, name);
 		this.setHardness(1.8F);
-		this.setHarvestLevel("pickaxe", 0);
+		this.setHarvestLevel("pickaxe", 1);
 	}
 
 	@Nullable
@@ -34,12 +35,9 @@ public class ConcreteBlock extends BasicBlock {
 	}
 
 	@Override
-	public void onEntityCollidedWithBlock(World worldIn, BlockPos pos,
-			IBlockState state, Entity entityIn) {
-		if (entityIn instanceof EntityLivingBase) {
-			((EntityLivingBase) entityIn).addPotionEffect(new PotionEffect(
-					MobEffects.SPEED, 20, 2, true, false));
-		}
+	public void onEntityCollidedWithBlock(World worldIn, BlockPos pos, IBlockState state, Entity entityIn) {
+		entityIn.motionX *= 1.1D;
+        entityIn.motionZ *= 1.1D;
 	}
 
 }
