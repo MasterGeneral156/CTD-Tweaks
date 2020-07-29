@@ -12,7 +12,6 @@ public class Config {
 
 	// This values below you can access elsewhere in your mod:
 	public static int hasteringmodifier = 2;
-	public static int speedringmodifier = 2;
 	public static int drillMiningLevel = 4;
 	public static int witherFuelBurn = 56000;
 	public static int combatcoredurability = 64;
@@ -47,9 +46,6 @@ public class Config {
 		hasteringmodifier = cfg.getInt("Haste Ring Modifier", CATEGORY_GENERAL,
 				hasteringmodifier, 1, Integer.MAX_VALUE,
 				"What level of Haste should the ring give?");
-		speedringmodifier = cfg.getInt("Speed Ring Modifier", CATEGORY_GENERAL,
-				speedringmodifier, 1, Integer.MAX_VALUE,
-				"What level of Speed should the ring give?");
 		combatcoredurability = cfg.getInt("Combat Core Maximum Users",
 				CATEGORY_GENERAL, combatcoredurability, 1, Integer.MAX_VALUE,
 				"How many uses before breaking");
