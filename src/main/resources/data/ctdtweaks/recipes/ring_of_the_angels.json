@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "ctdtweaks:ring_of_the_angels",
+    "pattern": [
+        "GES",
+        "ECE",
+		"SES"
+    ],
+    "key": {
+		"G": { "item": "minecraft:elytra" },
+		"E": { "item": "ctdtweaks:gold_ingot_enchanted" },
+		"S": { "item": "minecraft:shulker_shell" },
+		"C": { "item": "ctdtweaks:combat_core", "data": 32767 }
+    },
+    "result": {
+        "item": "ctdtweaks:ring_of_the_angels"
+    }
+}
