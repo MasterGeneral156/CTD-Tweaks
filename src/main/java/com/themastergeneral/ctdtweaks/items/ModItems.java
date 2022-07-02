@@ -13,6 +13,10 @@ public class ModItems {
 	
 	public static GlintItem gold_ingot_enchanted = new GlintItem();
 	
+	public static SpeedCuriosItem ring_of_swiftness = new SpeedCuriosItem();
+	public static HasteCuriosItem ring_of_enlightened_miner = new HasteCuriosItem();
+	public static FlightCuriosItem ring_of_the_angels = new FlightCuriosItem();
+	
 	public static BaseFoodItem steamed_carrot = new BaseFoodItem(6, 0.65F);
 	
 	public static BaseDurabilityItem combat_core = new BaseDurabilityItem(128);

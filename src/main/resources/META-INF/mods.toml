@@ -20,9 +20,16 @@ authors="" #optional
 description='''
 Misc tweaks, by TheMasterGeneral and friends.'''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
-[[dependencies.examplemod]] #optional
+[[dependencies.ctdtweaks]] #optional
     modId="ctdcore" #mandatory
     mandatory=true #mandatory
     versionRange="[2.1.2,)" #mandatory
+	ordering="BEFORE"
+    side="BOTH"
+	
+[[dependencies.ctdtweaks]] #optional
+    modId="curios" #mandatory
+    mandatory=true #mandatory
+    versionRange="[1.18.2-5.0.7.1,)" #mandatory
 	ordering="BEFORE"
     side="BOTH"
