@@ -1,6 +1,0 @@
-{
-    "parent": "ctdtweaks:blocks/gothicglass",
-    "textures": {
-        "inventory": "ctdtweaks:blocks/gothicglass"
-    }
-}

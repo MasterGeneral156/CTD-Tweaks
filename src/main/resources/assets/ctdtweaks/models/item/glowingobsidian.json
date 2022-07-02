@@ -1,6 +1,0 @@
-{
-    "parent": "ctdtweaks:blocks/glowingobsidian",
-    "textures": {
-        "inventory": "ctdtweaks:blocks/glowingobsidian"
-    }
-}

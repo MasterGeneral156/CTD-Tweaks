@@ -1,6 +1,0 @@
-{
-    "parent": "ctdtweaks:blocks/fuelwitherblock",
-    "textures": {
-        "inventory": "ctdtweaks:blocks/fuelwitherblock"
-    }
-}

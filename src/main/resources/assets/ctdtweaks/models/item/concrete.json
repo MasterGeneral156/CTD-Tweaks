@@ -1,6 +1,0 @@
-{
-    "parent": "ctdtweaks:blocks/concrete",
-    "textures": {
-        "inventory": "ctdtweaks:blocks/concrete"
-    }
-}
