@@ -1,0 +1,6 @@
+{
+    "parent": "ctdtweaks:block/block_coal_wither",
+    "textures": {
+        "inventory": "ctdtweaks:block/block_coal_wither"
+    }
+}
