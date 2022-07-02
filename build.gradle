@@ -15,6 +15,10 @@ repositories {
             includeGroup "curse.maven"
         }
     }
+	
+	maven {
+        url = "https://maven.theillusivec4.top/"
+    }
 }
 apply plugin: 'net.minecraftforge.gradle'
 // Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
@@ -38,6 +42,8 @@ minecraft {
     // Default run configurations.
     runs {
         client {
+			property 'mixin.env.remapRefMap', 'true'
+			property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
             workingDirectory project.file('run')
 
             // Recommended logging data for a userdev environment
@@ -60,7 +66,9 @@ minecraft {
         }
 
         server {
-            workingDirectory project.file('run')
+            workingDirectory project.file('runServ')
+			property 'mixin.env.remapRefMap', 'true'
+			property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
 
@@ -94,6 +102,9 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 dependencies {
     minecraft 'net.minecraftforge:forge:' + project.property('forge_version')
 	implementation fg.deobf('curse.maven:ctd-core-' + project.property('ctd_core_ver'))
+	
+	runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:" + project.property('curios_ver'))
+    compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:" + project.property('curios_ver') + ":api")
 }
 
 // Example for how to get properties into the manifest for reading by the runtime..
