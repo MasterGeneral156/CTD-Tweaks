@@ -1,0 +1,9 @@
+{
+    "itemGroup.ctdtweaks": "CTD Tweaks",
+
+    "item.ctdtweaks.coal_wither": "Wither Coal",
+	"item.ctdtweaks.gold_ingot_enchanted": "Enchanted Gold Ingot",
+	
+	"block.ctdtweaks.block_coal_wither": "Block of Wither Coal",
+	"block.ctdtweaks.glowing_obsidian": "Glowing Obsidian"
+}
