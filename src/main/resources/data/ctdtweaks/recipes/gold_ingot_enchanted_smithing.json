@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "minecraft:enchanted_book"
+  },
+  "base": { 
+	"tag": "forge:storage_blocks/gold" 
+  },
+  "result": {
+    "item": "ctdtweaks:gold_ingot_enchanted",
+	"count": 9
+  }
+}
