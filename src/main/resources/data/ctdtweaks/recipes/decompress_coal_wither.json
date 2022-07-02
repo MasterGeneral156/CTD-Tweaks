@@ -1,6 +1,6 @@
 {
     "type": "minecraft:crafting_shaped",
-    "group": "ctdtweaks:block_coal_wither",
+    "group": "ctdtweaks:coal_wither",
     "pattern": [
         "W"
     ],

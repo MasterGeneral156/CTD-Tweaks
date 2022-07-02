@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "ctdtweaks:combat_core",
+    "pattern": [
+        "ABA",
+        "SDN",
+		"ACA"
+    ],
+    "key": {
+		"D": { "tag": "forge:gems/amethyst" },
+		"N": { "item": "minecraft:netherite_sword" },
+		"S": { "item": "minecraft:shield" },
+		"B": { "item": "minecraft:bow" },
+		"A": { "item": "minecraft:tipped_arrow", "data": 32767 },
+		"C": { "item": "minecraft:crossbow" }
+    },
+    "result": {
+        "item": "ctdtweaks:combat_core"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "ctdtweaks:elytra",
+    "pattern": [
+        "PSP",
+        "LSL",
+		"LSL"
+    ],
+    "key": {
+		"P": { "item": "minecraft:purpur_block" },
+		"S": { "tag": "forge:rods/wooden" },
+		"L": { "tag": "forge:leather" }
+    },
+    "result": {
+        "item": "minecraft:elytra",
+		"count": 1
+		}
+    }
+}
