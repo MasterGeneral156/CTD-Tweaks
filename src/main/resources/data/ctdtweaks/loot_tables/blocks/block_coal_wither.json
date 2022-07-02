@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+	  "name": "ctdtweaks:block_coal_wither",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ctdtweaks:block_coal_wither"
+        }
+      ]
+    }
+  ]
+}
