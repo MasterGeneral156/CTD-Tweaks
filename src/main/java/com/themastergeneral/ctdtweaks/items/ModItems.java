@@ -17,6 +17,8 @@ public class ModItems {
 	public static HasteCuriosItem ring_of_enlightened_miner = new HasteCuriosItem();
 	public static FlightCuriosItem ring_of_the_angels = new FlightCuriosItem();
 	
+	public static CobbleGenItem pocket_cobble_generator = new CobbleGenItem();
+	
 	public static BaseFoodItem steamed_carrot = new BaseFoodItem(6, 0.65F);
 	
 	public static BaseDurabilityItem combat_core = new BaseDurabilityItem(128);
