@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "ctdtweaks:block_coal_wither",
+    "pattern": [
+        "W"
+    ],
+    "key": {
+		"W": { "item": "ctdtweaks:block_coal_wither" }
+    },
+    "result": {
+        "item": "ctdtweaks:coal_wither",
+		"count": 9
+    }
+}
