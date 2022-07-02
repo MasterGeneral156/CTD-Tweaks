@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "tag": "forge:dusts/glowstone"
+  },
+  "base": { 
+	"tag": "forge:obsidian" 
+  },
+  "result": {
+    "item": "ctdtweaks:glowing_obsidian"
+  }
+}
