@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "ctdtweaks:amulet_of_extinguish",
+    "pattern": [
+        "SSS",
+        "S S",
+		"BEB"
+    ],
+    "key": {
+		"B": { "tag": "forge:rods/blaze" },
+		"E": { "item": "ctdtweaks:gold_ingot_enchanted" },
+		"S": { "tag": "forge:string" }
+    },
+    "result": {
+        "item": "ctdtweaks:amulet_of_extinguish"
+    }
+}
