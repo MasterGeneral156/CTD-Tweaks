@@ -9,6 +9,7 @@ import com.themastergeneral.ctdtweaks.CTDTweaks;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.stats.Stats;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -53,6 +54,7 @@ public class CobbleGenItem extends CTDItem
 						if (this.ticksToGen == this.genRate)
 						{
 							player.addItem(new ItemStack(Blocks.COBBLESTONE));
+							player.awardStat(Stats.ITEM_USED.get(this));
 							this.ticksToGen = 0;
 						}
 					}
