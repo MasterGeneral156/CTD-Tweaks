@@ -16,6 +16,7 @@ public class ModItems {
 	public static SpeedCuriosItem ring_of_swiftness = new SpeedCuriosItem();
 	public static HasteCuriosItem ring_of_enlightened_miner = new HasteCuriosItem();
 	public static FlightCuriosItem ring_of_the_angels = new FlightCuriosItem();
+	public static FlameRetardantCurios amulet_of_extinguish = new FlameRetardantCurios();
 	
 	public static CobbleGenItem pocket_cobble_generator = new CobbleGenItem();
 	

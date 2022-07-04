@@ -16,6 +16,7 @@ public class ItemRegistry {
 	public static final RegistryObject<Item> ring_of_switftness = ITEMS.register("ring_of_swiftness", () -> ModItems.ring_of_swiftness);
 	public static final RegistryObject<Item> ring_of_enlightened_miner = ITEMS.register("ring_of_enlightened_miner", () -> ModItems.ring_of_enlightened_miner);
 	public static final RegistryObject<Item> ring_of_the_angels = ITEMS.register("ring_of_the_angels", () -> ModItems.ring_of_the_angels);
+	public static final RegistryObject<Item> amulet_of_extinguish = ITEMS.register("amulet_of_extinguish", () -> ModItems.amulet_of_extinguish);
 	public static final RegistryObject<Item> pocket_cobble_generator = ITEMS.register("pocket_cobble_generator", () -> ModItems.pocket_cobble_generator);
 	
 	
