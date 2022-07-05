@@ -30,7 +30,6 @@ public class CobbleGenItem extends CTDItem
 
 	protected int maxCobble = 64;	//Max on player
 	protected int genRate = 40;		//Ticks to gen cobble
-	int ticksToGen = 0;
 	
 	@Override
 	public void inventoryTick(ItemStack stack, Level level, Entity entity, int int1, boolean bool1)
@@ -50,18 +49,13 @@ public class CobbleGenItem extends CTDItem
 					//Check player to ensure we're not giving too much cobble.
 					if (cobble < this.maxCobble)
 					{
-						this.ticksToGen++;
-						if (this.ticksToGen == this.genRate)
+						if (!player.getCooldowns().isOnCooldown(stack.getItem()))
 						{
 							player.addItem(new ItemStack(Blocks.COBBLESTONE));
 							player.awardStat(Stats.ITEM_USED.get(this));
-							this.ticksToGen = 0;
+							player.getCooldowns().addCooldown(stack.getItem(), genRate);
 						}
 					}
-				}
-				else
-				{
-					this.ticksToGen = 0;
 				}
 			}
 		}
