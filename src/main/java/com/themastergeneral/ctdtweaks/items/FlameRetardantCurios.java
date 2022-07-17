@@ -1,7 +1,5 @@
 package com.themastergeneral.ctdtweaks.items;
 
-import java.util.Random;
-
 import com.themastergeneral.ctdcore.item.CTDItem;
 import com.themastergeneral.ctdtweaks.CTDTweaks;
 
@@ -17,7 +15,6 @@ public class FlameRetardantCurios extends CTDItem implements ICurioItem {
 	public FlameRetardantCurios() 
 	{
 		super(new Item.Properties().tab(CTDTweaks.CreativeTab).stacksTo(1).defaultDurability(64));
-		// TODO Auto-generated constructor stub
 	}
 	
 	@Override
