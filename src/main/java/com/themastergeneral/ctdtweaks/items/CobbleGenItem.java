@@ -20,8 +20,10 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
+import top.theillusivec4.curios.api.SlotContext;
+import top.theillusivec4.curios.api.type.capability.ICurioItem;
 
-public class CobbleGenItem extends CTDItem
+public class CobbleGenItem extends CTDItem implements ICurioItem
 {
 
 	public CobbleGenItem() {
@@ -39,6 +41,37 @@ public class CobbleGenItem extends CTDItem
 			if (entity instanceof Player)
 			{
 				Player player = (Player) entity;
+				int lava = player.getInventory().countItem(Items.LAVA_BUCKET);
+				int water = player.getInventory().countItem(Items.WATER_BUCKET);
+				int cobble = player.getInventory().countItem(Blocks.COBBLESTONE.asItem());
+				
+				//Check that player has lava and water buckets in inventory
+				if ((water > 0) && (lava > 0))
+				{
+					//Check player to ensure we're not giving too much cobble.
+					if (cobble < this.maxCobble)
+					{
+						if (!player.getCooldowns().isOnCooldown(stack.getItem()))
+						{
+							player.addItem(new ItemStack(Blocks.COBBLESTONE));
+							player.awardStat(Stats.ITEM_USED.get(this));
+							player.getCooldowns().addCooldown(stack.getItem(), genRate);
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	@Override
+	public void curioTick(SlotContext slotContext, ItemStack stack) 
+	{
+		Entity wearer = slotContext.entity();
+		if (!wearer.getLevel().isClientSide)
+		{
+			if (wearer instanceof Player)
+			{
+				Player player = (Player) wearer;
 				int lava = player.getInventory().countItem(Items.LAVA_BUCKET);
 				int water = player.getInventory().countItem(Items.WATER_BUCKET);
 				int cobble = player.getInventory().countItem(Blocks.COBBLESTONE.asItem());
