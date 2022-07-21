@@ -2,6 +2,7 @@ package com.themastergeneral.ctdtweaks;
 
 import com.mojang.logging.LogUtils;
 import com.themastergeneral.ctdtweaks.blocks.BlockRegistry;
+import com.themastergeneral.ctdtweaks.config.ModConfigs;
 import com.themastergeneral.ctdtweaks.items.ItemRegistry;
 
 import net.minecraft.world.item.CreativeModeTab;
@@ -36,6 +37,7 @@ public class CTDTweaks
         
         ItemRegistry.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
         BlockRegistry.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        ModConfigs.registerConfig();
     }
     
     private void setup(final FMLCommonSetupEvent event)

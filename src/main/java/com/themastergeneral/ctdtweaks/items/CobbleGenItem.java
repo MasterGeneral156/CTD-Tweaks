@@ -6,6 +6,7 @@ import javax.annotation.Nullable;
 
 import com.themastergeneral.ctdcore.item.CTDItem;
 import com.themastergeneral.ctdtweaks.CTDTweaks;
+import com.themastergeneral.ctdtweaks.config.PocketCobbleConfig;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
@@ -30,8 +31,8 @@ public class CobbleGenItem extends CTDItem implements ICurioItem
 		super(new Item.Properties().tab(CTDTweaks.CreativeTab).stacksTo(1));
 	}
 
-	protected int maxCobble = 64;	//Max on player
-	protected int genRate = 40;		//Ticks to gen cobble
+	protected int maxCobble = PocketCobbleConfig.MAX_STACK.get();	//Max on player
+	protected int genRate = PocketCobbleConfig.GEN_TICKS.get();		//Ticks to gen cobble
 	
 	@Override
 	public void inventoryTick(ItemStack stack, Level level, Entity entity, int int1, boolean bool1)
@@ -46,7 +47,7 @@ public class CobbleGenItem extends CTDItem implements ICurioItem
 				int cobble = player.getInventory().countItem(Blocks.COBBLESTONE.asItem());
 				
 				//Check that player has lava and water buckets in inventory
-				if ((water > 0) && (lava > 0))
+				if (((water > 0) && (lava > 0)) || (!PocketCobbleConfig.REQUIRE_BUCKETS.get()))
 				{
 					//Check player to ensure we're not giving too much cobble.
 					if (cobble < this.maxCobble)
@@ -77,7 +78,7 @@ public class CobbleGenItem extends CTDItem implements ICurioItem
 				int cobble = player.getInventory().countItem(Blocks.COBBLESTONE.asItem());
 				
 				//Check that player has lava and water buckets in inventory
-				if ((water > 0) && (lava > 0))
+				if (((water > 0) && (lava > 0)) || (!PocketCobbleConfig.REQUIRE_BUCKETS.get()))
 				{
 					//Check player to ensure we're not giving too much cobble.
 					if (cobble < this.maxCobble)
@@ -99,6 +100,7 @@ public class CobbleGenItem extends CTDItem implements ICurioItem
 	public void appendHoverText(ItemStack stack, @Nullable Level worldIn, List<Component> tooltip, TooltipFlag flagIn) 
 	{
 		tooltip.add(new TranslatableComponent("Generates 1 Cobblestone every " + genRate + " ticks, up to a max of " + maxCobble + "."));
-		tooltip.add(new TranslatableComponent("§4Must have Water and Lava buckets in inventory!!"));
+		if (PocketCobbleConfig.REQUIRE_BUCKETS.get())
+			tooltip.add(new TranslatableComponent("§4Must have Water and Lava buckets in inventory!!"));
 	}
 }
