@@ -5,7 +5,7 @@ license="https://github.com/MasterGeneral156/CTD-Tweaks/blob/1.18/LICENSE"
 # A list of mods - how many allowed here is determined by the individual mod loader
 [[mods]] #mandatory
 modId="ctdtweaks" #mandatory
-version="2.0.2" #mandatory
+version="2.1.0" #mandatory
 displayName="CTD Tweaks" #mandatory
 updateJSONURL="https://raw.githubusercontent.com/MasterGeneral156/Version/master/CTD-Tweaks.json" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI
