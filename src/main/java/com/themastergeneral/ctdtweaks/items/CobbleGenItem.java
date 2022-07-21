@@ -30,9 +30,6 @@ public class CobbleGenItem extends CTDItem implements ICurioItem
 	public CobbleGenItem() {
 		super(new Item.Properties().tab(CTDTweaks.CreativeTab).stacksTo(1));
 	}
-
-	protected int maxCobble = PocketCobbleConfig.MAX_STACK.get();	//Max on player
-	protected int genRate = PocketCobbleConfig.GEN_TICKS.get();		//Ticks to gen cobble
 	
 	@Override
 	public void inventoryTick(ItemStack stack, Level level, Entity entity, int int1, boolean bool1)
@@ -50,13 +47,13 @@ public class CobbleGenItem extends CTDItem implements ICurioItem
 				if (((water > 0) && (lava > 0)) || (!PocketCobbleConfig.REQUIRE_BUCKETS.get()))
 				{
 					//Check player to ensure we're not giving too much cobble.
-					if (cobble < this.maxCobble)
+					if (cobble < PocketCobbleConfig.MAX_STACK.get())
 					{
 						if (!player.getCooldowns().isOnCooldown(stack.getItem()))
 						{
 							player.addItem(new ItemStack(Blocks.COBBLESTONE));
 							player.awardStat(Stats.ITEM_USED.get(this));
-							player.getCooldowns().addCooldown(stack.getItem(), genRate);
+							player.getCooldowns().addCooldown(stack.getItem(), PocketCobbleConfig.GEN_TICKS.get());
 						}
 					}
 				}
@@ -81,13 +78,13 @@ public class CobbleGenItem extends CTDItem implements ICurioItem
 				if (((water > 0) && (lava > 0)) || (!PocketCobbleConfig.REQUIRE_BUCKETS.get()))
 				{
 					//Check player to ensure we're not giving too much cobble.
-					if (cobble < this.maxCobble)
+					if (cobble < PocketCobbleConfig.MAX_STACK.get())
 					{
 						if (!player.getCooldowns().isOnCooldown(stack.getItem()))
 						{
 							player.addItem(new ItemStack(Blocks.COBBLESTONE));
 							player.awardStat(Stats.ITEM_USED.get(this));
-							player.getCooldowns().addCooldown(stack.getItem(), genRate);
+							player.getCooldowns().addCooldown(stack.getItem(), PocketCobbleConfig.GEN_TICKS.get());
 						}
 					}
 				}
@@ -99,7 +96,7 @@ public class CobbleGenItem extends CTDItem implements ICurioItem
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack stack, @Nullable Level worldIn, List<Component> tooltip, TooltipFlag flagIn) 
 	{
-		tooltip.add(new TranslatableComponent("Generates 1 Cobblestone every " + genRate + " ticks, up to a max of " + maxCobble + "."));
+		tooltip.add(new TranslatableComponent("Generates 1 Cobblestone every " + PocketCobbleConfig.GEN_TICKS.get() + " ticks, up to a max of " + PocketCobbleConfig.MAX_STACK.get() + "."));
 		if (PocketCobbleConfig.REQUIRE_BUCKETS.get())
 			tooltip.add(new TranslatableComponent("§4Must have Water and Lava buckets in inventory!!"));
 	}
