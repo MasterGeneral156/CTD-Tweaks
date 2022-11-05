@@ -19,6 +19,8 @@ public class ModItems {
 	public static FlightCuriosItem ring_of_the_angels = new FlightCuriosItem();
 	public static FlameRetardantCurios amulet_of_extinguish = new FlameRetardantCurios();
 	
+	public static TeleporterItem personal_teleporter = new TeleporterItem(71);
+	
 	public static CobbleGenItem pocket_cobble_generator = new CobbleGenItem();
 	
 	public static BaseFoodItem steamed_carrot = new BaseFoodItem(6, 0.65F);
@@ -27,4 +29,5 @@ public class ModItems {
 	
 	public static ModBlockItems block_coal_wither = new ModBlockItems(ModBlocks.block_coal_wither);
 	public static ModBlockItems glowing_obsidian = new ModBlockItems(ModBlocks.glowing_obsidian);
+	
 }
