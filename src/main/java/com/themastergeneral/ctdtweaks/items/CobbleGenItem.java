@@ -36,7 +36,6 @@ import com.themastergeneral.ctdtweaks.CTDTweaks;
 import com.themastergeneral.ctdtweaks.config.PocketCobbleConfig;
 
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
@@ -123,8 +122,8 @@ public class CobbleGenItem extends CTDItem implements ICurioItem
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack stack, @Nullable Level worldIn, List<Component> tooltip, TooltipFlag flagIn) 
 	{
-		tooltip.add(new TranslatableComponent("Generates 1 Cobblestone every " + PocketCobbleConfig.GEN_TICKS.get() + " ticks, up to a max of " + PocketCobbleConfig.MAX_STACK.get() + "."));
+		tooltip.add(Component.literal("Generates 1 Cobblestone every " + PocketCobbleConfig.GEN_TICKS.get() + " ticks, up to a max of " + PocketCobbleConfig.MAX_STACK.get() + "."));
 		if (PocketCobbleConfig.REQUIRE_BUCKETS.get())
-			tooltip.add(new TranslatableComponent("§4Must have Water and Lava buckets in inventory!!"));
+			tooltip.add(Component.literal("§4Must have Water and Lava buckets in inventory!!"));
 	}
 }

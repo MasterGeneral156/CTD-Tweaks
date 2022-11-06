@@ -39,7 +39,7 @@ public class BaseDurabilityItem extends CTDItem {
 	}
 	
 	@Override
-	public ItemStack getContainerItem(ItemStack itemStack)
+	public ItemStack getCraftingRemainingItem(ItemStack itemStack)
     {
 		ItemStack newStack = itemStack.copy();
 		newStack.setDamageValue(newStack.getDamageValue() + 1);
@@ -48,7 +48,7 @@ public class BaseDurabilityItem extends CTDItem {
     }
 	
 	@Override
-	public boolean hasContainerItem(ItemStack stack)
+	public boolean hasCraftingRemainingItem(ItemStack stack)
     {
         return true;
     }

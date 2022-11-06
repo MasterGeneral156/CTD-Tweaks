@@ -35,8 +35,6 @@ import com.themastergeneral.ctdcore.item.CTDItem;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TextComponent;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
@@ -69,7 +67,7 @@ public class TeleporterItem extends BaseDurabilityItem {
 		if (playerIn.isCrouching())
 		{
 			setCoords(stackIn, playerIn);
-			playerIn.displayClientMessage(new TranslatableComponent("Location set."), true);
+			playerIn.displayClientMessage(Component.literal("Location set."), true);
 			playerIn.getCooldowns().addCooldown(this, 10);
 		}
 		//TP to coords in NBT
@@ -88,12 +86,12 @@ public class TeleporterItem extends BaseDurabilityItem {
 				double rposX = Math.round(stackIn.getTag().getDouble("posX") * 100.0) / 100.0;
 				double rposY = Math.round(stackIn.getTag().getDouble("posY") * 100.0) / 100.0;
 				double rposZ = Math.round(stackIn.getTag().getDouble("posZ") * 100.0) / 100.0;
-				playerIn.displayClientMessage(new TextComponent(playerIn.getCommandSenderWorld().toString()), true);
+				playerIn.displayClientMessage(Component.literal(playerIn.getCommandSenderWorld().toString()), true);
 				//playerIn.displayClientMessage(new TranslatableComponent("Teleported to X: " + rposX + " Y: " + rposY + " Z: " + rposZ + "."), true);
 			}
 			else
 			{
-				playerIn.displayClientMessage(new TranslatableComponent("Please set a location by crouching and right clicking at the same time."), true);
+				playerIn.displayClientMessage(Component.literal("Please set a location by crouching and right clicking at the same time."), true);
 			}
 		}
 		return InteractionResultHolder.sidedSuccess(stackIn, worldIn.isClientSide());
@@ -160,7 +158,7 @@ public class TeleporterItem extends BaseDurabilityItem {
 		double posX = Math.round(stack.getTag().getDouble("posX") * 100.0) / 100.0;
 		double posY = Math.round(stack.getTag().getDouble("posY") * 100.0) / 100.0;
 		double posZ = Math.round(stack.getTag().getDouble("posZ") * 100.0) / 100.0;
-		tooltip.add(new TranslatableComponent("Location X: " + posX + " Y: " + posY + " Z: " + posZ));
+		tooltip.add(Component.literal("Location X: " + posX + " Y: " + posY + " Z: " + posZ));
 	}
 }
 
