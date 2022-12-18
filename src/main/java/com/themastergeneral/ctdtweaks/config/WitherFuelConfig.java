@@ -12,5 +12,6 @@ public class WitherFuelConfig
 		GEN_TICKS = BUILDER
 	            .comment("Burn time (in ticks)")
 	            .defineInRange("fuelTime", 560000, 1, Integer.MAX_VALUE);
+		BUILDER.pop();
 	}
 }

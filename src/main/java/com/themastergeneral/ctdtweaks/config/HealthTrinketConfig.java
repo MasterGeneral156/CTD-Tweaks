@@ -19,5 +19,6 @@ public class HealthTrinketConfig
 		HP_TIER_ONE = BUILDER.comment("How much HP does the Health Charm give (per item)").defineInRange("healthCharmHP", 5.0, 0.1, 100.0);
 		HP_TIER_TWO = BUILDER.comment("How much HP does the Enchanted Health Charm give (per item)").defineInRange("enchantedHealthCharmHP", 10.0, 0.1, 100.0);
 		HP_TIER_THREE = BUILDER.comment("How much HP does the Demonic Health Charm give (per item)").defineInRange("demonicHealthCharmHP", 20.0, 0.1, 100.0);
+		BUILDER.pop();
 	}
 }
