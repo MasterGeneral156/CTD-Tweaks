@@ -5,6 +5,11 @@ import com.themastergeneral.ctdtweaks.CTDTweaks;
 import com.themastergeneral.ctdtweaks.blocks.ModBlocks;
 import com.themastergeneral.ctdtweaks.config.WitherFuelConfig;
 import com.themastergeneral.ctdtweaks.items.blocks.ModBlockItems;
+import com.themastergeneral.ctdtweaks.items.curios.CobbleGenItem;
+import com.themastergeneral.ctdtweaks.items.curios.FlameRetardantCurios;
+import com.themastergeneral.ctdtweaks.items.curios.FlightCuriosItem;
+import com.themastergeneral.ctdtweaks.items.curios.HasteCuriosItem;
+import com.themastergeneral.ctdtweaks.items.curios.SpeedCuriosItem;
 
 import net.minecraft.world.item.Item;
 

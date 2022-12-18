@@ -1,4 +1,4 @@
-package com.themastergeneral.ctdtweaks.items;
+package com.themastergeneral.ctdtweaks.items.curios;
 
 import com.themastergeneral.ctdcore.item.CTDItem;
 import com.themastergeneral.ctdtweaks.CTDTweaks;

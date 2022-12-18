@@ -1,4 +1,4 @@
-package com.themastergeneral.ctdtweaks.items;
+package com.themastergeneral.ctdtweaks.items.curios;
 
 import java.util.List;
 
