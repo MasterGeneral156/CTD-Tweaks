@@ -7,7 +7,7 @@
 		"EEE"
     ],
     "key": {
-		"G": { "item": "ctdtweaks:health_charm" },
+		"G": { "item": "ctdtweaks:enchanted_health_charm" },
 		"E": { "tag": "forge:ingots/netherite" },
 		"C": { "item": "ctdtweaks:combat_core", "data": 32767 }
     },
