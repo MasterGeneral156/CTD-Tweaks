@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "ctdtweaks:pocket_cobble_generator"
+    "ctdtweaks:pocket_cobble_generator",
+	"ctdtweaks:health_charm",
+	"ctdtweaks:enchanted_health_charm",
+	"ctdtweaks:demonic_health_charm"
   ]
 }

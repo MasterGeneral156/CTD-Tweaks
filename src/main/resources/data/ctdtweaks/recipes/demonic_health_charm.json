@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "ctdtweaks:health_charm",
+    "pattern": [
+        "EEE",
+        "GCG",
+		"EEE"
+    ],
+    "key": {
+		"G": { "item": "ctdtweaks:health_charm" },
+		"E": { "tag": "forge:ingots/netherite" },
+		"C": { "item": "ctdtweaks:combat_core", "data": 32767 }
+    },
+    "result": {
+        "item": "ctdtweaks:demonic_health_charm"
+    }
+}

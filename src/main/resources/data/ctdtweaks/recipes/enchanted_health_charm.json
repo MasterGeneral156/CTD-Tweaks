@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "ctdtweaks:health_charm",
+    "pattern": [
+        "EEE",
+        "GCG",
+		"EEE"
+    ],
+    "key": {
+		"G": { "item": "ctdtweaks:health_charm" },
+		"E": { "item": "ctdtweaks:gold_ingot_enchanted" },
+		"C": { "item": "ctdtweaks:combat_core", "data": 32767 }
+    },
+    "result": {
+        "item": "ctdtweaks:enchanted_health_charm"
+    }
+}

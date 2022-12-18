@@ -10,6 +10,7 @@ public class ModConfigs {
 		ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
 		PocketCobbleConfig.build(BUILDER);
 		WitherFuelConfig.build(BUILDER);
+		HealthTrinketConfig.build(BUILDER);
 		ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, BUILDER.build(), "ctd/ctd-tweaks.toml");
 	}
 	

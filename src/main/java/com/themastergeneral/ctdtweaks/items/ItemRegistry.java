@@ -19,6 +19,9 @@ public class ItemRegistry {
 	public static final RegistryObject<Item> amulet_of_extinguish = ITEMS.register("amulet_of_extinguish", () -> ModItems.amulet_of_extinguish);
 	public static final RegistryObject<Item> pocket_cobble_generator = ITEMS.register("pocket_cobble_generator", () -> ModItems.pocket_cobble_generator);
 	public static final RegistryObject<Item> personal_teleporter = ITEMS.register("personal_teleporter", () -> ModItems.personal_teleporter);
+	public static final RegistryObject<Item> health_charm = ITEMS.register("health_charm", () -> ModItems.health_charm);
+	public static final RegistryObject<Item> enchanted_health_charm = ITEMS.register("enchanted_health_charm", () -> ModItems.enchanted_health_charm);
+	public static final RegistryObject<Item> demonic_health_charm = ITEMS.register("demonic_health_charm", () -> ModItems.demonic_health_charm);
 	
 	
 	//Block Items

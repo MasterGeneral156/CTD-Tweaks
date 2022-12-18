@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "ctdtweaks:health_charm",
+    "pattern": [
+        "GEG",
+        "ECE",
+		"GEG"
+    ],
+    "key": {
+		"G": { "item": "minecraft:heart_of_the_sea" },
+		"E": { "item": "ctdtweaks:gold_ingot_enchanted" },
+		"C": { "item": "ctdtweaks:combat_core", "data": 32767 }
+    },
+    "result": {
+        "item": "ctdtweaks:health_charm"
+    }
+}
