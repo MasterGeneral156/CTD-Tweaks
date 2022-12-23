@@ -36,11 +36,12 @@ public class SunnBlockItem extends CTDItem implements ICurioItem
 					stack.hurtAndBreak(1, player, (p_41300_) -> {
 		                  p_41300_.broadcastBreakEvent(Player.getEquipmentSlotForItem(stack));
 		               });
-					player.getCooldowns().addCooldown(stack.getItem(), 100);
+					player.getCooldowns().addCooldown(stack.getItem(), 102);	//might just be better to have the cooldown longer 
+																				//just to have the game internally clear the last 
+																				//damage source? idfk
 					float currentHP = player.getHealth();
 					float damageDealt = startHP - currentHP;
 					player.getLastHurtByMob().hurt(DamageSource.playerAttack(player), damageDealt);
-					player.setLastHurtByMob((LivingEntity) null);	//may fix?
 				}
 			}
 		}
