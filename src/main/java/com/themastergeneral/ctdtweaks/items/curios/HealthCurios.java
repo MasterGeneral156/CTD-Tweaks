@@ -41,7 +41,7 @@ public class HealthCurios extends CTDItem implements ICurioItem {
 		if (wearer instanceof Player)
 		{
 			Player player = (Player) wearer;
-			double hp = player.getMaxHealth() - (stack.getCount() * this.healthGain);
+			double hp = player.getMaxHealth() - (prevStack.getCount() * this.healthGain);
 			player.getAttribute(Attributes.MAX_HEALTH).setBaseValue(hp);
 		}
 	}
