@@ -1,5 +1,6 @@
 package com.themastergeneral.ctdtweaks.items;
 
+import com.themastergeneral.ctdcore.item.CTDDurabilityItem;
 import com.themastergeneral.ctdcore.item.CTDFuelItem;
 import com.themastergeneral.ctdtweaks.CTDTweaks;
 import com.themastergeneral.ctdtweaks.blocks.ModBlocks;
@@ -37,7 +38,7 @@ public class ModItems {
 	
 	public static BaseFoodItem steamed_carrot = new BaseFoodItem(6, 0.65F);
 	
-	public static BaseDurabilityItem combat_core = new BaseDurabilityItem(128);
+	public static CTDDurabilityItem combat_core = new CTDDurabilityItem(new Item.Properties().tab(CTDTweaks.CreativeTab), 128);
 	
 	public static ModBlockItems block_coal_wither = new ModBlockItems(ModBlocks.block_coal_wither);
 	public static ModBlockItems glowing_obsidian = new ModBlockItems(ModBlocks.glowing_obsidian);

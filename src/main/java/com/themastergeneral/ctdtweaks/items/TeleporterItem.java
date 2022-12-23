@@ -4,7 +4,9 @@ import java.util.List;
 
 import javax.annotation.Nullable;
 
+import com.themastergeneral.ctdcore.item.CTDDurabilityItem;
 import com.themastergeneral.ctdcore.item.CTDItem;
+import com.themastergeneral.ctdtweaks.CTDTweaks;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
@@ -21,11 +23,11 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class TeleporterItem extends BaseDurabilityItem {
+public class TeleporterItem extends CTDDurabilityItem {
 	
 	public TeleporterItem(int durability) 
 	{
-		super(durability);
+		super(new Item.Properties().tab(CTDTweaks.CreativeTab), durability);
 	}
 
 	@Override
@@ -54,7 +56,7 @@ public class TeleporterItem extends BaseDurabilityItem {
 			if (validTeleport(posX, posY, posZ))
 			{
 				stackIn.hurtAndBreak(1, playerIn, (p_41300_) -> {
-	                  p_41300_.broadcastBreakEvent(playerIn.getEquipmentSlotForItem(stackIn));
+	                  p_41300_.broadcastBreakEvent(Player.getEquipmentSlotForItem(stackIn));
 	               });
 				playerIn.getCooldowns().addCooldown(this, 200);
 				playerIn.setPos(posX, posY, posZ);
@@ -82,7 +84,7 @@ public class TeleporterItem extends BaseDurabilityItem {
 		//compoundnbt.putString("posZ", playerIn.getLevel().toString());
 		stackIn.setTag(compoundnbt);
 		stackIn.hurtAndBreak(1, playerIn, (p_41300_) -> {
-            p_41300_.broadcastBreakEvent(playerIn.getEquipmentSlotForItem(stackIn));
+            p_41300_.broadcastBreakEvent(Player.getEquipmentSlotForItem(stackIn));
          });
 	}
 	
