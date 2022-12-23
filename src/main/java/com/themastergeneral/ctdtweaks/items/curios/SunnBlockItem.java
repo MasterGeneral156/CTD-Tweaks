@@ -31,7 +31,7 @@ public class SunnBlockItem extends CTDItem implements ICurioItem
 			Player player = (Player) wearer;
 			if (!player.getCooldowns().isOnCooldown(stack.getItem()))
 			{
-				if (player.getLastHurtByMob().isAlive())
+				if (player.getLastHurtByMob() != null)
 				{
 					stack.hurtAndBreak(1, player, (p_41300_) -> {
 		                  p_41300_.broadcastBreakEvent(Player.getEquipmentSlotForItem(stack));
