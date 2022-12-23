@@ -40,6 +40,7 @@ public class SunnBlockItem extends CTDItem implements ICurioItem
 					float currentHP = player.getHealth();
 					float damageDealt = startHP - currentHP;
 					player.getLastHurtByMob().hurt(DamageSource.playerAttack(player), damageDealt);
+					player.setLastHurtByMob((LivingEntity) null);	//may fix?
 				}
 			}
 		}
