@@ -22,7 +22,7 @@ public class ItemRegistry {
 	public static final RegistryObject<Item> health_charm = ITEMS.register("health_charm", () -> ModItems.health_charm);
 	public static final RegistryObject<Item> enchanted_health_charm = ITEMS.register("enchanted_health_charm", () -> ModItems.enchanted_health_charm);
 	public static final RegistryObject<Item> demonic_health_charm = ITEMS.register("demonic_health_charm", () -> ModItems.demonic_health_charm);
-	
+	public static final RegistryObject<Item> sunn_block_charm = ITEMS.register("sunn_block_charm", () -> ModItems.sunn_block_charm);
 	
 	//Block Items
 	public static final RegistryObject<Item> block_coal_wither = ITEMS.register("block_coal_wither", () -> ModItems.block_coal_wither);

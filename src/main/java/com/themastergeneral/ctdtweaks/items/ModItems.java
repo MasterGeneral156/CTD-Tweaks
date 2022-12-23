@@ -12,6 +12,7 @@ import com.themastergeneral.ctdtweaks.items.curios.FlightCuriosItem;
 import com.themastergeneral.ctdtweaks.items.curios.HasteCuriosItem;
 import com.themastergeneral.ctdtweaks.items.curios.HealthCurios;
 import com.themastergeneral.ctdtweaks.items.curios.SpeedCuriosItem;
+import com.themastergeneral.ctdtweaks.items.curios.SunnBlockItem;
 
 import net.minecraft.world.item.Item;
 
@@ -28,6 +29,7 @@ public class ModItems {
 	public static HealthCurios health_charm = new HealthCurios(HealthTrinketConfig.HP_TIER_ONE.get());
 	public static HealthCurios enchanted_health_charm = new HealthCurios(HealthTrinketConfig.HP_TIER_TWO.get());
 	public static HealthCurios demonic_health_charm = new HealthCurios(HealthTrinketConfig.HP_TIER_THREE.get());
+	public static SunnBlockItem sunn_block_charm = new SunnBlockItem();
 	
 	public static TeleporterItem personal_teleporter = new TeleporterItem(71);
 	
