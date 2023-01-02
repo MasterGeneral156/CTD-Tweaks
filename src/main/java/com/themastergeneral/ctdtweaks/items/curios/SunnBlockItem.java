@@ -31,17 +31,21 @@ public class SunnBlockItem extends CTDItem implements ICurioItem
 			Player player = (Player) wearer;
 			if (!player.getCooldowns().isOnCooldown(stack.getItem()))
 			{
-				if (player.getLastDamageSource().getEntity() instanceof LivingEntity)
+				if (player.getLastDamageSource() != null)	//null check
 				{
-					stack.hurtAndBreak(1, player, (p_41300_) -> {
-		                  p_41300_.broadcastBreakEvent(Player.getEquipmentSlotForItem(stack));
-		               });
-					player.getCooldowns().addCooldown(stack.getItem(), 102);	//might just be better to have the cooldown longer 
-																				//just to have the game internally clear the last 
-																				//damage source? idfk
-					float currentHP = player.getHealth();
-					float damageDealt = startHP - currentHP;
-					player.getLastDamageSource().getEntity().hurt(player.getLastDamageSource(), damageDealt);
+					DamageSource playerDmgd = player.getLastDamageSource();
+					if (playerDmgd.getEntity() instanceof LivingEntity && playerDmgd.getEntity().isAlive())	//make sure dmg src is entity
+					{
+						stack.hurtAndBreak(1, player, (p_41300_) -> {
+			                  p_41300_.broadcastBreakEvent(Player.getEquipmentSlotForItem(stack));
+			               });
+						player.getCooldowns().addCooldown(stack.getItem(), 102);	//might just be better to have the cooldown longer 
+																					//just to have the game internally clear the last 
+																					//damage source? idfk
+						float currentHP = player.getHealth();
+						float damageDealt = startHP - currentHP;
+						player.getLastDamageSource().getEntity().hurt(playerDmgd, damageDealt);
+					}
 				}
 			}
 		}
