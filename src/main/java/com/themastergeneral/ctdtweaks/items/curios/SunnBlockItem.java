@@ -31,7 +31,7 @@ public class SunnBlockItem extends CTDItem implements ICurioItem
 			Player player = (Player) wearer;
 			if (!player.getCooldowns().isOnCooldown(stack.getItem()))
 			{
-				if (player.getLastHurtByMob() != null)
+				if (player.getLastDamageSource().getEntity() instanceof LivingEntity)
 				{
 					stack.hurtAndBreak(1, player, (p_41300_) -> {
 		                  p_41300_.broadcastBreakEvent(Player.getEquipmentSlotForItem(stack));
@@ -41,7 +41,7 @@ public class SunnBlockItem extends CTDItem implements ICurioItem
 																				//damage source? idfk
 					float currentHP = player.getHealth();
 					float damageDealt = startHP - currentHP;
-					player.getLastHurtByMob().hurt(DamageSource.playerAttack(player), damageDealt);
+					player.getLastDamageSource().getEntity().hurt(player.getLastDamageSource(), damageDealt);
 				}
 			}
 		}
