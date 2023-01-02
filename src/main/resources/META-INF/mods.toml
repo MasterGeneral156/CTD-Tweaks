@@ -5,7 +5,7 @@ issueTrackerURL="https://github.com/MasterGeneral156/CTD-Tweaks/issues"
 
 [[mods]]
 modId="ctdtweaks"
-version="2.1.4"
+version="2.1.5"
 displayName="CTD Tweaks"
 updateJSONURL="https://raw.githubusercontent.com/MasterGeneral156/Version/master/CTD-Tweaks.json"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/ctd-tweaks"
