@@ -24,7 +24,7 @@ public class CTDTweaks
 {
 	public static CTDTweaks instance;
 	
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
     public static final CreativeModeTab CreativeTab = new CTDTweaksTab();
 
     public CTDTweaks()
