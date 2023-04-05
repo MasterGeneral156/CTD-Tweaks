@@ -32,7 +32,6 @@ import java.util.List;
 import javax.annotation.Nullable;
 
 import com.themastergeneral.ctdcore.item.CTDItem;
-import com.themastergeneral.ctdtweaks.CTDTweaks;
 import com.themastergeneral.ctdtweaks.config.PocketCobbleConfig;
 
 import net.minecraft.network.chat.Component;
