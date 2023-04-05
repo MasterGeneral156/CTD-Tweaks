@@ -1,11 +1,11 @@
 modLoader="javafml" #mandatory
-loaderVersion="[43,)" #mandatory
+loaderVersion="[45,)" #mandatory
 license="https://github.com/MasterGeneral156/CTD-Tweaks/blob/1.19/LICENSE"
 #issueTrackerURL="https://github.com/MasterGeneral156/CTD-Tweaks/issues" #optional
 # A list of mods - how many allowed here is determined by the individual mod loader
 [[mods]] #mandatory
 modId="ctdtweaks" #mandatory
-version="2.2.0" #mandatory
+version="2.4.0" #mandatory
 displayName="CTD Tweaks" #mandatory
 updateJSONURL="https://raw.githubusercontent.com/MasterGeneral156/Version/master/CTD-Tweaks.json" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI
@@ -30,6 +30,6 @@ Misc tweaks, by TheMasterGeneral and friends.'''
 [[dependencies.ctdtweaks]] #optional
     modId="curios" #mandatory
     mandatory=true #mandatory
-    versionRange="[1.19.2-5.0.7,)" #mandatory
+    versionRange="[1.19.4-5.1,)" #mandatory
 	ordering="BEFORE"
     side="BOTH"
