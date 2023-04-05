@@ -28,7 +28,6 @@
 package com.themastergeneral.ctdtweaks.items;
 
 import com.themastergeneral.ctdcore.item.CTDFuelItem;
-import com.themastergeneral.ctdtweaks.CTDTweaks;
 import com.themastergeneral.ctdtweaks.blocks.ModBlocks;
 import com.themastergeneral.ctdtweaks.config.WitherFuelConfig;
 import com.themastergeneral.ctdtweaks.items.blocks.ModBlockItems;

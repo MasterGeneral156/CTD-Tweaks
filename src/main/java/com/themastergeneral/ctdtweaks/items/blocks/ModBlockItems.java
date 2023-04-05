@@ -29,7 +29,6 @@ package com.themastergeneral.ctdtweaks.items.blocks;
 
 import javax.annotation.Nullable;
 
-import com.themastergeneral.ctdtweaks.CTDTweaks;
 import com.themastergeneral.ctdtweaks.config.WitherFuelConfig;
 import com.themastergeneral.ctdtweaks.items.ModItems;
 
