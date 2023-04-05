@@ -5,7 +5,7 @@
 	Website: 	https://github.com/MasterGeneral156/CTD-Tweaks
 	License:	MIT License
 
-				Copyright (c) 2022 MasterGeneral156
+				Copyright (c) 2023 MasterGeneral156
 				
 				Permission is hereby granted, free of charge, to any person obtaining a copy
 				of this software and associated documentation files (the "Software"), to deal
@@ -41,7 +41,7 @@ import top.theillusivec4.curios.api.type.capability.ICurioItem;
 public class HasteCuriosItem extends CTDItem implements ICurioItem {
 
 	public HasteCuriosItem() {
-		super(new Item.Properties().tab(CTDTweaks.CreativeTab).stacksTo(1));
+		super(new Item.Properties().stacksTo(1));
 	}
 
 	@Override
@@ -50,8 +50,10 @@ public class HasteCuriosItem extends CTDItem implements ICurioItem {
 		LivingEntity wearer = slotContext.entity();
 		if(!wearer.hasEffect(MobEffects.DIG_SPEED)) 
 		{
-            MobEffectInstance effectInstance = new MobEffectInstance(MobEffects.DIG_SPEED, Integer.MAX_VALUE, 4, false, false);
-            if(wearer.level.isClientSide) effectInstance.setNoCounter(true);
+            MobEffectInstance effectInstance = new MobEffectInstance(
+        										MobEffects.DIG_SPEED, 
+        										MobEffectInstance.INFINITE_DURATION, 
+        										4, false, false);
             wearer.addEffect(effectInstance);
         }
 	}
@@ -69,8 +71,10 @@ public class HasteCuriosItem extends CTDItem implements ICurioItem {
 		LivingEntity wearer = slotContext.entity();
 		if(!wearer.hasEffect(MobEffects.DIG_SPEED)) 
 		{
-			MobEffectInstance effectInstance = new MobEffectInstance(MobEffects.DIG_SPEED, Integer.MAX_VALUE, 4, false, false);
-            if(wearer.level.isClientSide) effectInstance.setNoCounter(true);
+			MobEffectInstance effectInstance = new MobEffectInstance(
+												MobEffects.DIG_SPEED, 
+												MobEffectInstance.INFINITE_DURATION, 
+												4, false, false);
             wearer.addEffect(effectInstance);
 		}
 	}

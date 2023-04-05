@@ -5,7 +5,7 @@
 	Website: 	https://github.com/MasterGeneral156/CTD-Tweaks
 	License:	MIT License
 
-				Copyright (c) 2022 MasterGeneral156
+				Copyright (c) 2023 MasterGeneral156
 				
 				Permission is hereby granted, free of charge, to any person obtaining a copy
 				of this software and associated documentation files (the "Software"), to deal
@@ -54,7 +54,7 @@ public class CobbleGenItem extends CTDItem implements ICurioItem
 {
 
 	public CobbleGenItem() {
-		super(new Item.Properties().tab(CTDTweaks.CreativeTab).stacksTo(1));
+		super(new Item.Properties().stacksTo(1));
 	}
 	
 	@Override
@@ -124,6 +124,6 @@ public class CobbleGenItem extends CTDItem implements ICurioItem
 	{
 		tooltip.add(Component.literal("Generates 1 Cobblestone every " + PocketCobbleConfig.GEN_TICKS.get() + " ticks, up to a max of " + PocketCobbleConfig.MAX_STACK.get() + "."));
 		if (PocketCobbleConfig.REQUIRE_BUCKETS.get())
-			tooltip.add(Component.literal("§4Must have Water and Lava buckets in inventory!!"));
+			tooltip.add(Component.literal("ï¿½4Must have Water and Lava buckets in inventory!!"));
 	}
 }

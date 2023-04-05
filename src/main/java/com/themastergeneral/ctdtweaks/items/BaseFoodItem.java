@@ -5,7 +5,7 @@
 	Website: 	https://github.com/MasterGeneral156/CTD-Tweaks
 	License:	MIT License
 
-				Copyright (c) 2022 MasterGeneral156
+				Copyright (c) 2023 MasterGeneral156
 				
 				Permission is hereby granted, free of charge, to any person obtaining a copy
 				of this software and associated documentation files (the "Software"), to deal
@@ -36,8 +36,10 @@ import net.minecraft.world.item.Item;
 public class BaseFoodItem extends CTDItem {
 
 	public BaseFoodItem(int hungerFed, float saturation) {
-		super(new Item.Properties().tab(CTDTweaks.CreativeTab)
-				.food(new FoodProperties.Builder().nutrition(hungerFed).saturationMod(saturation).build()));
+		super(new Item.Properties().food(new FoodProperties.Builder()
+				.nutrition(hungerFed)
+				.saturationMod(saturation)
+				.build()));
 	}
 
 }

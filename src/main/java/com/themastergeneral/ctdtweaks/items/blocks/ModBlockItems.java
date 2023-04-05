@@ -5,7 +5,7 @@
 	Website: 	https://github.com/MasterGeneral156/CTD-Tweaks
 	License:	MIT License
 
-				Copyright (c) 2022 MasterGeneral156
+				Copyright (c) 2023 MasterGeneral156
 				
 				Permission is hereby granted, free of charge, to any person obtaining a copy
 				of this software and associated documentation files (the "Software"), to deal
@@ -43,7 +43,7 @@ public class ModBlockItems extends BlockItem
 {
     public ModBlockItems(Block blockIn)
     {
-        super(blockIn, new Item.Properties().tab(CTDTweaks.CreativeTab));
+        super(blockIn, new Item.Properties());
     }
     
     @Override

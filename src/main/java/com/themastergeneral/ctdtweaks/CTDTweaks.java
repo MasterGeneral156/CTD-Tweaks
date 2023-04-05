@@ -5,7 +5,7 @@
 	Website: 	https://github.com/MasterGeneral156/CTD-Tweaks
 	License:	MIT License
 
-				Copyright (c) 2022 MasterGeneral156
+				Copyright (c) 2023 MasterGeneral156
 				
 				Permission is hereby granted, free of charge, to any person obtaining a copy
 				of this software and associated documentation files (the "Software"), to deal
@@ -32,9 +32,15 @@ import com.mojang.logging.LogUtils;
 import com.themastergeneral.ctdtweaks.blocks.BlockRegistry;
 import com.themastergeneral.ctdtweaks.config.ModConfigs;
 import com.themastergeneral.ctdtweaks.items.ItemRegistry;
+import com.themastergeneral.ctdtweaks.items.ModItems;
 
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.CreativeModeTabEvent;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -45,21 +51,23 @@ import top.theillusivec4.curios.api.SlotTypeMessage;
 
 import org.slf4j.Logger;
 
-
-// The value here should match an entry in the META-INF/mods.toml file
 @Mod("ctdtweaks")
 public class CTDTweaks
 {
 	public static CTDTweaks instance;
 	
     private static final Logger LOGGER = LogUtils.getLogger();
-    public static final CreativeModeTab CreativeTab = new CTDTweaksTab();
+	public static CreativeModeTab CTDTweaksTab;
 
     public CTDTweaks()
     {
     	instance = this;
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-    	FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
+
+        IEventBus modbus = FMLJavaModLoadingContext.get().getModEventBus();
+        modbus.addListener(this::setup);
+        modbus.addListener(this::enqueueIMC);
+        modbus.addListener(this::registerTabs);
+        modbus.addListener(this::fillTab);
     	
         MinecraftForge.EVENT_BUS.register(this);
         
@@ -73,9 +81,38 @@ public class CTDTweaks
 		LOGGER.info("CTD Tweaks is now launching.");
     }
     
-    private void enqueueIMC(final InterModEnqueueEvent event) {
+    private void enqueueIMC(final InterModEnqueueEvent event) 
+    {
         InterModComms.sendTo(CuriosApi.MODID, SlotTypeMessage.REGISTER_TYPE, () -> new SlotTypeMessage.Builder("ring").size(2).build());
         InterModComms.sendTo(CuriosApi.MODID, SlotTypeMessage.REGISTER_TYPE, () -> new SlotTypeMessage.Builder("necklace").size(1).build());
         InterModComms.sendTo(CuriosApi.MODID, SlotTypeMessage.REGISTER_TYPE, () -> new SlotTypeMessage.Builder("charm").size(1).build());
     }
+    
+    private void registerTabs(CreativeModeTabEvent.Register event)
+    {
+		CTDTweaksTab = event.registerCreativeModeTab(
+				new ResourceLocation("ctdtweaks", "ctdweaks_tab"), builder -> builder
+                .icon(() -> new ItemStack(ModItems.coal_wither))
+                .title(Component.translatable("itemGroup.ctdtweaks"))
+                .build());
+    }
+	
+	private void fillTab(CreativeModeTabEvent.BuildContents ev)
+	{
+		if (ev.getTab() == CTDTweaksTab)
+		{
+			ev.accept(ModItems.amulet_of_extinguish);
+			ev.accept(ModItems.block_coal_wither);
+			ev.accept(ModItems.coal_wither);
+			ev.accept(ModItems.combat_core);
+			ev.accept(ModItems.glowing_obsidian);
+			ev.accept(ModItems.gold_ingot_enchanted);
+			ev.accept(ModItems.personal_teleporter);
+			ev.accept(ModItems.pocket_cobble_generator);
+			ev.accept(ModItems.ring_of_enlightened_miner);
+			ev.accept(ModItems.ring_of_swiftness);
+			ev.accept(ModItems.ring_of_the_angels);
+			ev.accept(ModItems.steamed_carrot);
+		}
+	}
 }

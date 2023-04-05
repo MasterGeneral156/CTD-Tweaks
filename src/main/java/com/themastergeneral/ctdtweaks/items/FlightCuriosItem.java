@@ -41,7 +41,7 @@ public class FlightCuriosItem extends CTDItem implements ICurioItem {
 
 	public FlightCuriosItem()
 	{
-		super(new Item.Properties().tab(CTDTweaks.CreativeTab).stacksTo(1));
+		super(new Item.Properties().stacksTo(1));
 	}
 	@Override
 	public void onEquip(SlotContext slotContext, ItemStack prevStack, ItemStack stack) 
