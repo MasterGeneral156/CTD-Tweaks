@@ -34,6 +34,7 @@ import javax.annotation.Nullable;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
@@ -74,18 +75,20 @@ public class TeleporterItem extends BaseDurabilityItem {
 			double posX = getCoordsX(stackIn);
 			double posY = getCoordsY(stackIn);
 			double posZ = getCoordsZ(stackIn);
-			if (validTeleport(posX, posY, posZ))
+			String dim = getDim(stackIn);
+			if (validTeleport(posX, posY, posZ, dim))
 			{
 				stackIn.hurtAndBreak(1, playerIn, (p_41300_) -> {
-	                  p_41300_.broadcastBreakEvent(playerIn.getEquipmentSlotForItem(stackIn));
+	                  p_41300_.broadcastBreakEvent(Player.getEquipmentSlotForItem(stackIn));
 	               });
 				playerIn.getCooldowns().addCooldown(this, 200);
 				playerIn.setPos(posX, posY, posZ);
+				//playerIn.changeDimension(ServerLevel);
 				double rposX = Math.round(stackIn.getTag().getDouble("posX") * 100.0) / 100.0;
 				double rposY = Math.round(stackIn.getTag().getDouble("posY") * 100.0) / 100.0;
 				double rposZ = Math.round(stackIn.getTag().getDouble("posZ") * 100.0) / 100.0;
-				playerIn.displayClientMessage(Component.literal(playerIn.getCommandSenderWorld().toString()), true);
-				//playerIn.displayClientMessage(new TranslatableComponent("Teleported to X: " + rposX + " Y: " + rposY + " Z: " + rposZ + "."), true);
+				//playerIn.displayClientMessage(Component.literal(playerIn.getCommandSenderWorld().toString()), true);
+				playerIn.displayClientMessage(Component.literal("Teleported to X: " + rposX + " Y: " + rposY + " Z: " + rposZ + "."), true);
 			}
 			else
 			{
@@ -98,14 +101,13 @@ public class TeleporterItem extends BaseDurabilityItem {
 	public static void setCoords(ItemStack stackIn, Player playerIn)
 	{		
 		CompoundTag compoundnbt = new CompoundTag();
-		int damage = stackIn.getDamageValue();
 		compoundnbt.putDouble("posX", playerIn.getX());
 		compoundnbt.putDouble("posY", playerIn.getY());
 		compoundnbt.putDouble("posZ", playerIn.getZ());
-		//compoundnbt.putString("posZ", playerIn.getLevel().toString());
+		//compoundnbt.put("dim", playerIn.getLevel().dimension());
 		stackIn.setTag(compoundnbt);
 		stackIn.hurtAndBreak(1, playerIn, (p_41300_) -> {
-            p_41300_.broadcastBreakEvent(playerIn.getEquipmentSlotForItem(stackIn));
+            p_41300_.broadcastBreakEvent(Player.getEquipmentSlotForItem(stackIn));
          });
 	}
 	
@@ -127,16 +129,20 @@ public class TeleporterItem extends BaseDurabilityItem {
 		return nbt.getDouble("posZ");
 	}
 	
-	public static boolean validTeleport(double posX, double posY, double posZ)
+	public static String getDim(ItemStack stackIn)
 	{
-		if ((posX == 0.0D) && (posY < 1.0D) && (posZ == 0.0D))
-		{
+		CompoundTag nbt = stackIn.getTag();
+		return nbt.getString("dim");
+	}
+	
+	public static boolean validTeleport(double posX, double posY, double posZ, String dim)
+	{
+		if ((posX == Double.NaN) && (posY == Double.NaN) && (posZ == Double.NaN))
 			return false;
-		}
+		//else if (dim == "N/A")
+		//	return false;
 		else
-		{
 			return true;
-		}
 	}
 
 	@Override
@@ -146,6 +152,7 @@ public class TeleporterItem extends BaseDurabilityItem {
 		compoundnbt.putDouble("posX", Double.NaN);
 		compoundnbt.putDouble("posY", Double.NaN);
 		compoundnbt.putDouble("posZ", Double.NaN);
+		//compoundnbt.putString("dim", "N/A");
 		stack.setTag(compoundnbt);
 	}
 	
