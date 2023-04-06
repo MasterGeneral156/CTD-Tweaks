@@ -55,7 +55,7 @@ public class FlameRetardantCurios extends CTDItem implements ICurioItem {
 				if (!player.getCooldowns().isOnCooldown(stack.getItem()))
 				{
 					stack.hurtAndBreak(1, player, (p_41300_) -> {
-		                  p_41300_.broadcastBreakEvent(player.getEquipmentSlotForItem(stack));
+		                  p_41300_.broadcastBreakEvent(Player.getEquipmentSlotForItem(stack));
 		               });
 					player.getCooldowns().addCooldown(stack.getItem(), 20);
 					player.clearFire();
