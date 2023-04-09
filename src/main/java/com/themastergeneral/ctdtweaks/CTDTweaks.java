@@ -42,7 +42,9 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.CreativeModeTabEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.InterModComms;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -62,7 +64,7 @@ public class CTDTweaks
     public CTDTweaks()
     {
     	instance = this;
-
+    	
         IEventBus modbus = FMLJavaModLoadingContext.get().getModEventBus();
         modbus.addListener(this::setup);
         modbus.addListener(this::enqueueIMC);
@@ -70,10 +72,10 @@ public class CTDTweaks
         modbus.addListener(this::fillTab);
     	
         MinecraftForge.EVENT_BUS.register(this);
-        
-        ItemRegistry.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
-        BlockRegistry.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
-        ModConfigs.registerConfig();
+
+		ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ModConfigs.SPEC, "ctd/ctd-tweaks.toml");
+        ItemRegistry.ITEMS.register(modbus);
+        BlockRegistry.BLOCKS.register(modbus);
     }
     
     private void setup(final FMLCommonSetupEvent event)
