@@ -5,21 +5,16 @@ issueTrackerURL="https://github.com/MasterGeneral156/CTD-Tweaks/issues"
 
 [[mods]] #mandatory
 modId="ctdtweaks" #mandatory
-version="2.4.0" #mandatory
+version="2.3.0" #mandatory
 displayName="CTD Tweaks" #mandatory
 updateJSONURL="https://raw.githubusercontent.com/MasterGeneral156/Version/master/CTD-Tweaks.json" #optional
-# A URL for the "homepage" for this mod, displayed in the mod UI
-displayURL="https://www.curseforge.com/minecraft/mc-mods/ctd-tweaks" #optional
-# A file name (in the root of the mod JAR) containing a logo for display
-logoFile="logo-new.png" #optional
-# A text field displayed in the mod UI
-credits="TheMasterGeneral" #optional
-# A text field displayed in the mod UI
-authors="" #optional
-# The description text for the mod (multi line!) (#mandatory)
+displayURL="https://www.curseforge.com/minecraft/mc-mods/ctd-tweaks" 
+logoFile="logo-new.png"
+credits="TheMasterGeneral" 
+authors="TheMasterGeneral"
 description='''
 Misc tweaks, by TheMasterGeneral and friends.'''
-# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+
 [[dependencies.ctdtweaks]] #optional
     modId="ctdcore" #mandatory
     mandatory=true #mandatory
