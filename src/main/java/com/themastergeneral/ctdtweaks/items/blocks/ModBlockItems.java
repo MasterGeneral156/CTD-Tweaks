@@ -28,8 +28,6 @@
 package com.themastergeneral.ctdtweaks.items.blocks;
 
 import javax.annotation.Nullable;
-
-import com.themastergeneral.ctdtweaks.config.ModConfigs;
 import com.themastergeneral.ctdtweaks.items.ModItems;
 
 import net.minecraft.world.item.BlockItem;
@@ -49,7 +47,7 @@ public class ModBlockItems extends BlockItem
 	public int getBurnTime(ItemStack stack, @Nullable RecipeType<?> recipeType)
 	{
 		if (stack.getItem() == ModItems.block_coal_wither)
-			return ModConfigs.witherFuel.GEN_TICKS.get();
+			return 560000;
 		else
 			return -1;
 	}

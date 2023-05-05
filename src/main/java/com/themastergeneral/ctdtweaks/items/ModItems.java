@@ -29,14 +29,13 @@ package com.themastergeneral.ctdtweaks.items;
 
 import com.themastergeneral.ctdcore.item.CTDFuelItem;
 import com.themastergeneral.ctdtweaks.blocks.ModBlocks;
-import com.themastergeneral.ctdtweaks.config.ModConfigs;
 import com.themastergeneral.ctdtweaks.items.blocks.ModBlockItems;
 
 import net.minecraft.world.item.Item;
 
 public class ModItems {
 
-	public static CTDFuelItem coal_wither = new CTDFuelItem(new Item.Properties(), ModConfigs.witherFuel.GEN_TICKS.get() / 10);
+	public static CTDFuelItem coal_wither = new CTDFuelItem(new Item.Properties(), 560000 / 10);
 	
 	public static GlintItem gold_ingot_enchanted = new GlintItem();
 	

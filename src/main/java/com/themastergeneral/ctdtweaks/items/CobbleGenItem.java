@@ -32,7 +32,6 @@ import java.util.List;
 import javax.annotation.Nullable;
 
 import com.themastergeneral.ctdcore.item.CTDItem;
-import com.themastergeneral.ctdtweaks.config.ModConfigs;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.stats.Stats;
@@ -69,16 +68,19 @@ public class CobbleGenItem extends CTDItem implements ICurioItem
 				int cobble = player.getInventory().countItem(Blocks.COBBLESTONE.asItem());
 				
 				//Check that player has lava and water buckets in inventory
-				if (((water > 0) && (lava > 0)) || (!ModConfigs.cobbleGen.REQUIRE_BUCKETS.get()))
+				if ((water > 0) && (lava > 0))
+				//if (((water > 0) && (lava > 0)) || (!ModConfigs.COBBLEGEN_REQUIRE_BUCKETS.get()))
 				{
 					//Check player to ensure we're not giving too much cobble.
-					if (cobble < ModConfigs.cobbleGen.MAX_STACK.get())
+					//if (cobble < ModConfigs.COBBLEGEN_MAX_STACK.get())
+					if (cobble < 64)
 					{
 						if (!player.getCooldowns().isOnCooldown(stack.getItem()))
 						{
 							player.addItem(new ItemStack(Blocks.COBBLESTONE));
 							player.awardStat(Stats.ITEM_USED.get(this));
-							player.getCooldowns().addCooldown(stack.getItem(), ModConfigs.cobbleGen.GEN_TICKS.get());
+							player.getCooldowns().addCooldown(stack.getItem(), 20);
+							//player.getCooldowns().addCooldown(stack.getItem(), ModConfigs.COBBLEGEN_GEN_TICKS.get());
 						}
 					}
 				}
@@ -100,16 +102,19 @@ public class CobbleGenItem extends CTDItem implements ICurioItem
 				int cobble = player.getInventory().countItem(Blocks.COBBLESTONE.asItem());
 				
 				//Check that player has lava and water buckets in inventory
-				if (((water > 0) && (lava > 0)) || (!ModConfigs.cobbleGen.REQUIRE_BUCKETS.get()))
+				if ((water > 0) && (lava > 0))
+				//TODO fix for full 1.19.4 release
+				//if (((water > 0) && (lava > 0)) || (!ModConfigs.COBBLEGEN_REQUIRE_BUCKETS.get()))
 				{
 					//Check player to ensure we're not giving too much cobble.
-					if (cobble < ModConfigs.cobbleGen.MAX_STACK.get())
+					if (cobble < 64)
 					{
 						if (!player.getCooldowns().isOnCooldown(stack.getItem()))
 						{
 							player.addItem(new ItemStack(Blocks.COBBLESTONE));
 							player.awardStat(Stats.ITEM_USED.get(this));
-							player.getCooldowns().addCooldown(stack.getItem(), ModConfigs.cobbleGen.GEN_TICKS.get());
+							player.getCooldowns().addCooldown(stack.getItem(), 20);
+							//player.getCooldowns().addCooldown(stack.getItem(), ModConfigs.COBBLEGEN_GEN_TICKS.get());
 						}
 					}
 				}
@@ -121,8 +126,9 @@ public class CobbleGenItem extends CTDItem implements ICurioItem
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack stack, @Nullable Level worldIn, List<Component> tooltip, TooltipFlag flagIn) 
 	{
-		tooltip.add(Component.literal("Generates 1 Cobblestone every " + ModConfigs.cobbleGen.GEN_TICKS.get() + " ticks, up to a max of " + ModConfigs.cobbleGen.MAX_STACK.get() + "."));
-		if (ModConfigs.cobbleGen.REQUIRE_BUCKETS.get())
-			tooltip.add(Component.literal("�4Must have Water and Lava buckets in inventory!!"));
+		tooltip.add(Component.literal("Generates 1 Cobblestone every 20 ticks, up to a max of 64."));
+		//tooltip.add(Component.literal("Generates 1 Cobblestone every " + ModConfigs.COBBLEGEN_GEN_TICKS.get() + " ticks, up to a max of " + ModConfigs.COBBLEGEN_MAX_STACK.get() + "."));
+		//if (ModConfigs.COBBLEGEN_REQUIRE_BUCKETS.get())
+			tooltip.add(Component.literal("§Must have Water and Lava buckets in inventory!!"));
 	}
 }

@@ -30,7 +30,6 @@ package com.themastergeneral.ctdtweaks;
 
 import com.mojang.logging.LogUtils;
 import com.themastergeneral.ctdtweaks.blocks.BlockRegistry;
-import com.themastergeneral.ctdtweaks.config.ModConfigs;
 import com.themastergeneral.ctdtweaks.items.ItemRegistry;
 import com.themastergeneral.ctdtweaks.items.ModItems;
 
@@ -64,7 +63,7 @@ public class CTDTweaks
     public CTDTweaks()
     {
     	instance = this;
-    	
+		//ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ModConfigs.SPEC, "ctd/ctd-tweaks.toml");
         IEventBus modbus = FMLJavaModLoadingContext.get().getModEventBus();
         modbus.addListener(this::setup);
         modbus.addListener(this::enqueueIMC);
@@ -72,8 +71,6 @@ public class CTDTweaks
         modbus.addListener(this::fillTab);
     	
         MinecraftForge.EVENT_BUS.register(this);
-
-		ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ModConfigs.SPEC, "ctd/ctd-tweaks.toml");
         ItemRegistry.ITEMS.register(modbus);
         BlockRegistry.BLOCKS.register(modbus);
     }
