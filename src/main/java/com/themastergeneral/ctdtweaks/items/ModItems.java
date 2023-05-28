@@ -27,6 +27,8 @@
 */
 package com.themastergeneral.ctdtweaks.items;
 
+import com.themastergeneral.ctdcore.item.CTDConsumableItem;
+import com.themastergeneral.ctdcore.item.CTDDurabilityItem;
 import com.themastergeneral.ctdcore.item.CTDFuelItem;
 import com.themastergeneral.ctdtweaks.blocks.ModBlocks;
 import com.themastergeneral.ctdtweaks.items.blocks.ModBlockItems;
@@ -48,9 +50,9 @@ public class ModItems {
 	
 	public static CobbleGenItem pocket_cobble_generator = new CobbleGenItem();
 	
-	public static BaseFoodItem steamed_carrot = new BaseFoodItem(6, 0.65F);
+	public static CTDConsumableItem steamed_carrot = new CTDConsumableItem(6, 0.65F);
 	
-	public static BaseDurabilityItem combat_core = new BaseDurabilityItem(128);
+	public static CTDDurabilityItem combat_core = new CTDDurabilityItem(new Item.Properties(), 128);
 	
 	public static ModBlockItems block_coal_wither = new ModBlockItems(ModBlocks.block_coal_wither);
 	public static ModBlockItems glowing_obsidian = new ModBlockItems(ModBlocks.glowing_obsidian);

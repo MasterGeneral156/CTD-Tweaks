@@ -27,12 +27,14 @@
 */
 package com.themastergeneral.ctdtweaks.items;
 
+import com.themastergeneral.ctdcore.item.CTDItem;
+
 import net.minecraft.world.item.ItemStack;
 
-public class GlintItem extends BaseItem {
+public class GlintItem extends CTDItem {
 
 	public GlintItem() {
-		super();
+		super(new Properties());
 	}
 	
 	@Override
