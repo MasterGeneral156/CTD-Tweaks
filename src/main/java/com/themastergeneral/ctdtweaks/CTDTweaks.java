@@ -41,9 +41,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.CreativeModeTabEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.InterModComms;
-import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -100,11 +98,11 @@ public class CTDTweaks
 	{
 		if (ev.getTab() == CTDTweaksTab)
 		{
-			ev.accept(ModItems.amulet_of_extinguish);
+			ev.accept(ModItems.glowing_obsidian);
 			ev.accept(ModItems.block_coal_wither);
+			ev.accept(ModItems.amulet_of_extinguish);
 			ev.accept(ModItems.coal_wither);
 			ev.accept(ModItems.combat_core);
-			ev.accept(ModItems.glowing_obsidian);
 			ev.accept(ModItems.gold_ingot_enchanted);
 			ev.accept(ModItems.personal_teleporter);
 			ev.accept(ModItems.pocket_cobble_generator);
