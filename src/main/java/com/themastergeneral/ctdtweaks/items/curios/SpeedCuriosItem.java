@@ -47,7 +47,7 @@ public class SpeedCuriosItem extends CTDItem implements ICurioItem {
 	{
 		LivingEntity wearer = slotContext.entity();
 		double currentSpeed = wearer.getAttributeValue(Attributes.MOVEMENT_SPEED);
-		wearer.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(currentSpeed + 0.05D);
+		wearer.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(currentSpeed + 0.15D);
 	}
 	
 	@Override
@@ -55,6 +55,6 @@ public class SpeedCuriosItem extends CTDItem implements ICurioItem {
 	{
 		LivingEntity wearer = slotContext.entity();
 		double currentSpeed = wearer.getAttributeValue(Attributes.MOVEMENT_SPEED);
-		wearer.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(currentSpeed - 0.05D);
+		wearer.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(currentSpeed - 0.15D);
 	}
 }
