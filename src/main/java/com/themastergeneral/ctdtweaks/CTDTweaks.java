@@ -104,6 +104,10 @@ public class CTDTweaks
 			ev.accept(ModItems.ring_of_enlightened_miner);
 			ev.accept(ModItems.ring_of_swiftness);
 			ev.accept(ModItems.ring_of_the_angels);
+			
+			ev.accept(ModItems.basic_health_charm);
+			ev.accept(ModItems.medium_health_charm);
+			ev.accept(ModItems.large_health_charm);
 		}
 	}
 }

@@ -127,9 +127,9 @@ public class CobbleGenItem extends CTDItem implements ICurioItem
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack stack, @Nullable Level worldIn, List<Component> tooltip, TooltipFlag flagIn) 
 	{
-		tooltip.add(Component.literal("Generates 1 Cobblestone every 20 ticks, up to a max of 64."));
+		tooltip.add(Component.literal("Generates 1 Cobble/20 ticks, max 64."));
 		//tooltip.add(Component.literal("Generates 1 Cobblestone every " + ModConfigs.COBBLEGEN_GEN_TICKS.get() + " ticks, up to a max of " + ModConfigs.COBBLEGEN_MAX_STACK.get() + "."));
 		//if (ModConfigs.COBBLEGEN_REQUIRE_BUCKETS.get())
-			tooltip.add(Component.literal("§Must have Water and Lava buckets in inventory!!"));
+			tooltip.add(Component.literal("Must have Water and Lava buckets in inventory!!"));
 	}
 }

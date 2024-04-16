@@ -33,6 +33,7 @@ import com.themastergeneral.ctdcore.item.CTDFuelItem;
 import com.themastergeneral.ctdtweaks.blocks.ModBlocks;
 import com.themastergeneral.ctdtweaks.items.blocks.ModBlockItems;
 import com.themastergeneral.ctdtweaks.items.curios.CobbleGenItem;
+import com.themastergeneral.ctdtweaks.items.curios.CuriosHealthCharm;
 import com.themastergeneral.ctdtweaks.items.curios.CuriosSunnBlock;
 import com.themastergeneral.ctdtweaks.items.curios.FlameRetardantCurios;
 import com.themastergeneral.ctdtweaks.items.curios.FlightCuriosItem;
@@ -52,6 +53,10 @@ public class ModItems {
 	public static FlightCuriosItem ring_of_the_angels = new FlightCuriosItem();
 	public static FlameRetardantCurios amulet_of_extinguish = new FlameRetardantCurios();
 	public static CuriosSunnBlock sunn_block_charm = new CuriosSunnBlock();
+	
+	public static CuriosHealthCharm basic_health_charm = new CuriosHealthCharm(2.75D);
+	public static CuriosHealthCharm medium_health_charm = new CuriosHealthCharm(6.25D);
+	public static CuriosHealthCharm large_health_charm = new CuriosHealthCharm(14.125D);
 	
 	public static TeleporterItem personal_teleporter = new TeleporterItem(71);
 	

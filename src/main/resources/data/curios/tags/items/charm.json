@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "ctdtweaks:pocket_cobble_generator",
-	"ctdtweaks:sunn_block_charm"
+	"ctdtweaks:sunn_block_charm",
+	"ctdtweaks:large_health_charm",
+	"ctdtweaks:medium_health_charm",
+	"ctdtweaks:basic_health_charm"
   ]
 }

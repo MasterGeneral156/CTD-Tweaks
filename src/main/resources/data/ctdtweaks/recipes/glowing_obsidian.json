@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "ctdtweaks:snow",
+  "ingredients": [
+    {
+		"tag": "forge:obsidian"  
+    },
+	{
+		"tag": "forge:dusts/glowstone"	
+	}
+  ],
+  "result": {
+    "item": "ctdtweaks:glowing_obsidian"
+  }
+}
