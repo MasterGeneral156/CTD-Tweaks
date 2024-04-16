@@ -25,12 +25,13 @@
 				OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 				SOFTWARE.
 */
-package com.themastergeneral.ctdtweaks.items;
+package com.themastergeneral.ctdtweaks.items.curios;
 
 import java.util.List;
 
 import javax.annotation.Nullable;
 
+import com.themastergeneral.ctdcore.helpers.ServerHelper;
 import com.themastergeneral.ctdcore.item.CTDItem;
 
 import net.minecraft.network.chat.Component;
@@ -92,7 +93,7 @@ public class CobbleGenItem extends CTDItem implements ICurioItem
 	public void curioTick(SlotContext slotContext, ItemStack stack) 
 	{
 		Entity wearer = slotContext.entity();
-		if (!wearer.getLevel().isClientSide)
+		if (ServerHelper.isServerLevel(wearer.level()))
 		{
 			if (wearer instanceof Player)
 			{

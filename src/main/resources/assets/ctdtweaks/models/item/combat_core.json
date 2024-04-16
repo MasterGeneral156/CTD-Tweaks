@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "ctdtweaks:items/combat_core"
+        "layer0": "ctdtweaks:item/combat_core"
     }
 }

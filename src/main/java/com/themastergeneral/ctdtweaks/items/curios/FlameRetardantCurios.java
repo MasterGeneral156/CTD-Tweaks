@@ -1,6 +1,6 @@
 /*
 	Project:	CTD Tweaks 1.19
-	File:		com.themastergeneral.ctdtweaks.items.HasteCuriosItem
+	File:		com.themastergeneral.ctdtweaks.items.FlameRetardantCurios
 	Author:		TheMasterGeneral
 	Website: 	https://github.com/MasterGeneral156/CTD-Tweaks
 	License:	MIT License
@@ -25,56 +25,43 @@
 				OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 				SOFTWARE.
 */
-package com.themastergeneral.ctdtweaks.items;
+package com.themastergeneral.ctdtweaks.items.curios;
 
 import com.themastergeneral.ctdcore.item.CTDItem;
 
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.type.capability.ICurioItem;
 
-public class HasteCuriosItem extends CTDItem implements ICurioItem {
+public class FlameRetardantCurios extends CTDItem implements ICurioItem {
 
-	public HasteCuriosItem() {
-		super(new Item.Properties().stacksTo(1));
-	}
-
-	@Override
-	public void onEquip(SlotContext slotContext, ItemStack prevStack, ItemStack stack) 
+	public FlameRetardantCurios() 
 	{
-		LivingEntity wearer = slotContext.entity();
-		if(!wearer.hasEffect(MobEffects.DIG_SPEED)) 
-		{
-            MobEffectInstance effectInstance = new MobEffectInstance(
-        										MobEffects.DIG_SPEED, 
-        										MobEffectInstance.INFINITE_DURATION, 
-        										4, false, false);
-            wearer.addEffect(effectInstance);
-        }
-	}
-	
-	@Override
-	public void onUnequip(SlotContext slotContext, ItemStack prevStack, ItemStack stack) 
-	{
-		LivingEntity wearer = slotContext.entity();
-		wearer.removeEffect(MobEffects.DIG_SPEED);
+		super(new Item.Properties().stacksTo(1).defaultDurability(64));
 	}
 	
 	@Override
 	public void curioTick(SlotContext slotContext, ItemStack stack) 
 	{
 		LivingEntity wearer = slotContext.entity();
-		if(!wearer.hasEffect(MobEffects.DIG_SPEED)) 
+		if (wearer instanceof Player)
 		{
-			MobEffectInstance effectInstance = new MobEffectInstance(
-												MobEffects.DIG_SPEED, 
-												MobEffectInstance.INFINITE_DURATION, 
-												4, false, false);
-            wearer.addEffect(effectInstance);
+			Player player = (Player) wearer;
+			if(player.isOnFire())
+			{
+				if (!player.getCooldowns().isOnCooldown(stack.getItem()))
+				{
+					stack.hurtAndBreak(1, player, (p_41300_) -> {
+		                  p_41300_.broadcastBreakEvent(Player.getEquipmentSlotForItem(stack));
+		               });
+					player.getCooldowns().addCooldown(stack.getItem(), 20);
+					player.clearFire();
+				}
+			}
 		}
 	}
+
 }

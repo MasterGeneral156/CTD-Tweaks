@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "ctdtweaks:items/amulet_of_extinguish"
+        "layer0": "ctdtweaks:item/amulet_of_extinguish"
     }
 }

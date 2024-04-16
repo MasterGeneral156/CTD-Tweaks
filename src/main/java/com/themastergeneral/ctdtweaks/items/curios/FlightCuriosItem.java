@@ -1,11 +1,11 @@
 /*
 	Project:	CTD Tweaks 1.19
-	File:		com.themastergeneral.ctdtweaks.items.FlameRetardantCurios
+	File:		com.themastergeneral.ctdtweaks.items.FlightCuriosItem
 	Author:		TheMasterGeneral
 	Website: 	https://github.com/MasterGeneral156/CTD-Tweaks
 	License:	MIT License
 
-				Copyright (c) 2023 MasterGeneral156
+				Copyright (c) 2022 MasterGeneral156
 				
 				Permission is hereby granted, free of charge, to any person obtaining a copy
 				of this software and associated documentation files (the "Software"), to deal
@@ -25,7 +25,7 @@
 				OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 				SOFTWARE.
 */
-package com.themastergeneral.ctdtweaks.items;
+package com.themastergeneral.ctdtweaks.items.curios;
 
 import com.themastergeneral.ctdcore.item.CTDItem;
 
@@ -36,11 +36,36 @@ import net.minecraft.world.item.ItemStack;
 import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.type.capability.ICurioItem;
 
-public class FlameRetardantCurios extends CTDItem implements ICurioItem {
+public class FlightCuriosItem extends CTDItem implements ICurioItem {
 
-	public FlameRetardantCurios() 
+	public FlightCuriosItem()
 	{
-		super(new Item.Properties().stacksTo(1).defaultDurability(64));
+		super(new Item.Properties().stacksTo(1));
+	}
+	@Override
+	public void onEquip(SlotContext slotContext, ItemStack prevStack, ItemStack stack) 
+	{
+		LivingEntity wearer = slotContext.entity();
+		if (wearer instanceof Player)
+		{
+			Player player = (Player) wearer;
+			player.getAbilities().flying = true;
+			player.getAbilities().mayfly = true;
+			player.onUpdateAbilities();
+		}
+	}
+	
+	@Override
+	public void onUnequip(SlotContext slotContext, ItemStack prevStack, ItemStack stack) 
+	{
+		LivingEntity wearer = slotContext.entity();
+		if (wearer instanceof Player)
+		{
+			Player player = (Player) wearer;
+			player.getAbilities().flying = false;
+			player.getAbilities().mayfly = false;
+			player.onUpdateAbilities();
+		}
 	}
 	
 	@Override
@@ -50,18 +75,12 @@ public class FlameRetardantCurios extends CTDItem implements ICurioItem {
 		if (wearer instanceof Player)
 		{
 			Player player = (Player) wearer;
-			if(player.isOnFire())
+			if(!player.getAbilities().mayfly)
 			{
-				if (!player.getCooldowns().isOnCooldown(stack.getItem()))
-				{
-					stack.hurtAndBreak(1, player, (p_41300_) -> {
-		                  p_41300_.broadcastBreakEvent(Player.getEquipmentSlotForItem(stack));
-		               });
-					player.getCooldowns().addCooldown(stack.getItem(), 20);
-					player.clearFire();
-				}
+				player.getAbilities().flying = false;
+				player.getAbilities().mayfly = false;
+				player.onUpdateAbilities();
 			}
 		}
 	}
-
 }

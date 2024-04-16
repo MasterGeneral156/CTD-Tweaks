@@ -33,12 +33,9 @@ import com.themastergeneral.ctdtweaks.blocks.BlockRegistry;
 import com.themastergeneral.ctdtweaks.items.ItemRegistry;
 import com.themastergeneral.ctdtweaks.items.ModItems;
 
-import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.CreativeModeTabEvent;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.common.Mod;
@@ -56,7 +53,6 @@ public class CTDTweaks
 	public static CTDTweaks instance;
 	
     private static final Logger LOGGER = LogUtils.getLogger();
-	public static CreativeModeTab CTDTweaksTab;
 
     public CTDTweaks()
     {
@@ -65,12 +61,12 @@ public class CTDTweaks
         IEventBus modbus = FMLJavaModLoadingContext.get().getModEventBus();
         modbus.addListener(this::setup);
         modbus.addListener(this::enqueueIMC);
-        modbus.addListener(this::registerTabs);
         modbus.addListener(this::fillTab);
     	
         MinecraftForge.EVENT_BUS.register(this);
         ItemRegistry.ITEMS.register(modbus);
         BlockRegistry.BLOCKS.register(modbus);
+        TweakTab.CREATIVE_MODE_TABS.register(modbus);
     }
     
     private void setup(final FMLCommonSetupEvent event)
@@ -80,36 +76,34 @@ public class CTDTweaks
     
     private void enqueueIMC(final InterModEnqueueEvent event) 
     {
+    	//TODO Fix by 1.22
         InterModComms.sendTo(CuriosApi.MODID, SlotTypeMessage.REGISTER_TYPE, () -> new SlotTypeMessage.Builder("ring").size(2).build());
         InterModComms.sendTo(CuriosApi.MODID, SlotTypeMessage.REGISTER_TYPE, () -> new SlotTypeMessage.Builder("necklace").size(1).build());
         InterModComms.sendTo(CuriosApi.MODID, SlotTypeMessage.REGISTER_TYPE, () -> new SlotTypeMessage.Builder("charm").size(1).build());
     }
-    
-    private void registerTabs(CreativeModeTabEvent.Register event)
-    {
-		CTDTweaksTab = event.registerCreativeModeTab(
-				new ResourceLocation("ctdtweaks", "ctdweaks_tab"), builder -> builder
-                .icon(() -> new ItemStack(ModItems.coal_wither))
-                .title(Component.translatable("itemGroup.ctdtweaks"))
-                .build());
-    }
 	
-	private void fillTab(CreativeModeTabEvent.BuildContents ev)
+	private void fillTab(BuildCreativeModeTabContentsEvent ev)
 	{
-		if (ev.getTab() == CTDTweaksTab)
+		if (ev.getTab() == TweakTab.TWEAK_TAB.get())
 		{
 			ev.accept(ModItems.glowing_obsidian);
 			ev.accept(ModItems.block_coal_wither);
-			ev.accept(ModItems.amulet_of_extinguish);
 			ev.accept(ModItems.coal_wither);
-			ev.accept(ModItems.combat_core);
+			ev.accept(ModItems.steamed_carrot);
 			ev.accept(ModItems.gold_ingot_enchanted);
+			ev.accept(ModItems.combat_core);
+			
 			ev.accept(ModItems.personal_teleporter);
+			
+			ev.accept(ModItems.amulet_of_extinguish);
+			
+			
 			ev.accept(ModItems.pocket_cobble_generator);
+			ev.accept(ModItems.sunn_block_charm);
+			
 			ev.accept(ModItems.ring_of_enlightened_miner);
 			ev.accept(ModItems.ring_of_swiftness);
 			ev.accept(ModItems.ring_of_the_angels);
-			ev.accept(ModItems.steamed_carrot);
 		}
 	}
 }

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "ctdtweaks:pocket_cobble_generator"
+    "ctdtweaks:pocket_cobble_generator",
+	"ctdtweaks:sunn_block_charm"
   ]
 }

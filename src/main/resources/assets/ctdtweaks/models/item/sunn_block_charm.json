@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "ctdtweaks:item/coal_wither"
+        "layer0": "ctdtweaks:item/sunn_block_charm"
     }
 }

@@ -32,6 +32,12 @@ import com.themastergeneral.ctdcore.item.CTDDurabilityItem;
 import com.themastergeneral.ctdcore.item.CTDFuelItem;
 import com.themastergeneral.ctdtweaks.blocks.ModBlocks;
 import com.themastergeneral.ctdtweaks.items.blocks.ModBlockItems;
+import com.themastergeneral.ctdtweaks.items.curios.CobbleGenItem;
+import com.themastergeneral.ctdtweaks.items.curios.CuriosSunnBlock;
+import com.themastergeneral.ctdtweaks.items.curios.FlameRetardantCurios;
+import com.themastergeneral.ctdtweaks.items.curios.FlightCuriosItem;
+import com.themastergeneral.ctdtweaks.items.curios.HasteCuriosItem;
+import com.themastergeneral.ctdtweaks.items.curios.SpeedCuriosItem;
 
 import net.minecraft.world.item.Item;
 
@@ -45,6 +51,7 @@ public class ModItems {
 	public static HasteCuriosItem ring_of_enlightened_miner = new HasteCuriosItem();
 	public static FlightCuriosItem ring_of_the_angels = new FlightCuriosItem();
 	public static FlameRetardantCurios amulet_of_extinguish = new FlameRetardantCurios();
+	public static CuriosSunnBlock sunn_block_charm = new CuriosSunnBlock();
 	
 	public static TeleporterItem personal_teleporter = new TeleporterItem(71);
 	

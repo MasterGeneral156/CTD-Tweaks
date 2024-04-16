@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "ctdtweaks:items/personal_teleporter"
+        "layer0": "ctdtweaks:item/personal_teleporter"
     }
 }
