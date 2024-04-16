@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "ctdtweaks:amulet_of_extinguish"
+    "ctdtweaks:amulet_of_extinguish",
+	"ctdtweaks:amulet_water_breathing"
   ]
 }

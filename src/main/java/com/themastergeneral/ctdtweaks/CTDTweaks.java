@@ -97,7 +97,7 @@ public class CTDTweaks
 			ev.accept(ModItems.personal_teleporter);
 			
 			ev.accept(ModItems.amulet_of_extinguish);
-			
+			ev.accept(ModItems.amulet_water_breathing);
 			
 			ev.accept(ModItems.pocket_cobble_generator);
 			ev.accept(ModItems.sunn_block_charm);
