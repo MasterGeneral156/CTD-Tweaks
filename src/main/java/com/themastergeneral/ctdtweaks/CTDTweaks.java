@@ -93,6 +93,7 @@ public class CTDTweaks
 			ev.accept(ModItems.gold_ingot_enchanted);
 			ev.accept(ModItems.combat_core);
 			
+			ev.accept(ModItems.op_sword);
 			ev.accept(ModItems.personal_teleporter);
 			
 			ev.accept(ModItems.amulet_of_extinguish);

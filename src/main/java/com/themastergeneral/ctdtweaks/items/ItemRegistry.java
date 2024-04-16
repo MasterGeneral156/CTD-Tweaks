@@ -51,6 +51,8 @@ public class ItemRegistry {
 	public static final RegistryObject<Item> medium_health_charm = ITEMS.register("medium_health_charm", () -> ModItems.medium_health_charm);
 	public static final RegistryObject<Item> large_health_charm = ITEMS.register("large_health_charm", () -> ModItems.large_health_charm);
 	
+	public static final RegistryObject<Item> op_sword = ITEMS.register("op_sword", () -> ModItems.op_sword);
+	
 	
 	//Block Items
 	public static final RegistryObject<Item> block_coal_wither = ITEMS.register("block_coal_wither", () -> ModItems.block_coal_wither);

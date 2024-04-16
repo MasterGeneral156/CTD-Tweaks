@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "ctdtweaks:op_sword",
+    "pattern": [
+        "N N",
+        "E E",
+		" C "
+    ],
+    "key": {
+		"N": { "item": "minecraft:netherite_sword" },
+		"E": { "item": "ctdtweaks:gold_ingot_enchanted" },
+		"C": { "item": "ctdtweaks:combat_core", "data": 32767 }
+    },
+    "result": {
+        "item": "ctdtweaks:op_sword"
+    }
+}
