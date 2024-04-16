@@ -1,11 +1,11 @@
 /*
-	Project:	CTD Tweaks 1.19
+	Project:	CTD Tweaks 1.20
 	File:		com.themastergeneral.ctdtweaks.CTDTweaks
 	Author:		TheMasterGeneral
 	Website: 	https://github.com/MasterGeneral156/CTD-Tweaks
 	License:	MIT License
 
-				Copyright (c) 2023 MasterGeneral156
+				Copyright (c) 2024 MasterGeneral156
 				
 				Permission is hereby granted, free of charge, to any person obtaining a copy
 				of this software and associated documentation files (the "Software"), to deal
@@ -29,11 +29,11 @@
 package com.themastergeneral.ctdtweaks;
 
 import com.mojang.logging.LogUtils;
+import com.themastergeneral.ctdcore.helpers.ModUtils;
 import com.themastergeneral.ctdtweaks.blocks.BlockRegistry;
 import com.themastergeneral.ctdtweaks.items.ItemRegistry;
 import com.themastergeneral.ctdtweaks.items.ModItems;
 
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -71,7 +71,7 @@ public class CTDTweaks
     
     private void setup(final FMLCommonSetupEvent event)
     {
-		LOGGER.info("CTD Tweaks is now launching.");
+    	LOGGER.info("CTD Tweaks for is launching for " + ModUtils.getLoader() + " v" + ModUtils.getLoaderVersion() + ".");
     }
     
     private void enqueueIMC(final InterModEnqueueEvent event) 
