@@ -27,12 +27,21 @@
 */
 package com.themastergeneral.ctdtweaks.items.curios;
 
+import java.util.List;
+
+import javax.annotation.Nullable;
+
 import com.themastergeneral.ctdcore.item.CTDItem;
 
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.level.Level;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.type.capability.ICurioItem;
 
@@ -62,6 +71,13 @@ public class FlameRetardantCurios extends CTDItem implements ICurioItem {
 				}
 			}
 		}
+	}
+	
+	@Override
+	@OnlyIn(Dist.CLIENT)
+	public void appendHoverText(ItemStack stack, @Nullable Level worldIn, List<Component> tooltip, TooltipFlag flagIn) 
+	{
+		tooltip.add(Component.literal("Extinguishes player when set ablaze"));
 	}
 
 }
