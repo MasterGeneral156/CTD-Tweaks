@@ -39,6 +39,7 @@ import com.themastergeneral.ctdtweaks.items.curios.CuriosWaterBreathing;
 import com.themastergeneral.ctdtweaks.items.curios.FlameRetardantCurios;
 import com.themastergeneral.ctdtweaks.items.curios.FlightCuriosItem;
 import com.themastergeneral.ctdtweaks.items.curios.HasteCuriosItem;
+import com.themastergeneral.ctdtweaks.items.curios.KnockBackCurios;
 import com.themastergeneral.ctdtweaks.items.curios.SpeedCuriosItem;
 
 import net.minecraft.world.item.Item;
@@ -58,6 +59,7 @@ public class ModItems {
 	public static CuriosHealthCharm basic_health_charm = new CuriosHealthCharm(2.75D);
 	public static CuriosHealthCharm medium_health_charm = new CuriosHealthCharm(6.25D);
 	public static CuriosHealthCharm large_health_charm = new CuriosHealthCharm(14.125D);
+	public static KnockBackCurios knockback_amulet = new KnockBackCurios(5D);
 	
 	public static TeleporterItem personal_teleporter = new TeleporterItem(71);
 	

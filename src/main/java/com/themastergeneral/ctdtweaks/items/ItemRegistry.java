@@ -55,6 +55,7 @@ public class ItemRegistry {
 	
 	public static final RegistryObject<Item> amulet_water_breathing = ITEMS.register("amulet_water_breathing", () -> ModItems.amulet_water_breathing);
 	public static final RegistryObject<Item> amulet_of_extinguish = ITEMS.register("amulet_of_extinguish", () -> ModItems.amulet_of_extinguish);
+	public static final RegistryObject<Item> knockback_amulet = ITEMS.register("knockback_amulet", () -> ModItems.knockback_amulet);
 	
 	public static final RegistryObject<Item> op_sword = ITEMS.register("op_sword", () -> ModItems.op_sword);
 	
