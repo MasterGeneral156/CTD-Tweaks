@@ -61,7 +61,7 @@ public class HasteCuriosItem extends CTDItem implements ICurioItem {
             MobEffectInstance effectInstance = new MobEffectInstance(
         										MobEffects.DIG_SPEED, 
         										MobEffectInstance.INFINITE_DURATION, 
-        										4, false, false);
+        										3, false, false);
             wearer.addEffect(effectInstance);
         }
 	}
@@ -82,7 +82,7 @@ public class HasteCuriosItem extends CTDItem implements ICurioItem {
 			MobEffectInstance effectInstance = new MobEffectInstance(
 												MobEffects.DIG_SPEED, 
 												MobEffectInstance.INFINITE_DURATION, 
-												4, false, false);
+												3, false, false);
             wearer.addEffect(effectInstance);
 		}
 	}
@@ -91,6 +91,6 @@ public class HasteCuriosItem extends CTDItem implements ICurioItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack stack, @Nullable Level worldIn, List<Component> tooltip, TooltipFlag flagIn) 
 	{
-		tooltip.add(Component.literal("Mining Haste III"));
+		tooltip.add(Component.literal("Mining Haste II"));
 	}
 }
