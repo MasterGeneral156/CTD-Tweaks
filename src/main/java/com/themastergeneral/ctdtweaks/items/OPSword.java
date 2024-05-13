@@ -28,6 +28,7 @@
 package com.themastergeneral.ctdtweaks.items;
 
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tiers;
@@ -44,6 +45,8 @@ public class OPSword extends SwordItem {
 	{
 		super.hurtEnemy(stack, attacker, defender);
 		attacker.hurt(defender.damageSources().fellOutOfWorld(), getDamage());
+		if (defender instanceof Player defp)
+			defp.getCooldowns().addCooldown(defp.getMainHandItem().getItem(), 20);
 		return true;
 	}
 }
