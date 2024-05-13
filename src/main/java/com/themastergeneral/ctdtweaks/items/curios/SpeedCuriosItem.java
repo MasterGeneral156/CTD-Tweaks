@@ -56,7 +56,7 @@ public class SpeedCuriosItem extends CTDItem implements ICurioItem {
 	{
 		LivingEntity wearer = slotContext.entity();
 		double currentSpeed = wearer.getAttributeValue(Attributes.MOVEMENT_SPEED);
-		wearer.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(currentSpeed + 0.1D);
+		wearer.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(currentSpeed + 0.07D);
 	}
 	
 	@Override
@@ -64,13 +64,13 @@ public class SpeedCuriosItem extends CTDItem implements ICurioItem {
 	{
 		LivingEntity wearer = slotContext.entity();
 		double currentSpeed = wearer.getAttributeValue(Attributes.MOVEMENT_SPEED);
-		wearer.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(currentSpeed - 0.1D);
+		wearer.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(currentSpeed - 0.07D);
 	}
 	
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack stack, @Nullable Level worldIn, List<Component> tooltip, TooltipFlag flagIn) 
 	{
-		tooltip.add(Component.literal("+10% Speed"));
+		tooltip.add(Component.literal("+7% Speed"));
 	}
 }
