@@ -89,9 +89,11 @@ public class CTDTweaks
 			ev.accept(ModItems.glowing_obsidian);
 			ev.accept(ModItems.block_coal_wither);
 			ev.accept(ModItems.coal_wither);
-			ev.accept(ModItems.steamed_carrot);
 			ev.accept(ModItems.gold_ingot_enchanted);
 			ev.accept(ModItems.combat_core);
+			
+			ev.accept(ModItems.steamed_carrot);
+			ev.accept(ModItems.roasted_beetroot);
 			
 			ev.accept(ModItems.op_sword);
 			ev.accept(ModItems.personal_teleporter);
@@ -99,6 +101,7 @@ public class CTDTweaks
 			ev.accept(ModItems.amulet_of_extinguish);
 			ev.accept(ModItems.amulet_water_breathing);
 			ev.accept(ModItems.knockback_amulet);
+			ev.accept(ModItems.yeet_amulet);
 			
 			ev.accept(ModItems.pocket_cobble_generator);
 			ev.accept(ModItems.sunn_block_charm);

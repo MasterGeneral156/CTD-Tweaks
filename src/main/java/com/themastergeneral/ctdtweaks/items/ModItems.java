@@ -53,19 +53,24 @@ public class ModItems {
 	public static SpeedCuriosItem ring_of_swiftness = new SpeedCuriosItem();
 	public static HasteCuriosItem ring_of_enlightened_miner = new HasteCuriosItem();
 	public static FlightCuriosItem ring_of_the_angels = new FlightCuriosItem();
+	
 	public static FlameRetardantCurios amulet_of_extinguish = new FlameRetardantCurios();
-	public static CuriosSunnBlock sunn_block_charm = new CuriosSunnBlock();
+	public static KnockBackCurios knockback_amulet = new KnockBackCurios(5D);
 	public static CuriosWaterBreathing amulet_water_breathing = new CuriosWaterBreathing();
+	public static KnockBackCurios yeet_amulet = new KnockBackCurios(45D);
+	
+	public static CuriosSunnBlock sunn_block_charm = new CuriosSunnBlock();
 	public static CuriosHealthCharm basic_health_charm = new CuriosHealthCharm(2.75D);
 	public static CuriosHealthCharm medium_health_charm = new CuriosHealthCharm(6.25D);
 	public static CuriosHealthCharm large_health_charm = new CuriosHealthCharm(14.125D);
-	public static KnockBackCurios knockback_amulet = new KnockBackCurios(5D);
+	
 	
 	public static TeleporterItem personal_teleporter = new TeleporterItem(71);
 	
 	public static CobbleGenItem pocket_cobble_generator = new CobbleGenItem();
 	
 	public static CTDConsumableItem steamed_carrot = new CTDConsumableItem(6, 0.65F);
+	public static CTDConsumableItem roasted_beetroot = new CTDConsumableItem(2, 0.32F);
 	
 	public static CTDDurabilityItem combat_core = new CTDDurabilityItem(new Item.Properties(), 128);
 	

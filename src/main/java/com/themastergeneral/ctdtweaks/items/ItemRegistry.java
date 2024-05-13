@@ -39,7 +39,9 @@ public class ItemRegistry {
 	public static final RegistryObject<Item> coal_wither = ITEMS.register("coal_wither", () -> ModItems.coal_wither);
 	public static final RegistryObject<Item> gold_ingot_enchanted = ITEMS.register("gold_ingot_enchanted", () -> ModItems.gold_ingot_enchanted);
 	public static final RegistryObject<Item> combat_core = ITEMS.register("combat_core", () -> ModItems.combat_core);
+	
 	public static final RegistryObject<Item> steamed_carrot = ITEMS.register("steamed_carrot", () -> ModItems.steamed_carrot);
+	public static final RegistryObject<Item> roasted_beetroot = ITEMS.register("roasted_beetroot", () -> ModItems.roasted_beetroot);
 	
 	public static final RegistryObject<Item> ring_of_switftness = ITEMS.register("ring_of_swiftness", () -> ModItems.ring_of_swiftness);
 	public static final RegistryObject<Item> ring_of_enlightened_miner = ITEMS.register("ring_of_enlightened_miner", () -> ModItems.ring_of_enlightened_miner);
@@ -56,6 +58,7 @@ public class ItemRegistry {
 	public static final RegistryObject<Item> amulet_water_breathing = ITEMS.register("amulet_water_breathing", () -> ModItems.amulet_water_breathing);
 	public static final RegistryObject<Item> amulet_of_extinguish = ITEMS.register("amulet_of_extinguish", () -> ModItems.amulet_of_extinguish);
 	public static final RegistryObject<Item> knockback_amulet = ITEMS.register("knockback_amulet", () -> ModItems.knockback_amulet);
+	public static final RegistryObject<Item> yeet_amulet = ITEMS.register("yeet_amulet", () -> ModItems.yeet_amulet);
 	
 	public static final RegistryObject<Item> op_sword = ITEMS.register("op_sword", () -> ModItems.op_sword);
 	

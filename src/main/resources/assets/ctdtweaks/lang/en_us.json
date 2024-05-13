@@ -4,7 +4,9 @@
     "item.ctdtweaks.coal_wither": "Wither Coal",
 	"item.ctdtweaks.gold_ingot_enchanted": "§6Enchanted Gold Ingot",
 	"item.ctdtweaks.combat_core": "§cCombat Core",
+	
 	"item.ctdtweaks.steamed_carrot": "Steamed Carrot",
+	"item.ctdtweaks.roasted_beetroot": "Roasted Beetroot",
 	
 	"item.ctdtweaks.ring_of_the_angels": "Ring of the Angels",
 	"item.ctdtweaks.ring_of_swiftness": "Ring of the Swift",
@@ -15,11 +17,11 @@
 	"item.ctdtweaks.amulet_of_extinguish": "Amulet of Extinguish",
 	"item.ctdtweaks.amulet_water_breathing": "Waterbreathing Amulet",
 	"item.ctdtweaks.knockback_amulet": "Amulet of Knockback",
+	"item.ctdtweaks.yeet_amulet": "Amulet of the YEET",
 	
 	"item.ctdtweaks.personal_teleporter": "Memory Recall",
 	
 	"item.ctdtweaks.sunn_block_charm": "SunnBlock2K24",
-	
 	"item.ctdtweaks.basic_health_charm": "Health Curio",
 	"item.ctdtweaks.medium_health_charm": "Dashing Health Curio",
 	"item.ctdtweaks.large_health_charm": "Demonic Health Curio",
