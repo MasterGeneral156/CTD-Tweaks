@@ -31,6 +31,7 @@ import java.util.List;
 
 import javax.annotation.Nullable;
 
+import com.themastergeneral.ctdcore.helpers.ModUtils;
 import com.themastergeneral.ctdcore.item.CTDItem;
 
 import net.minecraft.network.chat.Component;
@@ -58,7 +59,6 @@ public class FlightCuriosItem extends CTDItem implements ICurioItem {
 		if (wearer instanceof Player)
 		{
 			Player player = (Player) wearer;
-			player.getAbilities().flying = true;
 			player.getAbilities().mayfly = true;
 			player.onUpdateAbilities();
 		}
@@ -86,8 +86,7 @@ public class FlightCuriosItem extends CTDItem implements ICurioItem {
 			Player player = (Player) wearer;
 			if(!player.getAbilities().mayfly)
 			{
-				player.getAbilities().flying = false;
-				player.getAbilities().mayfly = false;
+				player.getAbilities().mayfly = true;
 				player.onUpdateAbilities();
 			}
 		}
@@ -97,6 +96,6 @@ public class FlightCuriosItem extends CTDItem implements ICurioItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack stack, @Nullable Level worldIn, List<Component> tooltip, TooltipFlag flagIn) 
 	{
-		tooltip.add(Component.literal("Creative flight"));
+		tooltip.add(ModUtils.displayTranslation("item.ctdtweaks.ring_of_swiftness.desc"));
 	}
 }
