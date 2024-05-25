@@ -31,6 +31,7 @@ import java.util.List;
 
 import javax.annotation.Nullable;
 
+import com.themastergeneral.ctdcore.helpers.ModUtils;
 import com.themastergeneral.ctdcore.item.CTDItem;
 
 import net.minecraft.network.chat.Component;
@@ -87,6 +88,6 @@ public class CuriosSunnBlock extends CTDItem implements ICurioItem
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack stack, @Nullable Level worldIn, List<Component> tooltip, TooltipFlag flagIn) 
 	{
-		tooltip.add(Component.literal("Thorns, but passes damage back to the attacker"));
+		tooltip.add(ModUtils.displayTranslation("item.ctdtweaks.sunn_block_charm.desc"));
 	}
 }

@@ -31,6 +31,7 @@ import java.util.List;
 
 import javax.annotation.Nullable;
 
+import com.themastergeneral.ctdcore.helpers.ModUtils;
 import com.themastergeneral.ctdcore.helpers.ServerHelper;
 import com.themastergeneral.ctdcore.item.CTDItem;
 
@@ -127,9 +128,9 @@ public class CobbleGenItem extends CTDItem implements ICurioItem
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack stack, @Nullable Level worldIn, List<Component> tooltip, TooltipFlag flagIn) 
 	{
-		tooltip.add(Component.literal("Generates 1 Cobble/20 ticks, max 64."));
+		tooltip.add(ModUtils.displayTranslation("item.ctdtweaks.pocket_cobble_generator.desc"));
 		//tooltip.add(Component.literal("Generates 1 Cobblestone every " + ModConfigs.COBBLEGEN_GEN_TICKS.get() + " ticks, up to a max of " + ModConfigs.COBBLEGEN_MAX_STACK.get() + "."));
 		//if (ModConfigs.COBBLEGEN_REQUIRE_BUCKETS.get())
-			tooltip.add(Component.literal("Must have Water and Lava buckets in inventory!!"));
+			tooltip.add(ModUtils.displayTranslation("item.ctdtweaks.pocket_cobble_generator.warn"));
 	}
 }

@@ -31,6 +31,7 @@ import java.util.List;
 
 import javax.annotation.Nullable;
 
+import com.themastergeneral.ctdcore.helpers.ModUtils;
 import com.themastergeneral.ctdcore.item.CTDItem;
 
 import net.minecraft.network.chat.Component;
@@ -75,6 +76,6 @@ public class CuriosWaterBreathing extends CTDItem implements ICurioItem
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack stack, @Nullable Level worldIn, List<Component> tooltip, TooltipFlag flagIn) 
 	{
-		tooltip.add(Component.literal("Will replenish oxygen when below 25%"));
+		tooltip.add(ModUtils.displayTranslation("item.ctdtweaks.amulet_water_breathing.desc"));
 	}
 }

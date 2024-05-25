@@ -96,6 +96,6 @@ public class FlightCuriosItem extends CTDItem implements ICurioItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack stack, @Nullable Level worldIn, List<Component> tooltip, TooltipFlag flagIn) 
 	{
-		tooltip.add(ModUtils.displayTranslation("item.ctdtweaks.ring_of_swiftness.desc"));
+		tooltip.add(ModUtils.displayTranslation("item.ctdtweaks.ring_of_the_angels.desc"));
 	}
 }

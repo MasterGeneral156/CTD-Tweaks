@@ -31,6 +31,7 @@ import java.util.List;
 
 import javax.annotation.Nullable;
 
+import com.themastergeneral.ctdcore.helpers.ModUtils;
 import com.themastergeneral.ctdcore.item.CTDItem;
 
 import net.minecraft.network.chat.Component;
@@ -77,7 +78,7 @@ public class FlameRetardantCurios extends CTDItem implements ICurioItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack stack, @Nullable Level worldIn, List<Component> tooltip, TooltipFlag flagIn) 
 	{
-		tooltip.add(Component.literal("Extinguishes player when set ablaze"));
+		tooltip.add(ModUtils.displayTranslation("item.ctdtweaks.amulet_of_extinguish.desc"));
 	}
 
 }

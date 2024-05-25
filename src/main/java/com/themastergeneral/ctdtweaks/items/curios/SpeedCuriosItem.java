@@ -31,6 +31,7 @@ import java.util.List;
 
 import javax.annotation.Nullable;
 
+import com.themastergeneral.ctdcore.helpers.ModUtils;
 import com.themastergeneral.ctdcore.item.CTDItem;
 
 import net.minecraft.network.chat.Component;
@@ -71,6 +72,6 @@ public class SpeedCuriosItem extends CTDItem implements ICurioItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack stack, @Nullable Level worldIn, List<Component> tooltip, TooltipFlag flagIn) 
 	{
-		tooltip.add(Component.literal("+7% Speed"));
+		tooltip.add(ModUtils.displayTranslation("item.ctdtweaks.ring_of_swiftness.desc"));
 	}
 }
