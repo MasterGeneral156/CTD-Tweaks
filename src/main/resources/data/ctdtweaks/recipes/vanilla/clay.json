@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "ctdtweaks:clay",
   "ingredients": [
     {
       "item": "minecraft:clay"

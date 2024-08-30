@@ -1,6 +1,5 @@
 {
     "type": "minecraft:crafting_shaped",
-    "group": "ctdtweaks:op_sword",
     "pattern": [
         "N N",
         "E E",

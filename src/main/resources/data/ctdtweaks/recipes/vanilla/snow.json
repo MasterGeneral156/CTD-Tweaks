@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "ctdtweaks:snow",
   "ingredients": [
     {
       "item": "minecraft:snow"

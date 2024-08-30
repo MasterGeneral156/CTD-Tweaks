@@ -1,6 +1,5 @@
 {
     "type": "minecraft:crafting_shaped",
-    "group": "ctdtweaks:knockback_amulet",
     "pattern": [
         "SSS",
         "S S",

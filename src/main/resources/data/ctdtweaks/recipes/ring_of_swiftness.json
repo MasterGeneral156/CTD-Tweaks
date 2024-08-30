@@ -1,6 +1,5 @@
 {
     "type": "minecraft:crafting_shaped",
-    "group": "ctdtweaks:ring_of_swiftness",
     "pattern": [
         "GES",
         "ECE",

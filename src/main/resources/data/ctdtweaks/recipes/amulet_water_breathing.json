@@ -1,6 +1,5 @@
 {
     "type": "minecraft:crafting_shaped",
-    "group": "ctdtweaks:amulet_water_breathing",
     "pattern": [
         "SSS",
         "S S",

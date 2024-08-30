@@ -1,6 +1,5 @@
 {
     "type": "minecraft:crafting_shaped",
-    "group": "ctdtweaks:amulet_of_extinguish",
     "pattern": [
         "SSS",
         "S S",

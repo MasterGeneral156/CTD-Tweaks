@@ -1,6 +1,5 @@
 {
     "type": "minecraft:crafting_shaped",
-    "group": "ctdtweaks:pocket_cobble_generator",
     "pattern": [
         "EEE",
         "WPL",

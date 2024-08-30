@@ -5,6 +5,7 @@
 	"ctdtweaks:sunn_block_charm",
 	"ctdtweaks:large_health_charm",
 	"ctdtweaks:medium_health_charm",
-	"ctdtweaks:basic_health_charm"
+	"ctdtweaks:basic_health_charm",
+	"ctdtweaks:repair_charm"
   ]
 }

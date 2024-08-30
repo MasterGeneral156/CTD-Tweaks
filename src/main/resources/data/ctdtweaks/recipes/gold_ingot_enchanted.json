@@ -1,6 +1,5 @@
 {
     "type": "minecraft:crafting_shaped",
-    "group": "ctdtweaks:gold_ingot_enchanted",
     "pattern": [
         "GGG",
         "GBG",

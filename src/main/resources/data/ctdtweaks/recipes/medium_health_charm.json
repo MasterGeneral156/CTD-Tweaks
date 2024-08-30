@@ -1,6 +1,5 @@
 {
     "type": "minecraft:crafting_shaped",
-    "group": "ctdtweaks:health_charm",
     "pattern": [
         "EEE",
         "GCG",
