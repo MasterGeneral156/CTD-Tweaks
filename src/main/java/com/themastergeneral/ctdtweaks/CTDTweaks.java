@@ -105,6 +105,7 @@ public class CTDTweaks
 			
 			ev.accept(ModItems.pocket_cobble_generator);
 			ev.accept(ModItems.sunn_block_charm);
+			ev.accept(ModItems.repair_charm);
 			
 			ev.accept(ModItems.ring_of_enlightened_miner);
 			ev.accept(ModItems.ring_of_swiftness);

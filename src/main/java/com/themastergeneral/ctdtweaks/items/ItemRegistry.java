@@ -50,6 +50,7 @@ public class ItemRegistry {
 	public static final RegistryObject<Item> pocket_cobble_generator = ITEMS.register("pocket_cobble_generator", () -> ModItems.pocket_cobble_generator);
 	public static final RegistryObject<Item> personal_teleporter = ITEMS.register("personal_teleporter", () -> ModItems.personal_teleporter);
 	public static final RegistryObject<Item> sunn_block_charm = ITEMS.register("sunn_block_charm", () -> ModItems.sunn_block_charm);
+	public static final RegistryObject<Item> repair_charm = ITEMS.register("repair_charm", () -> ModItems.repair_charm);
 	
 	public static final RegistryObject<Item> basic_health_charm = ITEMS.register("basic_health_charm", () -> ModItems.basic_health_charm);
 	public static final RegistryObject<Item> medium_health_charm = ITEMS.register("medium_health_charm", () -> ModItems.medium_health_charm);

@@ -41,6 +41,7 @@ import com.themastergeneral.ctdtweaks.items.curios.FlightCuriosItem;
 import com.themastergeneral.ctdtweaks.items.curios.HasteCuriosItem;
 import com.themastergeneral.ctdtweaks.items.curios.KnockBackCurios;
 import com.themastergeneral.ctdtweaks.items.curios.SpeedCuriosItem;
+import com.themastergeneral.ctdtweaks.items.curios.RepairCurios;
 
 import net.minecraft.world.item.Item;
 
@@ -68,6 +69,7 @@ public class ModItems {
 	public static TeleporterItem personal_teleporter = new TeleporterItem(71);
 	
 	public static CobbleGenItem pocket_cobble_generator = new CobbleGenItem();
+	public static RepairCurios repair_charm = new RepairCurios();
 	
 	public static CTDConsumableItem steamed_carrot = new CTDConsumableItem(6, 0.65F);
 	public static CTDConsumableItem roasted_beetroot = new CTDConsumableItem(2, 0.32F);

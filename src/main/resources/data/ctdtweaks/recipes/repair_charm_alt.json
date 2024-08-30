@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "GGG",
+        "NCN",
+		"GGG"
+    ],
+    "key": {
+		"G": { "tag": "forge:ingots/enchanted_gold" },
+		"N": { "item": "minecraft:name_tag" },
+		"C": { "item": "ctdtweaks:combat_core", "data": 32767 }
+    },
+    "result": {
+        "item": "ctdtweaks:repair_charm"
+    }
+}
