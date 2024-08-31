@@ -90,6 +90,8 @@ public class CTDTweaks
 			ev.accept(ModItems.block_coal_wither);
 			ev.accept(ModItems.coal_wither);
 			ev.accept(ModItems.gold_ingot_enchanted);
+			ev.accept(ModItems.nugget_coal);
+			ev.accept(ModItems.nugget_charcoal);
 			ev.accept(ModItems.combat_core);
 			
 			ev.accept(ModItems.steamed_carrot);

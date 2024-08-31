@@ -59,7 +59,10 @@ public class ModItems {
 	public static KnockBackCurios knockback_amulet = new KnockBackCurios(5D);
 	public static CuriosWaterBreathing amulet_water_breathing = new CuriosWaterBreathing();
 	public static KnockBackCurios yeet_amulet = new KnockBackCurios(45D);
-	
+
+	public static CTDFuelItem nugget_coal = new CTDFuelItem(200);
+	public static CTDFuelItem nugget_charcoal = new CTDFuelItem(200);
+
 	public static CuriosSunnBlock sunn_block_charm = new CuriosSunnBlock();
 	public static CuriosHealthCharm basic_health_charm = new CuriosHealthCharm(2.75D);
 	public static CuriosHealthCharm medium_health_charm = new CuriosHealthCharm(6.25D);

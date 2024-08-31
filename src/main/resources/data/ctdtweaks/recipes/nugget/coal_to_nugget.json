@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "W"
+    ],
+    "key": {
+		"W": { "item": "minecraft:coal" }
+    },
+    "result": {
+        "item": "ctdtweaks:nugget_coal",
+		"count": 8
+    }
+}

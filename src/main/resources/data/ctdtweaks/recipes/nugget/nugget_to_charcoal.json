@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "WWW",
+        "W W",
+		"WWW"
+    ],
+    "key": {
+		"W": { "item": "ctdtweaks:nugget_charcoal" }
+    },
+    "result": {
+        "item": "minecraft:charcoal"
+    }
+}

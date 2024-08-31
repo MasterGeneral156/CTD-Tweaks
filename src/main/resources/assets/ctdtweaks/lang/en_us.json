@@ -2,6 +2,8 @@
     "ctdtweaks.itemgroup.name": "CTD Tweaks",
 
     "item.ctdtweaks.coal_wither": "Wither Coal",
+	"item.ctdtweaks.nugget_coal": "Tiny Coal",
+	"item.ctdtweaks.nugget_charcoal": "Tiny Charcoal",
 	"item.ctdtweaks.gold_ingot_enchanted": "§6Enchanted Gold Ingot",
 	"item.ctdtweaks.combat_core": "§cCombat Core",
 	
