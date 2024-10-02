@@ -42,4 +42,5 @@
 	"item.ctdtweaks.sunn_block_charm.desc": "Reflects damage back to attacker. (WIP)",
 	"item.ctdtweaks.amulet_water_breathing.desc": "Replenishes Oxygen when =< 25%",
 	"item.ctdtweaks.amulet_of_extinguish.desc": "Extinguishes the player when set ablaze"
+	"item.ctdtweaks.op_sword.desc": "§8Deals void damage"
 }
