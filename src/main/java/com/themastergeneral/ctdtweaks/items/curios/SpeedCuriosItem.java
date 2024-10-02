@@ -57,8 +57,8 @@ public class SpeedCuriosItem extends CTDItem implements ICurioItem {
 	{
 		LivingEntity wearer = slotContext.entity();
 		double currentSpeed = wearer.getAttributeValue(Attributes.MOVEMENT_SPEED);
-		double currentFlySpeed = wearer.getAttributeValue(Attributes.FLYING_SPEED);
 		wearer.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(currentSpeed + 0.07D);
+		//double currentFlySpeed = wearer.getAttributeValue(Attributes.FLYING_SPEED);
 		//wearer.getAttribute(Attributes.FLYING_SPEED).setBaseValue(currentFlySpeed + ModConfigs.CURIOS_SPEED_INCREASE.get());
 	}
 	
@@ -67,8 +67,8 @@ public class SpeedCuriosItem extends CTDItem implements ICurioItem {
 	{
 		LivingEntity wearer = slotContext.entity();
 		double currentSpeed = wearer.getAttributeValue(Attributes.MOVEMENT_SPEED);
-		double currentFlySpeed = wearer.getAttributeValue(Attributes.FLYING_SPEED);
 		wearer.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(currentSpeed - 0.07D);
+		//double currentFlySpeed = wearer.getAttributeValue(Attributes.FLYING_SPEED);
 		//wearer.getAttribute(Attributes.FLYING_SPEED).setBaseValue(currentFlySpeed - ModConfigs.CURIOS_SPEED_INCREASE.get());
 	}
 	
