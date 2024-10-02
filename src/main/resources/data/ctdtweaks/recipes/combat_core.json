@@ -1,17 +1,17 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "ABA",
+        "EBE",
         "SDN",
-		"ACA"
+		"EAE"
     ],
     "key": {
 		"D": { "tag": "forge:gems/amethyst" },
-		"N": { "item": "minecraft:netherite_sword" },
-		"S": { "item": "minecraft:shield" },
-		"B": { "item": "minecraft:bow" },
-		"A": { "item": "minecraft:spectral_arrow" },
-		"C": { "item": "minecraft:crossbow" }
+		"E": { "tag": "forge:ingots/enchanted_gold" },
+		"B": { "tag": "forge:tools/bows" },
+		"N": { "tag": "minecraft:swords" },
+		"S": { "tag": "forge:tools/shields" },
+		"A": { "tag": "minecraft:arrows" }
     },
     "result": {
         "item": "ctdtweaks:combat_core"
