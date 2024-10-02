@@ -29,6 +29,7 @@ package com.themastergeneral.ctdtweaks.items.curios;
 
 import com.themastergeneral.ctdcore.helpers.ModUtils;
 import com.themastergeneral.ctdcore.item.CTDItem;
+import com.themastergeneral.ctdtweaks.config.ModConfigs;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -69,7 +70,7 @@ public class RepairCurios extends CTDItem implements ICurioItem {
 					if (slotID > -1) {
 						ItemStack itemstack1 = player.getInventory().getItem(slotID);
 						itemstack1.setDamageValue(itemstack1.getDamageValue() - 1);
-						player.getCooldowns().addCooldown(this.asItem(), 10);
+						player.getCooldowns().addCooldown(this.asItem(), ModConfigs.REPAIR_TICKS.get());
 					}
 			}
 		}

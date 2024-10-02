@@ -34,6 +34,7 @@ import javax.annotation.Nullable;
 import com.themastergeneral.ctdcore.helpers.ModUtils;
 import com.themastergeneral.ctdcore.item.CTDItem;
 
+import com.themastergeneral.ctdtweaks.config.ModConfigs;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -67,7 +68,7 @@ public class FlameRetardantCurios extends CTDItem implements ICurioItem {
 					stack.hurtAndBreak(1, player, (p_41300_) -> {
 		                  p_41300_.broadcastBreakEvent(Player.getEquipmentSlotForItem(stack));
 		               });
-					player.getCooldowns().addCooldown(stack.getItem(), 20);
+					player.getCooldowns().addCooldown(stack.getItem(), ModConfigs.EXTINGUISHING_COOLDOWN.get());
 					player.clearFire();
 				}
 			}

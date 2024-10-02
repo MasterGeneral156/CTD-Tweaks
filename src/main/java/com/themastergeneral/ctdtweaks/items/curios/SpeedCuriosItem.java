@@ -34,6 +34,7 @@ import javax.annotation.Nullable;
 import com.themastergeneral.ctdcore.helpers.ModUtils;
 import com.themastergeneral.ctdcore.item.CTDItem;
 
+import com.themastergeneral.ctdtweaks.config.ModConfigs;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -57,8 +58,8 @@ public class SpeedCuriosItem extends CTDItem implements ICurioItem {
 	{
 		LivingEntity wearer = slotContext.entity();
 		double currentSpeed = wearer.getAttributeValue(Attributes.MOVEMENT_SPEED);
-		wearer.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(currentSpeed + 0.07D);
 		//double currentFlySpeed = wearer.getAttributeValue(Attributes.FLYING_SPEED);
+		wearer.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(currentSpeed + ModConfigs.CURIOS_SPEED_INCREASE.get());
 		//wearer.getAttribute(Attributes.FLYING_SPEED).setBaseValue(currentFlySpeed + ModConfigs.CURIOS_SPEED_INCREASE.get());
 	}
 	
@@ -67,8 +68,8 @@ public class SpeedCuriosItem extends CTDItem implements ICurioItem {
 	{
 		LivingEntity wearer = slotContext.entity();
 		double currentSpeed = wearer.getAttributeValue(Attributes.MOVEMENT_SPEED);
-		wearer.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(currentSpeed - 0.07D);
 		//double currentFlySpeed = wearer.getAttributeValue(Attributes.FLYING_SPEED);
+		wearer.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(currentSpeed - ModConfigs.CURIOS_SPEED_INCREASE.get());
 		//wearer.getAttribute(Attributes.FLYING_SPEED).setBaseValue(currentFlySpeed - ModConfigs.CURIOS_SPEED_INCREASE.get());
 	}
 	
@@ -76,6 +77,6 @@ public class SpeedCuriosItem extends CTDItem implements ICurioItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack stack, @Nullable Level worldIn, List<Component> tooltip, TooltipFlag flagIn) 
 	{
-		tooltip.add(ModUtils.displayTranslation("item.ctdtweaks.ring_of_swiftness.desc"));
+		tooltip.add(ModUtils.displayTranslation("item.ctdtweaks.ring_of_swiftness.desc").append(" +" + Math.round(ModConfigs.CURIOS_SPEED_INCREASE.get() * 100D) + "%"));
 	}
 }

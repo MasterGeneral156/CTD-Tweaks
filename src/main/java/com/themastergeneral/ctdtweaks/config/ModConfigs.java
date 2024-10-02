@@ -27,60 +27,92 @@
 */
 package com.themastergeneral.ctdtweaks.config;
 
-/*import net.minecraftforge.common.ForgeConfigSpec;
-import net.minecraftforge.common.ForgeConfigSpec.Builder;
-import net.minecraftforge.fml.ModLoadingContext;
+import com.google.common.base.Equivalence;
+import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
+import org.checkerframework.checker.nullness.qual.Nullable;
 
-@Mod.EventBusSubscriber(modid = "ctdtweaks", bus = Mod.EventBusSubscriber.Bus.MOD)
+@Mod.EventBusSubscriber
 public class ModConfigs {
 
-	private static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder().push(null);
-	
-	public static final ForgeConfigSpec SPEC = BUILDER.build();
-	
-	public static void registerConfig()
-	{
-		cobbleGen.build(BUILDER);
-		witherFuel.build(BUILDER);
-	}
-	
-	public static class cobbleGen
-	{
-		public static void build(ForgeConfigSpec.Builder BUILDER)
-		{
-			BUILDER.comment("Settings for Pocket Cobblestone Generator").push("Pocket Cobble Generator");
-			COBBLEGEN_REQUIRE_BUCKETS = BUILDER
-					.comment("Require Water and Lava bucket in inventory before generating Cobblestone?")
-					.define("requireMaterials", true);
-			
-			COBBLEGEN_GEN_TICKS = BUILDER
-		            .comment("Delay (in ticks) before Pocket Cobble Generator generators another Cobblestone.")
-		            .defineInRange("cobbleGenRateTicks", 40, 1, 1024);
-			
-			COBBLEGEN_MAX_STACK = BUILDER
-		            .comment("How much Cobblestone to store before the Pocket Cobble Gen stops creating more.")
-		            .defineInRange("cobbleGenMaxStack", 64, 1, 1024);
-			BUILDER.pop();
-		}
-	}
-	
-	public class witherFuel
-	{
-		
-		public static void build(ForgeConfigSpec.Builder BUILDER)
-		{
-			BUILDER.comment("Config for Wither Fuel").push("Wither Fuel");
-			WITHER_GEN_TICKS = BUILDER
-		            .comment("Burn time (in ticks)")
-		            .defineInRange("fuelTime", 560000, 1, Integer.MAX_VALUE);
-		}
-	}
-	public static ForgeConfigSpec.ConfigValue<Integer> COBBLEGEN_GEN_TICKS;
-	public static ForgeConfigSpec.ConfigValue<Boolean> COBBLEGEN_REQUIRE_BUCKETS;
-	public static ForgeConfigSpec.ConfigValue<Integer> WITHER_GEN_TICKS;
-	public static ForgeConfigSpec.ConfigValue<Integer> COBBLEGEN_MAX_STACK;
-	
-	
-}*/
+    public static ForgeConfigSpec.IntValue COBBLE_GEN_TICKS;
+    public static ForgeConfigSpec.BooleanValue COBBLE_GEN_BUCKET;
+    public static ForgeConfigSpec.IntValue COBBLE_GEN_MAX;
+
+    public static ForgeConfigSpec.IntValue REPAIR_TICKS;
+
+    public static ForgeConfigSpec.IntValue WATERBREATHING_COOLDOWN;
+    public static ForgeConfigSpec.DoubleValue WATERBREATHING_REGEN;
+
+    public static ForgeConfigSpec.IntValue EXTINGUISHING_COOLDOWN;
+
+    public static ForgeConfigSpec.DoubleValue CURIOS_SPEED_INCREASE;
+    public static ForgeConfigSpec.IntValue CURIOS_MINING_INCREASE;
+
+    public static final ForgeConfigSpec.Builder GENERAL_SPEC = new ForgeConfigSpec.Builder();
+
+    public static ForgeConfigSpec COMMON;
+
+    static {
+        GENERAL_SPEC.push("pocket_cobble_generator");
+        COBBLE_GEN_TICKS =
+                GENERAL_SPEC
+                        .comment("Ticks between cobblestone being generated")
+                        .defineInRange("pocket_cobble_ticks", 20, 1, Integer.MAX_VALUE);
+
+        COBBLE_GEN_MAX =
+                GENERAL_SPEC
+                        .comment("Maximum amount of cobble to store in player inventory before stopping")
+                        .defineInRange("pocket_cobble_max", 64, 8, 1024);
+
+        COBBLE_GEN_BUCKET =
+                GENERAL_SPEC
+                        .comment("Set to false to disable the need to have a buckets of water and lava in inventory")
+                        .define("pocket_cobble_bucket_required", true);
+        GENERAL_SPEC.pop();
+
+        GENERAL_SPEC.push("repair_charm");
+        REPAIR_TICKS =
+                GENERAL_SPEC
+                        .comment("Ticks between repair attempts on damaged items when using the Repair Charm")
+                        .defineInRange("repair_charm_ticks", 10, 1, Integer.MAX_VALUE);
+
+        GENERAL_SPEC.pop();
+        GENERAL_SPEC.push("amulet_water_breathing");
+        WATERBREATHING_COOLDOWN =
+                GENERAL_SPEC
+                        .comment("Ticks between refilling the players O2 supply")
+                        .defineInRange("amulet_water_breathing_cooldown", 100, 1, Integer.MAX_VALUE);
+
+       WATERBREATHING_REGEN =
+                GENERAL_SPEC
+                        .comment("How low must player O2 supply drop before refill")
+                        .defineInRange("amulet_water_breathing_regen", 0.25D, 0.01D, 1.0D);
+        GENERAL_SPEC.pop();
+
+        GENERAL_SPEC.push("amulet_of_extinguish");
+        EXTINGUISHING_COOLDOWN =
+                GENERAL_SPEC
+                        .comment("Ticks between extinguishing the player when on fire")
+                        .defineInRange("amulet_of_extinguish_cooldown", 20, 1, Integer.MAX_VALUE);
+
+        GENERAL_SPEC.pop();
+
+        GENERAL_SPEC.push("ring_of_switftness");
+        CURIOS_SPEED_INCREASE =
+                GENERAL_SPEC
+                        .comment("Perecent speed increase when worn")
+                        .defineInRange("ring_of_switftness_increase", 0.07D, 0.01D, 500D);
+
+        GENERAL_SPEC.pop();
+
+        GENERAL_SPEC.push("ring_of_enlightened_miner");
+        CURIOS_MINING_INCREASE =
+                GENERAL_SPEC
+                        .comment("Mining Haste effect strength when worn")
+                        .defineInRange("ring_of_enlightened_miner_increase", 2, 1, 32);
+
+        GENERAL_SPEC.pop();
+        COMMON = GENERAL_SPEC.build();
+    }
+}

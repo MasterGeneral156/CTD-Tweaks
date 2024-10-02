@@ -34,6 +34,7 @@ import javax.annotation.Nullable;
 import com.themastergeneral.ctdcore.helpers.ModUtils;
 import com.themastergeneral.ctdcore.item.CTDItem;
 
+import com.themastergeneral.ctdtweaks.config.ModConfigs;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -58,14 +59,14 @@ public class CuriosWaterBreathing extends CTDItem implements ICurioItem
 		LivingEntity wearer = slotContext.entity();
 		if (wearer instanceof Player player)
 		{
-			if(player.isUnderWater() && (player.getAirSupply() < (player.getMaxAirSupply() * 0.25)))
+			if(player.isUnderWater() && (player.getAirSupply() < (player.getMaxAirSupply() * ModConfigs.WATERBREATHING_REGEN.get())))
 			{
 				if (!player.getCooldowns().isOnCooldown(stack.getItem()))
 				{
 					stack.hurtAndBreak(1, player, (p_41300_) -> {
 		                  p_41300_.broadcastBreakEvent(Player.getEquipmentSlotForItem(stack));
 		               });
-					player.getCooldowns().addCooldown(stack.getItem(), 100);
+					player.getCooldowns().addCooldown(stack.getItem(), ModConfigs.WATERBREATHING_COOLDOWN.get());
 					player.setAirSupply(player.getMaxAirSupply());
 				}
 			}
@@ -76,6 +77,6 @@ public class CuriosWaterBreathing extends CTDItem implements ICurioItem
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack stack, @Nullable Level worldIn, List<Component> tooltip, TooltipFlag flagIn) 
 	{
-		tooltip.add(ModUtils.displayTranslation("item.ctdtweaks.amulet_water_breathing.desc"));
+		tooltip.add(ModUtils.displayTranslation("item.ctdtweaks.amulet_water_breathing.desc").append(" " +  Math.round(ModConfigs.WATERBREATHING_REGEN.get() * 100D) + "%"));
 	}
 }

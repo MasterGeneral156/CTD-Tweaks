@@ -35,12 +35,13 @@
 	"block.ctdtweaks.glowing_obsidian": "Glowing Obsidian",
 	
 	"item.ctdtweaks.ring_of_the_angels.desc": "Creative flight",
-	"item.ctdtweaks.ring_of_enlightened_miner.desc": "Mining Haste II",
-	"item.ctdtweaks.ring_of_swiftness.desc": "Speed +7%",
-	"item.ctdtweaks.pocket_cobble_generator.desc": "Generates 1 Cobble/tick; Max stored: 64",
-	"item.ctdtweaks.pocket_cobble_generator.warn": "Must have Water and Lava buckets in inventory!!",
-	"item.ctdtweaks.sunn_block_charm.desc": "Reflects damage back to attacker. (WIP)",
-	"item.ctdtweaks.amulet_water_breathing.desc": "Replenishes Oxygen when =< 25%",
-	"item.ctdtweaks.amulet_of_extinguish.desc": "Extinguishes the player when set ablaze"
+	"item.ctdtweaks.ring_of_enlightened_miner.desc": "Mining Haste",
+	"item.ctdtweaks.ring_of_swiftness.desc": "Speed",
+	"item.ctdtweaks.pocket_cobble_generator.desc": "Generates 1 Cobble per ",
+	"item.ctdtweaks.pocket_cobble_generator.desc.2": " tick(s), stocking to a maximum of ",
+	"item.ctdtweaks.pocket_cobble_generator.warn": "§4Must have Water and Lava buckets in inventory!!",
+	"item.ctdtweaks.sunn_block_charm.desc": "Reflects damage back to attacker [WIP]",
+	"item.ctdtweaks.amulet_water_breathing.desc": "Replenishes Oxygen when below",
+	"item.ctdtweaks.amulet_of_extinguish.desc": "Extinguishes the player when set ablaze",
 	"item.ctdtweaks.op_sword.desc": "§8Deals void damage"
 }

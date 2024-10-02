@@ -34,23 +34,14 @@ public class KnockBackCurios extends CTDItem implements ICurioItem
 	{
 		LivingEntity wearer = slotContext.entity();
 		if (wearer instanceof Player player)
-		{
-			double knockback = player.getAttributeValue(Attributes.ATTACK_KNOCKBACK);
-			player.getAttribute(Attributes.ATTACK_KNOCKBACK).setBaseValue(knockback + this.knockback);
-		}
+			player.getAttribute(Attributes.ATTACK_KNOCKBACK).setBaseValue(player.getAttributeValue(Attributes.ATTACK_KNOCKBACK) + this.knockback);
 	}
 	
 	public void onUnequip(SlotContext slotContext, ItemStack newStack, ItemStack stack) 
 	{
 		LivingEntity wearer = slotContext.entity();
 		if (wearer instanceof Player player)
-		{
-			double knockback = player.getAttributeValue(Attributes.ATTACK_KNOCKBACK);
-			if ((knockback > 5D) && (knockback != Double.NaN))
-			{
-				player.getAttribute(Attributes.ATTACK_KNOCKBACK).setBaseValue(knockback - this.knockback);
-			}
-		}
+			player.getAttribute(Attributes.ATTACK_KNOCKBACK).setBaseValue(Attributes.ATTACK_KNOCKBACK.getDefaultValue());
 	}
 	
 	@Override
@@ -58,6 +49,5 @@ public class KnockBackCurios extends CTDItem implements ICurioItem
 	public void appendHoverText(ItemStack stack, @Nullable Level worldIn, List<Component> tooltip, TooltipFlag flagIn) 
 	{
 		tooltip.add(Component.literal("+" + this.knockback + " attack knockback."));
-		tooltip.add(Component.literal("Base Knockback: 5"));
 	}
 }

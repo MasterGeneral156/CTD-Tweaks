@@ -34,6 +34,7 @@ import javax.annotation.Nullable;
 import com.themastergeneral.ctdcore.helpers.ModUtils;
 import com.themastergeneral.ctdcore.item.CTDItem;
 
+import com.themastergeneral.ctdtweaks.config.ModConfigs;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -57,14 +58,8 @@ public class HasteCuriosItem extends CTDItem implements ICurioItem {
 	public void onEquip(SlotContext slotContext, ItemStack prevStack, ItemStack stack) 
 	{
 		LivingEntity wearer = slotContext.entity();
-		if(!wearer.hasEffect(MobEffects.DIG_SPEED)) 
-		{
-            MobEffectInstance effectInstance = new MobEffectInstance(
-        										MobEffects.DIG_SPEED, 
-        										MobEffectInstance.INFINITE_DURATION, 
-        										3, false, false);
-            wearer.addEffect(effectInstance);
-        }
+		if(!wearer.hasEffect(MobEffects.DIG_SPEED))
+            wearer.addEffect(getEffect());
 	}
 	
 	@Override
@@ -78,20 +73,23 @@ public class HasteCuriosItem extends CTDItem implements ICurioItem {
 	public void curioTick(SlotContext slotContext, ItemStack stack) 
 	{
 		LivingEntity wearer = slotContext.entity();
-		if(!wearer.hasEffect(MobEffects.DIG_SPEED)) 
-		{
-			MobEffectInstance effectInstance = new MobEffectInstance(
-												MobEffects.DIG_SPEED, 
-												MobEffectInstance.INFINITE_DURATION, 
-												3, false, false);
-            wearer.addEffect(effectInstance);
-		}
+		if(!wearer.hasEffect(MobEffects.DIG_SPEED))
+            wearer.addEffect(getEffect());
 	}
 	
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack stack, @Nullable Level worldIn, List<Component> tooltip, TooltipFlag flagIn) 
 	{
-		tooltip.add(ModUtils.displayTranslation("item.ctdtweaks.ring_of_enlightened_miner.desc"));
+		tooltip.add(ModUtils.displayTranslation("item.ctdtweaks.ring_of_enlightened_miner.desc").append(" " + ModConfigs.CURIOS_MINING_INCREASE.get()));
+	}
+
+	public MobEffectInstance getEffect()
+	{
+		return new MobEffectInstance(
+				MobEffects.DIG_SPEED,
+				MobEffectInstance.INFINITE_DURATION,
+				ModConfigs.CURIOS_MINING_INCREASE.get() + 1,
+				false, false);
 	}
 }

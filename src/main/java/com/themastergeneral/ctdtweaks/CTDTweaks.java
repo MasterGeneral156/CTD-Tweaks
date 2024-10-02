@@ -31,6 +31,7 @@ package com.themastergeneral.ctdtweaks;
 import com.mojang.logging.LogUtils;
 import com.themastergeneral.ctdcore.helpers.ModUtils;
 import com.themastergeneral.ctdtweaks.blocks.BlockRegistry;
+import com.themastergeneral.ctdtweaks.config.ModConfigs;
 import com.themastergeneral.ctdtweaks.items.ItemRegistry;
 import com.themastergeneral.ctdtweaks.items.ModItems;
 
@@ -38,7 +39,9 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.InterModComms;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -62,7 +65,8 @@ public class CTDTweaks
         modbus.addListener(this::setup);
         modbus.addListener(this::enqueueIMC);
         modbus.addListener(this::fillTab);
-    	
+
+		ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ModConfigs.COMMON);
         MinecraftForge.EVENT_BUS.register(this);
         ItemRegistry.ITEMS.register(modbus);
         BlockRegistry.BLOCKS.register(modbus);
