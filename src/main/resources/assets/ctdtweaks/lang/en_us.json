@@ -1,25 +1,25 @@
 {
     "ctdtweaks.itemgroup.name": "CTD Tweaks",
 
-    "item.ctdtweaks.coal_wither": "Wither Coal",
-	"item.ctdtweaks.nugget_coal": "Tiny Coal",
-	"item.ctdtweaks.nugget_charcoal": "Tiny Charcoal",
+    "item.ctdtweaks.coal_wither": "§bWither Coal",
+	"item.ctdtweaks.nugget_coal": "§8Tiny Coal",
+	"item.ctdtweaks.nugget_charcoal": "§8Tiny Charcoal",
 	"item.ctdtweaks.gold_ingot_enchanted": "§6Enchanted Gold Ingot",
 	"item.ctdtweaks.combat_core": "§cCombat Core",
 	
 	"item.ctdtweaks.steamed_carrot": "Steamed Carrot",
 	"item.ctdtweaks.roasted_beetroot": "Roasted Beetroot",
 	
-	"item.ctdtweaks.ring_of_the_angels": "Ring of the Angels",
-	"item.ctdtweaks.ring_of_swiftness": "Ring of the Swift",
-	"item.ctdtweaks.ring_of_enlightened_miner": "Ring of Enlightened Mining",
+	"item.ctdtweaks.ring_of_the_angels": "§eRing of the Angels",
+	"item.ctdtweaks.ring_of_swiftness": "§eRing of the Swift",
+	"item.ctdtweaks.ring_of_enlightened_miner": "§eRing of Enlightened Mining",
 	
-	"item.ctdtweaks.pocket_cobble_generator": "Pocket Cobble Collector",
-	"item.ctdtweaks.repair_charm": "Repair Charm",
+	"item.ctdtweaks.pocket_cobble_generator": "§ePocket Cobble Collector",
+	"item.ctdtweaks.repair_charm": "§eRepair Charm",
 	
-	"item.ctdtweaks.amulet_of_extinguish": "Amulet of Extinguish",
-	"item.ctdtweaks.amulet_water_breathing": "Waterbreathing Amulet",
-	"item.ctdtweaks.knockback_amulet": "Amulet of Knockback",
+	"item.ctdtweaks.amulet_of_extinguish": "§eAmulet of Extinguish",
+	"item.ctdtweaks.amulet_water_breathing": "§eWaterbreathing Amulet",
+	"item.ctdtweaks.knockback_amulet": "§eAmulet of Knockback",
 	"item.ctdtweaks.yeet_amulet": "§eAmulet of the Yeetus Skeetus",
 	
 	"item.ctdtweaks.personal_teleporter": "Memory Recall",
@@ -31,7 +31,7 @@
 	
 	"item.ctdtweaks.op_sword": "Tri-blade of Destruction",
 	
-	"block.ctdtweaks.block_coal_wither": "Block of Wither Coal",
+	"block.ctdtweaks.block_coal_wither": "§bBlock of Wither Coal",
 	"block.ctdtweaks.glowing_obsidian": "Glowing Obsidian",
 	
 	"item.ctdtweaks.ring_of_the_angels.desc": "Creative flight",
