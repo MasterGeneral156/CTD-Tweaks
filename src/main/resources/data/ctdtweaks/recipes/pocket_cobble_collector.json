@@ -9,7 +9,7 @@
 		"P": { "item": "minecraft:netherite_pickaxe" },
 		"W": { "item": "minecraft:water_bucket" },
 		"L": { "item": "minecraft:lava_bucket" },
-		"E": { "item": "ctdtweaks:gold_ingot_enchanted" }
+		"E": { "tag": "forge:ingots/enchanted_gold" }
     },
     "result": {
         "item": "ctdtweaks:pocket_cobble_generator"

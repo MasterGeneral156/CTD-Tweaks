@@ -7,7 +7,7 @@
     ],
     "key": {
 		"G": { "tag": "forge:gems/amethyst" },
-		"E": { "item": "ctdtweaks:gold_ingot_enchanted" },
+		"E": { "tag": "forge:ingots/enchanted_gold" },
 		"S": { "item": "minecraft:golden_pickaxe" },
 		"C": { "item": "ctdtweaks:combat_core", "data": 32767 }
     },

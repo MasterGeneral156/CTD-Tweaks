@@ -7,7 +7,7 @@
     ],
     "key": {
 		"G": { "item": "minecraft:elytra" },
-		"E": { "item": "ctdtweaks:gold_ingot_enchanted" },
+		"E": { "tag": "forge:ingots/enchanted_gold" },
 		"S": { "item": "minecraft:shulker_shell" },
 		"C": { "item": "ctdtweaks:combat_core", "data": 32767 }
     },

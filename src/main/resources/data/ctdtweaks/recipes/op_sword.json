@@ -7,7 +7,7 @@
     ],
     "key": {
 		"N": { "item": "minecraft:netherite_sword" },
-		"E": { "item": "ctdtweaks:gold_ingot_enchanted" },
+		"E": { "tag": "forge:ingots/enchanted_gold" },
 		"C": { "item": "ctdtweaks:combat_core", "data": 32767 }
     },
     "result": {
