@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "DLD",
+        "DDD",
+		"D D"
+    ],
+    "key": {
+		"D": { "tag": "forge:ingots/enchanted_gold" },
+		"L": { "tag": "forge:leather" }
+    },
+    "result": {
+        "item": "minecraft:golden_horse_armor",
+		"count": 1
+	}
+}
