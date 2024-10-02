@@ -6,7 +6,7 @@
 		"EEE"
     ],
     "key": {
-		"P": { "item": "minecraft:netherite_pickaxe" },
+		"P": { "tag": "minecraft:pickaxes" },
 		"W": { "item": "minecraft:water_bucket" },
 		"L": { "item": "minecraft:lava_bucket" },
 		"E": { "tag": "forge:ingots/enchanted_gold" }

@@ -2,8 +2,7 @@
     "type": "minecraft:crafting_shaped",
     "pattern": [
         "N N",
-        "E E",
-		" C "
+        "ECE"
     ],
     "key": {
 		"N": { "item": "minecraft:netherite_sword" },
