@@ -111,12 +111,9 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
     maven {
-        url "https://cursemaven.com"
-        content {
-            includeGroup "curse.maven"
-        }
-		
-    }
+		name = "MasterGeneral156"
+		url = "https://maven.chivalryengine.com/"
+	}
 	maven {
 		name = "Illusive Soulworks maven"
 		url = "https://maven.theillusivec4.top/"
