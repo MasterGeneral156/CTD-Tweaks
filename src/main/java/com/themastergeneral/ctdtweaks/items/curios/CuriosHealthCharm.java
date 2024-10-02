@@ -52,7 +52,7 @@ public class CuriosHealthCharm extends CTDItem implements ICurioItem {
 	
 	public CuriosHealthCharm(double healthGain) 
 	{
-		super(new Item.Properties().stacksTo(4));
+		super(new Item.Properties().stacksTo(1));
 		this.healthGain = healthGain;
 	}
 
@@ -89,6 +89,6 @@ public class CuriosHealthCharm extends CTDItem implements ICurioItem {
 	public void appendHoverText(ItemStack stack, @Nullable Level worldIn, List<Component> tooltip, TooltipFlag flagIn) 
 	{
 		tooltip.add(Component.literal("Increases health by " + healthGain + " when worn"));
-		tooltip.add(Component.literal("Max: " + this.getMaxStackSize(stack)));
+		tooltip.add(Component.literal("Max: " + getMaxStackSize(stack)));
 	}
 }
