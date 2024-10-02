@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+		"tag": "forge:obsidian"  
+    },
+	{
+		"tag": "forge:obsidian"  
+    },
+	{
+		"tag": "forge:dusts/glowstone"	
+	},
+	{
+		"tag": "forge:dusts/glowstone"	
+	}
+  ],
+  "result": {
+    "item": "ctdtweaks:glowing_obsidian",
+	"count": 2
+  }
+}
