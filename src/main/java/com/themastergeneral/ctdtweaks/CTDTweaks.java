@@ -102,6 +102,7 @@ public class CTDTweaks
 			ev.accept(ModItems.roasted_beetroot);
 			
 			ev.accept(ModItems.op_sword);
+			ev.accept(ModItems.op_hammer);
 			ev.accept(ModItems.personal_teleporter);
 			
 			ev.accept(ModItems.amulet_of_extinguish);

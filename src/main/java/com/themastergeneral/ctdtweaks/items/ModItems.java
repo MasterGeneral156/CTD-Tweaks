@@ -79,7 +79,8 @@ public class ModItems {
 	
 	public static CTDDurabilityItem combat_core = new CTDDurabilityItem(new Item.Properties(), 128);
 	
-	public static OPSword op_sword = new OPSword();
+	public static OPSword op_sword = new OPSword(4, -2.4F);
+	public static OPSword op_hammer = new OPSword(27, -3.5F);
 	
 	public static ModBlockItems block_coal_wither = new ModBlockItems(ModBlocks.block_coal_wither);
 	public static ModBlockItems glowing_obsidian = new ModBlockItems(ModBlocks.glowing_obsidian);

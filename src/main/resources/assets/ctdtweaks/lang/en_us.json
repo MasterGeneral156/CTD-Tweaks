@@ -30,6 +30,7 @@
 	"item.ctdtweaks.large_health_charm": "Demonic Health Curio",
 	
 	"item.ctdtweaks.op_sword": "Tri-blade of Destruction",
+	"item.ctdtweaks.op_hammer": "Warhammer of Destruction",
 	
 	"block.ctdtweaks.block_coal_wither": "§bBlock of Wither Coal",
 	"block.ctdtweaks.glowing_obsidian": "Glowing Obsidian",
@@ -43,5 +44,7 @@
 	"item.ctdtweaks.sunn_block_charm.desc": "Reflects damage back to attacker [WIP]",
 	"item.ctdtweaks.amulet_water_breathing.desc": "Replenishes Oxygen when below",
 	"item.ctdtweaks.amulet_of_extinguish.desc": "Extinguishes the player when set ablaze",
-	"item.ctdtweaks.op_sword.desc": "§8Deals void damage"
+	"item.ctdtweaks.destruction_item.desc": "§8Deals void damage",
+	"item.ctdtweaks.op_sword.desc": "§4Disable's opponenet's main hand",
+	"item.ctdtweaks.op_hammer.desc": "§4Gives opponent confusion. VERY HEAVY!"
 }

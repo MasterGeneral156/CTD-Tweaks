@@ -62,6 +62,7 @@ public class ItemRegistry {
 	public static final RegistryObject<Item> yeet_amulet = ITEMS.register("yeet_amulet", () -> ModItems.yeet_amulet);
 	
 	public static final RegistryObject<Item> op_sword = ITEMS.register("op_sword", () -> ModItems.op_sword);
+	public static final RegistryObject<Item> op_hammer = ITEMS.register("op_hammer", () -> ModItems.op_hammer);
 
 	public static final RegistryObject<Item> nugget_charcoal = ITEMS.register("nugget_charcoal", () -> ModItems.nugget_charcoal);
 	public static final RegistryObject<Item> nugget_coal = ITEMS.register("nugget_coal", () -> ModItems.nugget_coal);

@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "NNN",
+        " C ",
+		" E "
+    ],
+    "key": {
+		"N": { "tag": "forge:storage_blocks/netherite" },
+		"E": { "tag": "forge:ingots/enchanted_gold" },
+		"C": { "item": "ctdtweaks:combat_core", "data": 32767 }
+    },
+    "result": {
+        "item": "ctdtweaks:op_hammer"
+    }
+}

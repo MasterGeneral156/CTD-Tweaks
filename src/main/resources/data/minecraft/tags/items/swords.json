@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "ctdtweaks:op_sword"
+    "ctdtweaks:op_sword",
+	"ctdtweaks:op_hammer"
   ]
 }
