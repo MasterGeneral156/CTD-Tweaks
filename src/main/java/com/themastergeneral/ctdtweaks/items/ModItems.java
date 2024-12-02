@@ -64,9 +64,9 @@ public class ModItems {
 	public static CTDFuelItem nugget_charcoal = new CTDFuelItem(200);
 
 	public static CuriosSunnBlock sunn_block_charm = new CuriosSunnBlock();
-	public static CuriosHealthCharm basic_health_charm = new CuriosHealthCharm(2.75D);
-	public static CuriosHealthCharm medium_health_charm = new CuriosHealthCharm(6.25D);
-	public static CuriosHealthCharm large_health_charm = new CuriosHealthCharm(14.125D);
+	public static CuriosHealthCharm basic_health_charm = new CuriosHealthCharm(3D);
+	public static CuriosHealthCharm medium_health_charm = new CuriosHealthCharm(3D * 2.5);
+	public static CuriosHealthCharm large_health_charm = new CuriosHealthCharm((3D * 2.5) * 2.5);
 	
 	
 	public static TeleporterItem personal_teleporter = new TeleporterItem(71);
