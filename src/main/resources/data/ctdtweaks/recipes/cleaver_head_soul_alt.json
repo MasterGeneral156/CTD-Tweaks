@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+		"BBB",
+        " I ",
+        "BBB"
+    ],
+    "key": {
+		"I": { "item": "ctdtweaks:cleaver_head" },
+		"B": { "tag": "forge:ingots/enchanted_gold" }
+    },
+    "result": {
+        "item": "ctdtweaks:cleaver_head_soul"
+    }
+}

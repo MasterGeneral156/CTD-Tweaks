@@ -30,6 +30,7 @@ package com.themastergeneral.ctdtweaks.items;
 import com.themastergeneral.ctdcore.item.CTDConsumableItem;
 import com.themastergeneral.ctdcore.item.CTDDurabilityItem;
 import com.themastergeneral.ctdcore.item.CTDFuelItem;
+import com.themastergeneral.ctdcore.item.CTDItem;
 import com.themastergeneral.ctdtweaks.blocks.ModBlocks;
 import com.themastergeneral.ctdtweaks.items.blocks.ModBlockItems;
 import com.themastergeneral.ctdtweaks.items.curios.CobbleGenItem;
@@ -53,7 +54,9 @@ public class ModItems {
 
 	public static CTDItem cleaver_hilt = new CTDItem();
 	public static CTDItem cleaver_burning_hilt = new CTDItem();
+	public static CTDItem cleaver_soul_burning_hilt = new CTDItem();
 	public static CTDItem cleaver_head = new CTDItem();
+	public static CTDItem cleaver_head_soul = new CTDItem();
 	
 	public static SpeedCuriosItem ring_of_swiftness = new SpeedCuriosItem();
 	public static HasteCuriosItem ring_of_enlightened_miner = new HasteCuriosItem();
@@ -86,6 +89,7 @@ public class ModItems {
 	public static OPSword op_sword = new OPSword(4, -2.4F);
 	public static OPSword op_hammer = new OPSword(27, -3.5F);
 	public static OPSword cleaver = new OPSword(8, -2.8F);
+	public static OPSword cleaver_soul_burning = new OPSword(8, -2.75F);
 	public static OPSword cleaver_burning = new OPSword(8, -2.75F);
 	
 	public static ModBlockItems block_coal_wither = new ModBlockItems(ModBlocks.block_coal_wither);

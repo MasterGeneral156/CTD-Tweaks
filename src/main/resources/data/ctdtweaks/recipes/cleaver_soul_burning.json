@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+		"item": "ctdtweaks:cleaver_head_soul"
+    },
+	{
+		"item": "ctdtweaks:cleaver_soul_burning_hilt"	
+	},
+	{
+		"item": "minecraft:flint_and_steel"	, "data": 32767
+	}
+  ],
+  "result": {
+    "item": "ctdtweaks:cleaver_soul_burning"
+  }
+}
