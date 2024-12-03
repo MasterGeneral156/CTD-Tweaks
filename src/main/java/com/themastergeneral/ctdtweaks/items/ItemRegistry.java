@@ -36,6 +36,8 @@ public class ItemRegistry {
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "ctdtweaks");
 	
 	//Base Items
+	public static final RegistryObject<Item> cleaver_head = ITEMS.register("cleaver_head", () -> ModItems.cleaver_head);
+	public static final RegistryObject<Item> cleaver_hilt = ITEMS.register("cleaver_hilt", () -> ModItems.cleaver_hilt);
 	public static final RegistryObject<Item> coal_wither = ITEMS.register("coal_wither", () -> ModItems.coal_wither);
 	public static final RegistryObject<Item> gold_ingot_enchanted = ITEMS.register("gold_ingot_enchanted", () -> ModItems.gold_ingot_enchanted);
 	public static final RegistryObject<Item> combat_core = ITEMS.register("combat_core", () -> ModItems.combat_core);
@@ -62,6 +64,7 @@ public class ItemRegistry {
 	public static final RegistryObject<Item> yeet_amulet = ITEMS.register("yeet_amulet", () -> ModItems.yeet_amulet);
 	
 	public static final RegistryObject<Item> op_sword = ITEMS.register("op_sword", () -> ModItems.op_sword);
+	public static final RegistryObject<Item> cleaver = ITEMS.register("cleaver", () -> ModItems.cleaver);
 	public static final RegistryObject<Item> op_hammer = ITEMS.register("op_hammer", () -> ModItems.op_hammer);
 
 	public static final RegistryObject<Item> nugget_charcoal = ITEMS.register("nugget_charcoal", () -> ModItems.nugget_charcoal);

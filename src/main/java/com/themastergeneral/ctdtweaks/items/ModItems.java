@@ -50,6 +50,8 @@ public class ModItems {
 	public static CTDFuelItem coal_wither = new CTDFuelItem(new Item.Properties(), 560000 / 10);
 	
 	public static GlintItem gold_ingot_enchanted = new GlintItem();
+
+	public static CTDItem cleaver_head = new CTDItem();
 	
 	public static SpeedCuriosItem ring_of_swiftness = new SpeedCuriosItem();
 	public static HasteCuriosItem ring_of_enlightened_miner = new HasteCuriosItem();
@@ -81,6 +83,7 @@ public class ModItems {
 	
 	public static OPSword op_sword = new OPSword(4, -2.4F);
 	public static OPSword op_hammer = new OPSword(27, -3.5F);
+	public static OPSword cleaver = new OPSword(8, -2.8F);
 	
 	public static ModBlockItems block_coal_wither = new ModBlockItems(ModBlocks.block_coal_wither);
 	public static ModBlockItems glowing_obsidian = new ModBlockItems(ModBlocks.glowing_obsidian);

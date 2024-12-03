@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+		"item": "ctdtweaks:cleaver_head"
+    },
+	{
+		"item": "ctdtweaks:cleaver_hilt"	
+	}
+  ],
+  "result": {
+    "item": "ctdtweaks:cleaver"
+  }
+}

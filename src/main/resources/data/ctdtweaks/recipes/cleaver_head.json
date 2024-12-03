@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+		"II",
+        "BB",
+        "BB"
+    ],
+    "key": {
+		"I": { "tag": "forge:ingots/iron" },
+		"B": { "tag": "forge:storage_blocks/iron" }
+    },
+    "result": {
+        "item": "ctdtweaks:cleaver_head"
+    }
+}
