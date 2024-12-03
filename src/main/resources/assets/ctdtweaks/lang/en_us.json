@@ -53,6 +53,7 @@
 	"item.ctdtweaks.amulet_water_breathing.desc": "Replenishes Oxygen when below",
 	"item.ctdtweaks.amulet_of_extinguish.desc": "Extinguishes the player when set ablaze",
 	"item.ctdtweaks.destruction_item.desc": "§8Deals void damage",
+	"item.ctdtweaks.fire_item.desc": "§8Sets target ablaze",
 	"item.ctdtweaks.op_sword.desc": "§4Disable's opponenet's main hand",
 	"item.ctdtweaks.op_hammer.desc": "§4Gives opponent confusion. VERY HEAVY!"
 }
