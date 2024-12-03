@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+		"NNN",
+        "NHN",
+        "NNN"
+    ],
+    "key": {
+		"H": { "item": "ctdtweaks:cleaver_hilt" },
+		"N": { "tag": "forge:netherrack" }
+    },
+    "result": {
+        "item": "ctdtweaks:cleaver_burning_hilt"
+    }
+}

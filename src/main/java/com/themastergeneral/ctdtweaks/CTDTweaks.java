@@ -99,6 +99,7 @@ public class CTDTweaks
 			ev.accept(ModItems.combat_core);
 			ev.accept(ModItems.cleaver_head);
 			ev.accept(ModItems.cleaver_hilt);
+			ev.accept(ModItems.cleaver_burning_hilt);
 			
 			ev.accept(ModItems.steamed_carrot);
 			ev.accept(ModItems.roasted_beetroot);
@@ -106,6 +107,7 @@ public class CTDTweaks
 			ev.accept(ModItems.op_sword);
 			ev.accept(ModItems.op_hammer);
 			ev.accept(ModItems.cleaver);
+			ev.accept(ModItems.cleaver_burning);
 			ev.accept(ModItems.personal_teleporter);
 			
 			ev.accept(ModItems.amulet_of_extinguish);
