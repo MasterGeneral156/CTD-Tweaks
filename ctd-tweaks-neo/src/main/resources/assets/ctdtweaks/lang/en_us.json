@@ -1,13 +1,9 @@
 {
-  "itemGroup.ctdtweaks": "Example Mod Tab",
-  "block.ctdtweaks.example_block": "Example Block",
-  "item.ctdtweaks.example_item": "Example Item",
+    "item.ctdtweaks.nugget_coal": "§8Tiny Coal",
+	"item.ctdtweaks.nugget_charcoal": "§8Tiny Charcoal",
 
-  "ctdtweaks.configuration.title": "CTD Tweaks Configs",
-  "ctdtweaks.configuration.section.ctdtweaks.common.toml": "CTD Tweaks Configs",
-  "ctdtweaks.configuration.section.ctdtweaks.common.toml.title": "CTD Tweaks Configs",
-  "ctdtweaks.configuration.items": "Item List",
-  "ctdtweaks.configuration.logDirtBlock": "Log Dirt Block",
-  "ctdtweaks.configuration.magicNumberIntroduction": "Magic Number Text",
-  "ctdtweaks.configuration.magicNumber": "Magic Number"
+	"item.ctdtweaks.steamed_carrot": "Steamed Carrot",
+	"item.ctdtweaks.roasted_beetroot": "Roasted Beetroot",
+
+	"item.ctdtweaks.pocket_cobble_generator": "Pocket Cobble Generator"
 }
