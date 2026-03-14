@@ -1,4 +1,4 @@
-package com.themastergeneral.crdtweaks;
+package com.themastergeneral.ctdtweaks;
 
 import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;

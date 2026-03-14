@@ -1,12 +1,12 @@
-package com.themastergeneral.crdtweaks.registries;
+package com.themastergeneral.ctdtweaks.registries;
 
-import com.themastergeneral.crdtweaks.items.ItemConstants;
+import com.themastergeneral.ctdtweaks.items.ItemConstants;
 import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
 
-import static com.themastergeneral.crdtweaks.CTDTweaks.MODID;
+import static com.themastergeneral.ctdtweaks.CTDTweaks.MODID;
 
 public class ItemRegistry {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MODID);
@@ -18,6 +18,10 @@ public class ItemRegistry {
     /** Fuel Items */
     public static final Supplier<Item> nugget_charcoal = ITEMS.register("nugget_charcoal", () -> ItemConstants.nugget_charcoal);
     public static final Supplier<Item> nugget_coal = ITEMS.register("nugget_coal", () -> ItemConstants.nugget_coal);
+
+    /** Misc materials & ingredients */
+    public static final Supplier<Item> enchanted_gold_ingot = ITEMS.register("enchanted_gold_ingot", () -> ItemConstants.enchanted_gold_ingot);
+    public static final Supplier<Item> enchanted_gold_nugget = ITEMS.register("enchanted_gold_nugget", () -> ItemConstants.enchanted_gold_nugget);
 
     /** Curios Items */
     //Artifacts

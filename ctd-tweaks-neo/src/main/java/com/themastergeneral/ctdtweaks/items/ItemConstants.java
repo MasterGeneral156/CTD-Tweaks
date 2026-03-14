@@ -1,6 +1,6 @@
-package com.themastergeneral.crdtweaks.items;
+package com.themastergeneral.ctdtweaks.items;
 
-import com.themastergeneral.crdtweaks.items.curios.artifacts.CobbleGenItem;
+import com.themastergeneral.ctdtweaks.items.curios.artifacts.CobbleGenItem;
 import com.themastergeneral.ctdcore.item.CTDConsumableItem;
 import com.themastergeneral.ctdcore.item.CTDFuelItem;
 
@@ -13,6 +13,10 @@ public class ItemConstants {
     /** Fuel Items */
     public static CTDFuelItem nugget_coal = new CTDFuelItem(200);
     public static CTDFuelItem nugget_charcoal = new CTDFuelItem(200);
+
+    /** Misc materials & ingredients */
+    public static GlowingItem enchanted_gold_ingot = new GlowingItem();
+    public static GlowingItem enchanted_gold_nugget = new GlowingItem();
 
     /** Curios Items */
     //Artifacts

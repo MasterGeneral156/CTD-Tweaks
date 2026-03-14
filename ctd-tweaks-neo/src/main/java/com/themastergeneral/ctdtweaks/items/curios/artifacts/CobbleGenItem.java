@@ -1,4 +1,4 @@
-package com.themastergeneral.crdtweaks.items.curios.artifacts;
+package com.themastergeneral.ctdtweaks.items.curios.artifacts;
 
 import com.themastergeneral.ctdcore.helpers.ModUtils;
 import com.themastergeneral.ctdcore.item.CTDItem;
@@ -17,7 +17,6 @@ import net.neoforged.api.distmarker.OnlyIn;
 import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.type.capability.ICurioItem;
 
-import javax.annotation.Nullable;
 import java.util.List;
 
 public class CobbleGenItem extends CTDItem implements ICurioItem
