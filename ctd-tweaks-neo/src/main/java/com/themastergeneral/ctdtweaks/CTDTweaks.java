@@ -2,6 +2,7 @@ package com.themastergeneral.ctdtweaks;
 
 import com.themastergeneral.ctdtweaks.registries.ItemRegistry;
 import net.minecraft.world.item.*;
+import net.neoforged.neoforge.common.NeoForge;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -14,8 +15,6 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.ModContainer;
-import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -40,5 +39,9 @@ public class CTDTweaks {
         CTDTweaksTab.CREATIVE_MODE_TABS.register(modEventBus);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
+        //modEventBus.addListener(this::onUseItemOnBlock);
+
+        NeoForge.EVENT_BUS.register(CTDTweaksEvents.class);
     }
 }
