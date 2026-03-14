@@ -4,7 +4,7 @@
   "cookingtime": 200,
   "experience": 0.35,
   "ingredient": {
-    "item": "minecraft:carrot"
+    "tag": "c:crops/carrot"
   },
   "result": {
     "id": "ctdtweaks:steamed_carrot"
