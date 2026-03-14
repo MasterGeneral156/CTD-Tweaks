@@ -35,12 +35,9 @@ public class CTDTweaks {
         ItemRegistry.ITEMS.register(modEventBus);
         CREATIVE_MODE_TABS.register(modEventBus);
 
-        //NeoForge.EVENT_BUS.register(this);
         CTDTweaksTab.CREATIVE_MODE_TABS.register(modEventBus);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
-
-        //modEventBus.addListener(this::onUseItemOnBlock);
 
         NeoForge.EVENT_BUS.register(CTDTweaksEvents.class);
     }
