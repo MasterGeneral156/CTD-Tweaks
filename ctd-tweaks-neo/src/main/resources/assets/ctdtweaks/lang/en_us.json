@@ -12,6 +12,7 @@
 	"item.ctdtweaks.pocket_cobble_generator.desc": "Generates 1 Cobble every second. \nRequires Lava/Water bucket in inventory.",
 	"item.ctdtweaks.enchanted_gold_ingot": "Enchanted Gold Ingot",
 	"item.ctdtweaks.enchanted_gold_nugget": "Enchanted Gold Nugget",
+	"item.ctdtweaks.combat_core": "Combat Core",
 
 	"ctdtweaks.enchantedgold.no_xp": "You need at least 1 XP level to do this"
 }

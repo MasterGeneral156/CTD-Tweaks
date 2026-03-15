@@ -18,6 +18,7 @@ public class CTDTweaksTab {
             .icon(() -> ItemConstants.enchanted_gold_ingot.getDefaultInstance())
             .title(ModUtils.displayTranslation("itemGroup.ctdtweaks"))
             .displayItems((parameters, ev) -> {
+                ev.accept(ItemConstants.combat_core);
                 ev.accept(ItemConstants.enchanted_gold_ingot);
                 ev.accept(ItemConstants.enchanted_gold_nugget);
 

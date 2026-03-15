@@ -1,8 +1,10 @@
 package com.themastergeneral.ctdtweaks.items;
 
+import com.themastergeneral.ctdcore.item.CTDDurabilityItem;
 import com.themastergeneral.ctdtweaks.items.curios.artifacts.CobbleGenItem;
 import com.themastergeneral.ctdcore.item.CTDConsumableItem;
 import com.themastergeneral.ctdcore.item.CTDFuelItem;
+import net.minecraft.world.item.Item;
 
 public class ItemConstants {
 
@@ -18,6 +20,7 @@ public class ItemConstants {
     /** Misc materials & ingredients */
     public static GlowingItem enchanted_gold_ingot = new GlowingItem();
     public static GlowingItem enchanted_gold_nugget = new GlowingItem();
+    public static CTDDurabilityItem combat_core = new CTDDurabilityItem(new Item.Properties(), 128);
 
     /** Curios Items */
     //Artifacts

@@ -18,10 +18,12 @@ public class ItemRegistry {
     /** Fuel Items */
     public static final Supplier<Item> nugget_charcoal = ITEMS.register("nugget_charcoal", () -> ItemConstants.nugget_charcoal);
     public static final Supplier<Item> nugget_coal = ITEMS.register("nugget_coal", () -> ItemConstants.nugget_coal);
+    public static final Supplier<Item> coal_wither = ITEMS.register("coal_wither", () -> ItemConstants.coal_wither);
 
     /** Misc materials & ingredients */
     public static final Supplier<Item> enchanted_gold_ingot = ITEMS.register("enchanted_gold_ingot", () -> ItemConstants.enchanted_gold_ingot);
     public static final Supplier<Item> enchanted_gold_nugget = ITEMS.register("enchanted_gold_nugget", () -> ItemConstants.enchanted_gold_nugget);
+    public static final Supplier<Item> combat_core = ITEMS.register("combat_core", () -> ItemConstants.combat_core);
 
     /** Curios Items */
     //Artifacts

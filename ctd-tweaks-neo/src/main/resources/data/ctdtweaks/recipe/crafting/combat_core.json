@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "ctdtweaks:enchanted_gold_ingot"
+    },
+    "H": {
+      "tag": "c:tools/shield"
+    },
+    "S": {
+      "tag": "minecraft:swords"
+    },
+    "A": {
+      "tag": "minecraft:arrows"
+    }
+  },
+  "pattern": [
+    "ASA",
+    "HEH",
+    "ASA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ctdtweaks:combat_core"
+  }
+}
