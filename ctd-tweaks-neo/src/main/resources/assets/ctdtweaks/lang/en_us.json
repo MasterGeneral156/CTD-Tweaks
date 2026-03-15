@@ -10,6 +10,9 @@
 
 	"item.ctdtweaks.pocket_cobble_generator": "Pocket Cobble Generator",
 	"item.ctdtweaks.pocket_cobble_generator.desc": "Generates 1 Cobble every second. \nRequires Lava/Water bucket in inventory.",
+	"item.ctdtweaks.repair_charm": "Repair Charm",
+	"item.ctdtweaks.repair_charm.desc": "Repairs 1 item durability every 20 ticks",
+
 	"item.ctdtweaks.enchanted_gold_ingot": "Enchanted Gold Ingot",
 	"item.ctdtweaks.enchanted_gold_nugget": "Enchanted Gold Nugget",
 	"item.ctdtweaks.combat_core": "Combat Core",

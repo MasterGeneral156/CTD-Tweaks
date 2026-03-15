@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "item": "minecraft:name_tag"
+    },
+    "I": {
+      "item": "ctdtweaks:enchanted_gold_ingot"
+    },
+    "E": {
+      "item": "ctdtweaks:enchanted_gold_nugget"
+    }
+  },
+  "pattern": [
+    "EIE",
+    "INI",
+    "EIE"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ctdtweaks:repair_charm"
+  }
+}

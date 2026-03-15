@@ -4,6 +4,7 @@ import com.themastergeneral.ctdcore.item.CTDDurabilityItem;
 import com.themastergeneral.ctdtweaks.items.curios.artifacts.CobbleGenItem;
 import com.themastergeneral.ctdcore.item.CTDConsumableItem;
 import com.themastergeneral.ctdcore.item.CTDFuelItem;
+import com.themastergeneral.ctdtweaks.items.curios.artifacts.RepairCharmItem;
 import net.minecraft.world.item.Item;
 
 public class ItemConstants {
@@ -25,4 +26,5 @@ public class ItemConstants {
     /** Curios Items */
     //Artifacts
     public static CobbleGenItem pocket_cobble_generator = new CobbleGenItem();
+    public static RepairCharmItem repair_charm = new RepairCharmItem();
 }

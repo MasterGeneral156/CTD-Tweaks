@@ -28,4 +28,5 @@ public class ItemRegistry {
     /** Curios Items */
     //Artifacts
     public static final Supplier<Item> pocket_cobble_generator = ITEMS.register("pocket_cobble_generator", () -> ItemConstants.pocket_cobble_generator);
+    public static final Supplier<Item> repair_charm = ITEMS.register("repair_charm", () -> ItemConstants.repair_charm);
 }
