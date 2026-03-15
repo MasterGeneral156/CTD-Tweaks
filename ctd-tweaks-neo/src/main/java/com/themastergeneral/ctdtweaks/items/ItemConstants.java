@@ -13,6 +13,7 @@ public class ItemConstants {
     /** Fuel Items */
     public static CTDFuelItem nugget_coal = new CTDFuelItem(200);
     public static CTDFuelItem nugget_charcoal = new CTDFuelItem(200);
+    public static CTDFuelItem coal_wither = new CTDFuelItem(60000);
 
     /** Misc materials & ingredients */
     public static GlowingItem enchanted_gold_ingot = new GlowingItem();

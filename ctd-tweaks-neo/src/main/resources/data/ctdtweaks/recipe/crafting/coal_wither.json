@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:storage_blocks/coal"
+    },
+    {
+      "tag": "c:nether_stars"
+    }
+  ],
+  "result": {
+    "count": 8,
+    "id": "ctdtweaks:coal_wither"
+  }
+}
