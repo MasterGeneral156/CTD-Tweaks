@@ -47,4 +47,13 @@ public class CTDTweaksEvents {
             }
         }
     }
+
+    @SubscribeEvent
+    public static void onPlayerJoin(PlayerEvent.PlayerLoggedInEvent event) {
+
+        Player player = event.getEntity();
+        if (EntityHelper.isMasterGeneral(player)) {
+            player.sendSystemMessage(ModUtils.displayString("Greetings and welcome, master..."));
+        }
+    }
 }
