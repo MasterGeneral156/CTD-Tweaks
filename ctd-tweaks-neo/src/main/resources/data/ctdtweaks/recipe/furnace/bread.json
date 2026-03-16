@@ -4,9 +4,9 @@
   "cookingtime": 200,
   "experience": 0.35,
   "ingredient": {
-    "tag": "c:foods/bread"
+    "tag": "c:foods/dough"
   },
   "result": {
-    "id": "ctdtweaks:toasted_bread"
+    "id": "minecraft:bread"
   }
 }
