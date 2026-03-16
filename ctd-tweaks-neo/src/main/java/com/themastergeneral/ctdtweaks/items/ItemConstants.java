@@ -10,8 +10,8 @@ import net.minecraft.world.item.Item;
 public class ItemConstants {
 
     /** Food Items */
-    public static CTDConsumableItem steamed_carrot = new CTDConsumableItem(6, 0.65F);
-    public static CTDConsumableItem roasted_beetroot = new CTDConsumableItem(2, 0.32F);
+    public static CTDConsumableItem steamed_carrot = new CTDConsumableItem(4, 0.7F);
+    public static CTDConsumableItem roasted_beetroot = new CTDConsumableItem(3, 0.65F);
 
     /** Fuel Items */
     public static CTDFuelItem nugget_coal = new CTDFuelItem(200);
