@@ -7,6 +7,8 @@
 
 	"item.ctdtweaks.steamed_carrot": "Steamed Carrot",
 	"item.ctdtweaks.roasted_beetroot": "Roasted Beetroot",
+	"item.ctdtweaks.toasted_bread": "Toasted Bread",
+	"item.ctdtweaks.dough_ball": "Raw Dough Ball",
 
 	"item.ctdtweaks.pocket_cobble_generator": "Pocket Cobble Generator",
 	"item.ctdtweaks.pocket_cobble_generator.desc": "Generates 1 Cobble every second. \nRequires Lava/Water bucket in inventory.",

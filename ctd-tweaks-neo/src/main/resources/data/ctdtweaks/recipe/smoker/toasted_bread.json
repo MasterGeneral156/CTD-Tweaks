@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "ctdtweaks:dough_ball"
+  },
+  "result": {
+    "id": "ctdtweaks:toasted_bread"
+  }
+}

@@ -12,6 +12,8 @@ public class ItemConstants {
     /** Food Items */
     public static CTDConsumableItem steamed_carrot = new CTDConsumableItem(4, 0.7F);
     public static CTDConsumableItem roasted_beetroot = new CTDConsumableItem(3, 0.65F);
+    public static CTDConsumableItem dough_ball = new CTDConsumableItem(2, 0.2F);
+    public static CTDConsumableItem toasted_bread = new CTDConsumableItem(5, 0.7F);
 
     /** Fuel Items */
     public static CTDFuelItem nugget_coal = new CTDFuelItem(200);

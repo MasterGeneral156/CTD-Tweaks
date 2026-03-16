@@ -24,6 +24,8 @@ public class CTDTweaksTab {
 
                 ev.accept(ItemConstants.steamed_carrot);
                 ev.accept(ItemConstants.roasted_beetroot);
+                ev.accept(ItemConstants.dough_ball);
+                ev.accept(ItemConstants.toasted_bread);
 
                 ev.accept(ItemConstants.coal_wither);
                 ev.accept(ItemConstants.nugget_charcoal);

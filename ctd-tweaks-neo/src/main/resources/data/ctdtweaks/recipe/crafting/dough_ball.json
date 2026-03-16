@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "W": {
+      "tag": "c:crops/wheat"
+    },
+    "B": {
+      "tag": "c:buckets/water"
+    }
+  },
+  "pattern": [
+    " W ",
+    "WBW",
+    " W "
+  ],
+  "result": {
+    "count": 4,
+    "id": "ctdtweaks:dough_ball"
+  }
+}

@@ -14,6 +14,8 @@ public class ItemRegistry {
     /** Food Items */
     public static final Supplier<Item> steamed_carrot = ITEMS.register("steamed_carrot", () -> ItemConstants.steamed_carrot);
     public static final Supplier<Item> roasted_beetroot = ITEMS.register("roasted_beetroot", () -> ItemConstants.roasted_beetroot);
+    public static final Supplier<Item> dough_ball = ITEMS.register("dough_ball", () -> ItemConstants.dough_ball);
+    public static final Supplier<Item> toasted_bread = ITEMS.register("toasted_bread", () -> ItemConstants.toasted_bread);
 
     /** Fuel Items */
     public static final Supplier<Item> nugget_charcoal = ITEMS.register("nugget_charcoal", () -> ItemConstants.nugget_charcoal);
