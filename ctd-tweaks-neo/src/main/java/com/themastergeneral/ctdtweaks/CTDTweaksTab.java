@@ -31,6 +31,8 @@ public class CTDTweaksTab {
                 ev.accept(ItemConstants.nugget_charcoal);
                 ev.accept(ItemConstants.nugget_coal);
 
+                ev.accept(ItemConstants.smite_tool);
+
                 ev.accept(ItemConstants.pocket_cobble_generator);
                 ev.accept(ItemConstants.repair_charm);
             }).build());

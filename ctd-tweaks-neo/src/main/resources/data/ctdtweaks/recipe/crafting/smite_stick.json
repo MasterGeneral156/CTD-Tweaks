@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "tag": "c:nuggets/enchanted_gold"
+    },
+    "I": {
+      "tag": "c:ingots/enchanted_gold"
+    },
+    "S": {
+      "tag": "c:rods/wooden"
+    },
+    "R": {
+      "item": "minecraft:lightning_rod"
+    }
+  },
+  "pattern": [
+    " I ",
+    "NRN",
+    "NSN"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ctdtweaks:smite_tool"
+  }
+}

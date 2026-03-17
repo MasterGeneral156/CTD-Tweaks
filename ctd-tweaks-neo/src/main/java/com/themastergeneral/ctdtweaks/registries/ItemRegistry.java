@@ -27,6 +27,9 @@ public class ItemRegistry {
     public static final Supplier<Item> enchanted_gold_nugget = ITEMS.register("enchanted_gold_nugget", () -> ItemConstants.enchanted_gold_nugget);
     public static final Supplier<Item> combat_core = ITEMS.register("combat_core", () -> ItemConstants.combat_core);
 
+    /** Tools / Weapons */
+    public static final Supplier<Item> smite_tool = ITEMS.register("smite_tool", () -> ItemConstants.smite_tool);
+
     /** Curios Items */
     //Artifacts
     public static final Supplier<Item> pocket_cobble_generator = ITEMS.register("pocket_cobble_generator", () -> ItemConstants.pocket_cobble_generator);

@@ -5,6 +5,7 @@ import com.themastergeneral.ctdtweaks.items.curios.artifacts.CobbleGenItem;
 import com.themastergeneral.ctdcore.item.CTDConsumableItem;
 import com.themastergeneral.ctdcore.item.CTDFuelItem;
 import com.themastergeneral.ctdtweaks.items.curios.artifacts.RepairCharmItem;
+import com.themastergeneral.ctdtweaks.items.tools.SmiteTool;
 import net.minecraft.world.item.Item;
 
 public class ItemConstants {
@@ -24,6 +25,10 @@ public class ItemConstants {
     public static GlowingItem enchanted_gold_ingot = new GlowingItem();
     public static GlowingItem enchanted_gold_nugget = new GlowingItem();
     public static CTDDurabilityItem combat_core = new CTDDurabilityItem(new Item.Properties(), 128);
+
+    /** Tools / Weapons */
+    public static SmiteTool smite_tool = new SmiteTool(64);
+
 
     /** Curios Items */
     //Artifacts
