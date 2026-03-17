@@ -10,7 +10,7 @@ version="${mod_version}"
 displayName="${mod_name}"
 updateJSONURL="https://raw.githubusercontent.com/MasterGeneral156/Version/refs/heads/master/CTD-Tweaks.json"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/ctd-tweaks"
-logoFile="ctd-tweaks-logo.png"
+logoFile="ctd-tweaks.png"
 authors="TheMasterGeneral"
 
 description='''
