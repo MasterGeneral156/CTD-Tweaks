@@ -3,7 +3,7 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "ctdtweaks:enchanted_gold_ingot"
+      "tag": "c:ingots/enchanted_gold"
     }
   ],
   "result": {

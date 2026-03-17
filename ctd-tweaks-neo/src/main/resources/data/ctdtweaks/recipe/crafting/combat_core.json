@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "E": {
-      "item": "ctdtweaks:enchanted_gold_ingot"
+      "tag": "c:ingots/enchanted_gold"
     },
     "H": {
       "tag": "c:tools/shield"

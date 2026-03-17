@@ -6,10 +6,10 @@
       "item": "minecraft:name_tag"
     },
     "I": {
-      "item": "ctdtweaks:enchanted_gold_ingot"
+      "tag": "c:ingots/enchanted_gold"
     },
     "E": {
-      "item": "ctdtweaks:enchanted_gold_nugget"
+      "tag": "c:nuggets/enchanted_gold"
     }
   },
   "pattern": [
