@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "minecraft:purpur_block"
+    },
+    "M": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "S": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    "PSP",
+    "MSM",
+    "MSM"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ctdtweaks:enchanted_gold_ingot"
+  }
+}
